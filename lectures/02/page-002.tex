@@ -1,19 +1,25 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 2. Content remains in source order.
 \sourcepage{02}{2}
-\sourceheading{Classes of decision problems}
+\section{Classes of decision problems}
 \begin{itemize}
-\item Problems become elements of sets (classes): need a standard format.
-\item $\mathcal S$ is already standardized:
+\item Abstract decision problems: $\Pi_A:\mathcal I\longrightarrow\{\mathrm{yes},\mathrm{no}\}$.
+\item Concrete decision problems: $\Pi_C:\bits^*\longrightarrow\{\mathrm{yes},\mathrm{no}\}$.
+\end{itemize}
+
+
+Problems are elements of sets (classes). There is a need of standard format.
+Decision problems's solution sets $\mathcal S$ are already standardized:
 \[
 \mathcal S=\{\mathrm{yes},\mathrm{no}\},\qquad\Pi_A:\mathcal I\longrightarrow\{\mathrm{yes},\mathrm{no}\}.
 \]
-\item Need to standardize $\mathcal I$:
-\begin{itemize}
-\item From set of abstract structures of arbitrary nature.
-\item To set of binary strings $\subseteq\bits^*$.
-\end{itemize}
-\end{itemize}
-\textbf{DEF:} An encoding is an injective function, mapping an abstract set $\mathcal I$ to $\bits^*$:
+There is a need to standardize $\mathcal I$:
+We can transform any instance set from a set of abstract structures of arbitrary nature to a set of binary strings $\subseteq\bits^*$ 
+
+
+\section{Encodings} 
+An encoding is an injective function, mapping an abstract set $\mathcal I$ to $\bits^*$:
 \[
 e:\mathcal I\longrightarrow\bits^*.
 \]
+
+An encoding must also be coincise, i.e. the length of the encoding must be polynomially bounded in the size of the abstract instance. (Explained later.)

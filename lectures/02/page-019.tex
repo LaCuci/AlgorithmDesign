@@ -1,15 +1,22 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 19. Content remains in source order.
 \sourcepage{02}{19}
-\textbf{DEF:}
+\subsection{Class NP and the relationship between P and NP}
+
+The complexity class NP is the set of all languages that are verified in polynomial time.
 \[
 \classNP=\{L\subseteq\bits^*:\ L\text{ verified in polynomial time}\}.
 \]
-NP can be equivalently defined with respect to decision problems.
+NP can be equivalently defined with respect to decision problems : 
+\[
+\classNP=\{\Pi_C:\bits^*\to\{0,1\}:\ \Pi_C\text{ is verified in polynomial time}\}.
+\]
 
 We proved that $\mathrm{HAMILTON}\in\classNP$.
 
-Since verifying is easier than solving, we suspect that
+Since solving in polynomial time implies verifying in polynomial time (proof later), we have that 
 \[
 \text{if }L\in\classP\ \Rightarrow\ L\in\classNP.
 \]
 That is, $\classP\subseteq\classNP$.
+
+But we do not know if $\classP=\classNP$ or $\classP\subset\classNP$.

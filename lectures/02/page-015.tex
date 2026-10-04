@@ -1,7 +1,8 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 15. Content remains in source order.
 \sourcepage{02}{15}
-\sourceheading{EXAMPLE}
-\textbf{DEF:} Given $G=(V,E)$ undirected, a simple cycle is a sequence:
+\section{Polynomial-time verification of Hamiltonian cycles}
+
+Given $G=(V,E)$ undirected, a simple cycle is a sequence:
 \[
 \langle v_1,v_2,\ldots,v_k\rangle,\quad v_i\in V,\quad v_1=v_k,
 \]
@@ -9,7 +10,8 @@
 v_i\neq v_j\quad1\leq i<j<k,\qquad k\geq1,\qquad
 \{v_i,v_{i+1}\}\in E\quad1\leq i<k.
 \]
-HAMILTON:
+
+HAMILTON problem is a decision problem that asks whether a given undirected graph contains a simple cycle that visits all nodes in the graph exactly once (a Hamiltonian cycle):
 \[
 \begin{aligned}
 \text{I: }&\langle G=(V,E)\rangle,\quad G\text{ undirected},\\
@@ -18,6 +20,8 @@ HAMILTON:
 \]
 Example:
 \sourcefigure[0.65]{assets/02/page-015-hamilton-cycle.png}
-Deciding whether a graph contains a Hamiltonian cycle is a difficult problem (no polynomial algorithms are known).
 
-Verifying that a candidate vertex sequence is indeed a Hamiltonian cycle is easy!
+\subsection{Solution}
+Deciding whether a graph contains a Hamiltonian cycle is a difficult problem (no polynomial algorithms are known).
+\subsection{Verification}
+Verifying that a candidate vertex sequence is indeed a Hamiltonian cycle is easy (there is a polynomial time algorithm that checks the correctness of a candidate solution). Given a candidate sequence $\langle v_1,v_2,\ldots,v_k\rangle$, we can check in polynomial time whether it is a simple cycle and whether it visits all nodes in the graph exactly once. If both conditions are satisfied, we can conclude that the graph contains a Hamiltonian cycle.

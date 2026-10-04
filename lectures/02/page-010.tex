@@ -1,16 +1,29 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 10. Content remains in source order.
 \sourcepage{02}{10}
-\sourceheading{FORMAL LANGUAGE REPRESENTATION OF CONCRETE DECISION PROBLEMS}
-\textbf{RECAP:} Given an alphabet $\Sigma$, a formal language $L$ over $\Sigma$ is a set of finite strings:
+\section{Formal Language Representation of Concrete Decision Problems}
+
+Given an alphabet $\Sigma$, a formal language $L$ over $\Sigma$ is a set of finite strings:
 \[
 L\subseteq\Sigma^*\quad\text{(Kleene star of }\Sigma\text{)}.
 \]
+
 \begin{itemize}
 \item $L$ may/may not contain the empty string $\eps$ ($\eps\notin L$ or $\eps\in L$).
-\item Empty language: $\varnothing$ ($\{\eps\}\neq\varnothing$!).
+\item Empty language: $\varnothing$ ($\{\eps\}\neq\varnothing$!) is a language with no strings.
+\item Union operator: $L_1\cup L_2=\{z\in\Sigma^*:\exists x\in L_1,y\in L_2:z=x\text{ or }z=y\}$. The union of two languages is a language where each string is in at least one of the two languages.
+\item Intersection operator: $L_1\cap L_2=\{z\in\Sigma^*:\exists x\in L_1,y\in L_2:z=x\text{ and }z=y\}$. The intersection of two languages is a language where each string was in both original languages.
 \item $L_1\cdot L_2$ concatenation operator:
 \[
 L_1\cdot L_2=\{z\in\Sigma^*:\exists x\in L_1,y\in L_2:z=\langle x,y\rangle\}.
 \]
-\item Powers: $L^0=\{\eps\}$; $L^i=L\cdot L^{i-1}$.
+The concatenation of two languages is a language where each string is the concatenation of a string from the first language and a string from the second language.
+\item Powers: $L^0=\{\eps\}$; $L^i=L\cdot L^{i-1}$. The power of a language is a language where each string is the concatenation of $i$ strings from the original language. 
+\item Kleene star of a language:
+\[
+\begin{split}
+L^*=\bigcup_{i=0}^\infty L^i
+&=\{z\in\Sigma^*:\exists k\geq1:\exists x_1,\ldots,x_k\in L:\\
+&\qquad z=\langle x_1,x_2,\ldots,x_k\rangle\}\cup\{\eps\}.
+\end{split}
+\] The kleene star of a language is a language where each string is the concatenation of any number of strings from the original language, including zero strings (the empty string).
 \end{itemize}

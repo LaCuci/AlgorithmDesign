@@ -15,7 +15,8 @@
 \> \{check cycle edges\}\\
 \> return $1$
 \end{tabbing}
-The algorithm is at most quadratic in the size of the input!
+
+The algorithm is at most quadratic in the size of the input! So we have a polinomial time verification algorithm for the hamiltonian cycle problem. The algorithm runs in polynomial time in the size of the input $x$ and the size of the certificate $y$, so we have that $\mathrm{HAMILTON}\in\classNP$.
 
 \textbf{DEF:} A two-input algorithm $V$ verifies string $x\in\bits^*$ iff $\exists y\in\bits^*:\ V(x,y)=1$.
 Any $y:\ V(x,y)=1$ is called a certificate for $x$.

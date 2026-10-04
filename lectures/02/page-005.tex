@@ -1,12 +1,15 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 5. Content remains in source order.
 \sourcepage{02}{5}
-Since $|x|=|e(i)|=n$ ($i$: abstract instance), the independent parameter is the encoding length!
+Since $|x|=|e(i)|=n$ ($i$: abstract instance), the independent parameter is the encoding length
 
-$\rightarrow$ ``Unreasonably'' lengthy encodings may ``mask'' the inefficiency of an algorithm!
+``Unreasonably'' lengthy encodings may ``mask'' the inefficiency of an algorithm
 
-\textbf{EXAMPLE:} Let $\mathcal I=\mathbb N-\{0\}$.
 
-\textbf{BINARY ENCODING:} If $m\in\mathcal I=\mathbb N-\{0\}$,
+\subsection{Binary Encoding}
+
+Example :  let $\mathcal I=\mathbb N-\{0\}$.
+
+If $m\in\mathcal I=\mathbb N-\{0\}$,
 \[
 e_b(m)=\langle a_k,a_{k-1},\ldots,a_0\rangle,\quad a_k=1,
 \]
@@ -14,7 +17,7 @@ with $k=\lfloor\log_2 m\rfloor$ and
 \[
 m=\sum_{j=0}^k a_j2^j.
 \]
-\textbf{NOTE 1:}
+\textbf{NOTE:}
 \[
 |e_b(m)|=\lfloor\log_2 m\rfloor+1=\Theta(\log m).
 \]

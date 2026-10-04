@@ -1,12 +1,12 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 1. Content remains in source order.
 \sourcepage{02}{1}
-\sourceheading{RECAP}
+\section{Lesson 1 Recap}
 \begin{itemize}
-\item Problem classes (categorization with respect to complexity of solution algorithms) $\longrightarrow$ standardization.
-\item Abstract decision problems: $\Pi_A:\mathcal I\longrightarrow\{\mathrm{yes},\mathrm{no}\}$.
-\item Optimization problems can be paired with a computationally equivalent decision problem $\rightarrow$ add upper/lower bound on cost to instance.
-\item If decision problem admits a poly-time algorithm then same holds for optimization problem (AND VICEVERSA).
+\item Problem classes are categorization of problems with respect to complexity of the algorithms that solve them : they allow standardization.
+\item Abstract decision problems: Problems whose solution set is {1,0} $\Pi_A:\mathcal I\longrightarrow\{\mathrm{yes},\mathrm{no}\}$.
+\item Optimization problems can be paired with a computationally equivalent decision problem, with an upper/lower bound on cost added to the instance.
+\item If decision problem admits a poly-time algorithm then same holds for optimization problem. Proof : a simple for loop on the cost of the optimization problem, using the decision problem as a subroutine.
 \end{itemize}
-\textbf{CAVEAT:} We can construct optimization problems where the equivalence does not hold! But it holds for totality of interesting problems.
+There are some optimization problems where the equivalence does not hold, but it holds for the totality of the problems that we are interested in.
 
-\textbf{Morale:} Concentrate on decision problems.
+\textbf{Morale:} We can concentrate on decision problems.

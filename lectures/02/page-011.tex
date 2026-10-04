@@ -1,16 +1,7 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 11. Content remains in source order.
 \sourcepage{02}{11}
-\begin{itemize}
-\item Kleene star of a
-\[
-\begin{split}
-L^*=\bigcup_{i=0}^\infty L^i
-&=\{z\in\Sigma^*:\exists k\geq1:\exists x_1,\ldots,x_k\in L:\\
-&\qquad z=\langle x_1,x_2,\ldots,x_k\rangle\}\cup\{\eps\}.
-\end{split}
-\]
-ALL FINITE CONCATENATIONS OF STRINGS $\in L$.
-\end{itemize}
+
+\subsection{Formal languages and concrete decision problems}
 There is a one-to-one correspondence between concrete problems and formal languages over $\Sigma=\{0,1\}$:
 \[
 \Pi_C\ \longleftrightarrow\ L_{\Pi_C}=\{x\in\bits^*:\Pi_C(x)=1\}
@@ -23,4 +14,15 @@ We will use the two concepts interchangeably.
 \text{Language }L_{\Pi_C}&\longleftrightarrow\text{Algorithm deciding }L_{\Pi_C}\ \text{(Automaton)}.
 \end{aligned}
 \]
-\textbf{DEF:} $A$ accepts $x$ if $A(x)=1$. $A$ rejects $x$ if $A(x)=0$.
+
+\textbf{DEF:}
+\[
+L_A=\{x\in\bits^*:\ A(x)=1\}\quad\text{(language decided by }A\text{)}.
+\]
+
+\begin{itemize}
+    \item An automaton $A$ decides a language $L$ if it accepts all strings in $L$ and rejects all strings not in $L$.
+    \item An algorithm that solves a concrete decision problem $\Pi_C$ is an algorithm that decides the language $L_{\Pi_C}$. It returns 1 for all strings in $L_{\Pi_C}$ and 0 for all strings not in $L_{\Pi_C}$.
+    \item Algorithm $A$ accepts $x$ if $A(x)=1$. $A$ rejects $x$ if $A(x)=0$.
+\end{itemize}
+

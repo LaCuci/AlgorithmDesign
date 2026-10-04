@@ -1,20 +1,23 @@
 % Source: 02 - Tue Sep 29 2026.pdf, page 6. Content remains in source order.
 \sourcepage{02}{6}
-\textbf{UNARY ENCODING:} If $m\in\mathcal I=\mathbb N-\{0\}$,
+\subsection{Unary Encoding}
+If $m\in\mathcal I=\mathbb N-\{0\}$,
 \[
 e_u(m)=\langle\underbrace{1,\ldots,1}_{m\text{ times}}\rangle\quad\text{(string of }m\text{ 1's)}.
 \]
-\textbf{NOTE 2:} $|e_u(m)|=m$.
+\textbf{NOTE:} $|e_u(m)|=m$.
 
-\textbf{NOTE 3:}
+\textbf{NOTE:}
 \[
 m=|e_u(m)|=2^{\log_2 m}=\Theta(2^{|e_b(m)|}).
 \]
-The unary encoding is exponentially longer than the binary encoding!
-\sourceheading{RIPERCUSSIONS ON COMPLEXITY ANALYSIS}
-\textbf{RECALL:} $T(n)$ uses encoding length as the independent variable $n$.
 
-\textbf{EXAMPLE:} Consider this algorithm:
+The unary encoding is exponentially longer than the binary encoding!
+
+\subsection{Ripercussions on complexity analysis}
+$T(n)$ uses encoding length as the independent variable $n$.
+
+Consider this algorithm:
 
 \textbf{GAUSS$(m)$}
 \begin{tabbing}
