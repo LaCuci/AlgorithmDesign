@@ -1,0 +1,16 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 8. Content remains in source order.
+\sourcepage{04}{8}
+\sourceheading{INFORMAL PROOF}
+We need to show that given an arbitrary $L\in\classNP$, $L\polyred L_{\mathrm{BC\text{-}SAT}}$.
+
+Given $L$, the only thing that we know is that $\exists V_L(x,y)$, poly-time verifier for $L$.
+
+We must define a reduction function
+\[
+f_{L\to\mathrm{BC\text{-}SAT}}(x):\bits^*\longrightarrow\bits^*.
+\]
+The reduction function builds a boolean circuit starting from $V_L$: as follows
+\sourcefigure[0.65]{assets/04/page-008-verifier-circuit.png}
+The shape of $C_{V_L,x}$ depends on $V_L$ and $x$. Its inputs ``represent'' input $y$ of $V_L$.
+
+We will make sure that:

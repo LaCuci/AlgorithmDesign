@@ -1,0 +1,28 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 8. Content remains in source order.
+\sourcepage{03}{8}
+(If $L_2$ can be decided in poly-time, so can $L_1$!)
+
+\textbf{PROOF:} We have two hypotheses:
+
+HP1: $L_1\polyred L_2:\ \exists f$ ptc: $x\in L_1\Longleftrightarrow f(x)\in L_2$.
+Let $T_{A_f}(|x|)=O(|x|^{k_1})$, $k_1\geq0$.
+
+HP2: $L_2\in\classP:\ \exists A_{L_2}$ which decides $L_2$ in poly time. Let
+$T_{A_{L_2}}(|x|)=O(|x|^{k_2})$.
+
+I can write the following algorithm:
+
+\textbf{$A_{L_1}(x)$}
+\begin{tabbing}\quad\=\kill\> $y\leftarrow A_f(x)$\\\> return $A_{L_2}(y)$\end{tabbing}
+Running time:
+\[
+T_{A_{L_1}}(|x|)=O(|x|^{k_1}+|y|^{k_2}).
+\]
+How large can $y$ be? $A_f$ may use all of its steps to create bits of $y$, thus
+\[
+|y|=O(|x|^{k_1}).
+\]
+Hence
+\[
+T_{A_{L_1}}=O(|x|^{k_1}+|x|^{k_1k_2})=O(|x|^{k_3})
+\]

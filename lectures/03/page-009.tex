@@ -1,0 +1,30 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 9. Content remains in source order.
+\sourcepage{03}{9}
+with $k_3=\max\{k_1,k_1\cdot k_2\}$: STILL POLYNOMIAL!
+
+It remains to show that $L_1=L_{A_{L_1}}$ ($\subseteq$ and $\supseteq$):
+\[
+\begin{aligned}
+x\in L_1&\Rightarrow y=f(x)\in L_2\Rightarrow A_{L_1}(x)=A_{L_2}(y)=1\\
+&\Rightarrow x\in L_{A_{L_1}}\qquad L_1\subseteq L_{A_{L_1}}.
+\end{aligned}
+\]
+\[
+\begin{aligned}
+x\in L_{A_{L_1}}&\Rightarrow A_{L_1}(x)=A_{L_2}(y)=A_{L_2}(f(x))=1\\
+&\Rightarrow f(x)\in L_2\Rightarrow x\in L_1\qquad L_{A_{L_1}}\subseteq L_1.
+\end{aligned}
+\]
+We proved $L_1\subseteq L_{A_{L_1}}$ and $L_1\supseteq L_{A_{L_1}}\Rightarrow L_1=L_{A_{L_1}}$.
+
+$A_{L_1}$ is a poly-time algorithm deciding $L_1$, therefore $L_1\in\classP$.
+
+\textbf{REMARK:} The proof uses both implications $x\in L_1\Longleftrightarrow f(x)\in L_2$.
+
+Poly-time reducibility $\polyred$ is a relation between languages.
+
+\textbf{Homework! Prove that:}
+\[
+\underbrace{L\polyred L}_{\text{reflexivity}},\qquad
+\underbrace{(L_1\polyred L_2)\land(L_2\polyred L_3)\Rightarrow(L_1\polyred L_3)}_{\text{transitivity}}.
+\]

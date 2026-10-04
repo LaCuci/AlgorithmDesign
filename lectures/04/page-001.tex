@@ -1,0 +1,28 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 1. Content remains in source order.
+\sourcepage{04}{1}
+\sourceheading{RECAP}
+\begin{itemize}
+\item Classes P and NP. $\classP\subseteq\classNP$.
+\item Poly-time reducibility: $L_1\polyred L_2$. ``relative difficulty'' of problems:
+\[
+\underbrace{(L_1\polyred L_2)}_{\text{``LESS DIFFICULT''}}\land(L_2\in\classP)\Rightarrow L_1\in\classP.
+\]
+\item Classes NPH and NPC:
+\[
+L'\in\classNPC:\quad(L'\in\classNP)\land
+\underbrace{(\forall L\in\classNP:\ L\polyred L')}_{\mathrm{NPH}}.
+\]
+\item Facts:
+\[
+(\classP\cap\classNPC\neq\varnothing)\Rightarrow\classP=\classNP.
+\]
+\[
+L_1,L_2\in\classNPC:\ (L_1\polyred L_2)\land(L_2\polyred L_1).
+\]
+\item Membership in NPC: use transitivity of $\polyred$ by proving:
+\[
+L_{\mathrm{KNOWN\text{-}NPC}}\polyred L_{\mathrm{CANDIDATE}},\qquad
+\forall L\in\classNP,\ L\polyred L_{\mathrm{KNOWN\text{-}NP}}.
+\]
+\item First language in NPC requires direct application of definition: $\infty$ reductions!
+\end{itemize}

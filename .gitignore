@@ -1,0 +1,10 @@
+pdf-prof/
+.DS_Store
+/build/
+__pycache__/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

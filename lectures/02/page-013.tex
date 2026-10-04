@@ -1,0 +1,32 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 13. Content remains in source order.
+\sourcepage{02}{13}
+\textbf{ALTERNATIVE DEF: (equivalent)}
+\[
+\classP=\{\Pi_C:\bits^*\to\{0,1\}:\ \Pi_C\text{ is solved in polynomial time}\}.
+\]
+\textbf{EXAMPLE}
+
+SEARCH:
+\[
+\begin{aligned}
+\text{INSTANCE: }&\langle S,m\rangle:\ S\subseteq\mathbb N\text{ finite},\ m\in\mathbb N,\\
+\text{QUESTION: }&m\in S?
+\end{aligned}
+\]
+\[
+L_{\mathrm{SEARCH}}=\{x\in\bits^*:\ (x=\langle S,m\rangle)\land m\in S\}.
+\]
+\textbf{$A_{\mathrm{SEARCH}}(x)$}
+\begin{tabbing}
+\quad\=\quad\=\kill
+\> if $(x\neq\langle S,m\rangle)$ then return $0$\\
+\> $k\leftarrow|S|$\\
+\> $*\ S=\{s_1,\ldots,s_k\}\ *$\\
+\> for $i\leftarrow1$ to $k$ do\\
+\>\> if $(s_i=m)$ then return $1$\\
+\> return $0$
+\end{tabbing}
+\[
+T_{A_{\mathrm{SEARCH}}}(|x|)=O(|x|)\ \Rightarrow\
+\{\mathrm{SEARCH},L_{\mathrm{SEARCH}}\}\in\classP.
+\]

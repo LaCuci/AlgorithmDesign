@@ -1,0 +1,25 @@
+% Source: 01 - Mon  Sep 28 2026.pdf, page 13. Content remains in source order.
+\sourcepage{01}{13}
+Let $A_{\mathrm{KUP}}(G=(V,E),u,z,k)$ be a polynomial time algorithm for KUP.
+
+We first show that $A_{\mathrm{KUP}}$ can be employed to determine the length of the shortest path between $u$ and $z$ as follows:
+
+\textbf{P-LENGTH$(\langle G=(V,E),u,z\rangle)$}
+\begin{tabbing}
+\quad\=\quad\=\quad\=\kill
+\> $n\leftarrow |V|$\\
+\> for $k\leftarrow0$ to $n-1$ do\\
+\>\> if $A_{\mathrm{KUP}}(\langle G=(V,E),u,z,k\rangle)=\mathrm{yes}$\\
+\>\>\> then return $k$\\
+\> return $+\infty$
+\end{tabbing}
+Clearly, P-LENGTH$(G,u,z)$ returns the smallest value of $k$ such that $\exists$ a path from $u$ to $z$ ($+\infty$ if no path exists).
+
+Since $|V|=n\leq|\langle G,u,z\rangle|$ (SIZE OF THE INSTANCE) and
+\[
+|\langle G,u,z,k\rangle|=\Theta(|\langle G,u,z\rangle|),
+\]
+if $T_{\mathrm{KUP}}(\langle G,u,z,k\rangle)=O(|\langle G,u,z,k\rangle|^c)$ then
+\[
+T_{\mathrm{P\text{-}LENGTH}}(\langle G,u,z\rangle)=O(|\langle G,u,z\rangle|^{c+1}).
+\]

@@ -1,0 +1,20 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 16. Content remains in source order.
+\sourcepage{06}{16}
+Let us prove that
+\[
+\langle\phi(x_1,\ldots,x_n)=\bigwedge_{j=1}^m C_j\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}
+\Longleftrightarrow f(\langle\phi\rangle)=\langle S_\phi,t_\phi\rangle\in\mathrm{SS}.
+\]
+$(\Rightarrow)$ $\phi\in\mathrm{3\text{-}CNF\text{-}SAT}\Rightarrow\exists\vec b:\phi(\vec b)=1$.
+Let us build a subset $S'_\phi\subseteq S_\phi:\sum_{s\in S'_\phi}s=t_\phi$.
+
+For each $1\leq i\leq n$:
+\begin{itemize}
+\item if $b_i=1$ then $\delta_i\in S'_\phi$;
+\item if $b_i=0$ then $\delta'_i\in S'_\phi$.
+\end{itemize}
+After this selection of $n$ values:
+\begin{enumerate}
+\item The sum of the values in $S'_\phi$ will have 1's in the $n$ most significant digits (exactly one between $\delta_i$ and $\delta'_i$ is selected for $1\leq i\leq n$).
+\item The digit of the sum in each clause column $j$ ($m$ least significant digits) reflects the number of true literals in $C_j$ under $\vec b$ ($\delta_i$ has 1's for clauses containing $x_i$, while $\delta'_i$ has 1's for clauses containing $\bar x_i$).
+\end{enumerate}

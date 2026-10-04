@@ -1,0 +1,22 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 11. Content remains in source order.
+\sourcepage{06}{11}
+The reduction is much more complex than the other ones seen before.
+
+Given a 3-CNF formula:
+\[
+\phi(x_1,x_2,\ldots,x_n)=C_1\land C_2\land\cdots\land C_m,
+\]
+with $C_i=y_1^i\lor y_2^i\lor y_3^i$, $y_j^i\in\{x_k,\bar x_k:1\leq k\leq n\}$,
+the reduction $f$ must create $\langle S_\phi,t_\phi\rangle$ such that
+\[
+\langle\phi\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}\Longleftrightarrow\langle S_\phi,t_\phi\rangle\in\mathrm{SS}.
+\]
+$f$ creates a set $S_\phi$ of $2n+2m$ numbers, each with $n+m$ decimal digits:
+\[
+S_\phi=\{\underbrace{\boxed{n+m}\quad\boxed{n+m}\quad\boxed{n+m}\quad\cdots\quad\boxed{n+m}}_{2n+2m}\}.
+\]
+The $n$ most significant digits correspond to the $n$ variables $x_1,\ldots,x_n$. The $m$ least significant digits correspond to the $m$ clauses.
+
+\textbf{CRUCIAL PROPERTY:} the sum of all digits in each position $i$, $1\leq i\leq n+m$, does never generate a carry.
+
+This is important to relate the satisfiability of $\phi$ to the achievement of the target $t_\phi$.

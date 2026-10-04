@@ -1,0 +1,24 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 6. Content remains in source order.
+\sourcepage{05}{6}
+\begin{itemize}
+\item A clause is a disjunction of 3 distinct literals, e.g. $C_i=x_1\lor\bar x_3\lor x_5$.
+\item A 3-CNF formula $\phi(x_1,\ldots,x_n)$ is a conjunction of clauses built on the $n$ variables.
+\end{itemize}
+E.g. $\phi(x_1,x_2,x_3,x_4)=(x_1\lor\bar x_2\lor x_3)\land(\bar x_1\lor x_2\lor\bar x_3)$.
+
+\textbf{3-CNF-SAT:}
+
+I: $\langle\phi(x_1,x_2,\ldots,x_n)=\bigwedge_{i=1}^m C_i\rangle$, $\phi$ 3-CNF formula.
+
+Q: Is $\phi(\vec x)$ satisfiable?
+
+We will prove that $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPC$.
+
+Meaning: Even restricting the shape of the formula to a very simple one, the problem stays difficult!
+
+$\mathrm{3\text{-}CNF\text{-}SAT}\in\classNP$ (trivial, exercise).
+
+$\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPH$:
+
+We reduce again from BC-SAT, using a similar idea to $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.
+\begin{itemize}\item PREPROCESSING STEP: we modify $C$ to get an equivalent one:\end{itemize}

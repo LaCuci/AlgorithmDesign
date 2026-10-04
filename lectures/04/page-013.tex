@@ -1,0 +1,25 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 13. Content remains in source order.
+\sourcepage{04}{13}
+The value $\phi(\vec b)$ can be computed in time linear in the formula's size by using the tree.
+
+A satisfying assignment $\vec b$ is such that $\phi(\vec b)=1$. If $\vec b$ exists, $\phi$ is said satisfiable.
+\sourceheading{FORMULA SATISFIABILITY (SAT)}
+\[
+\begin{aligned}
+\text{I: }&\langle\phi(x_1,\ldots,x_n)\rangle,\quad\phi\text{ boolean formula},\\
+\text{Q: }&\text{is }\phi\text{ satisfiable?}
+\end{aligned}
+\]
+\textbf{EXAMPLE:} $\vec b=(0,0,1,1)$.
+\[
+\phi(x_1,x_2,x_3,x_4)=(x_1\to x_2)\lor(\neg((\neg x_1\leftrightarrow x_3)\lor x_4)).
+\]
+\sourcefigure[0.55]{assets/04/page-013-satisfying-formula-tree.png}
+$\phi$ is satisfiable $[\phi(\vec b)=1]$.
+
+Very similar to BC-SAT (in fact, this is Cook's original problem).
+Nonetheless, the reduction is nontrivial.
+
+1. $\mathrm{SAT}\in\classNP$: Trivial: for $\langle\phi(x_1,\ldots,x_n)\rangle$ a candidate certificate is $\vec b\in\bits^n$. $\phi(\vec b)$ can be computed in linear time using the tree representation.
+
+(write code of VERIFY-SAT$(x,y)$ as an exercise)

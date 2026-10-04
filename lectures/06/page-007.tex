@@ -1,0 +1,14 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 7. Content remains in source order.
+\sourcepage{06}{7}
+\textbf{OBSERVE:} Clique $\{1,2,5\}$ in $G$ implies that:
+\begin{enumerate}
+\item $V-\{1,2,5\}=\{3,4\}$ is a vertex cover in $G^c$ (all edges between $\{1,2,5\}$ disappear in $E^c$, thus each edge in $E^c$ has an endpoint in $\{3,4\}$).
+\item $\{1,2,5\}$ is an independent set in $G^c$ (there cannot be edges between $\{1,2,5\}$ in $E^c$).
+\end{enumerate}
+These observations suggest the following two reductions!
+
+1. $\mathrm{CLIQUE}\polyred\mathrm{VC}$ using:
+\[f_{C\to\mathrm{VC}}(\langle G=(V,E),k\rangle)=\langle G^c=(V,E^c),|V|-k\rangle.\]
+2. $\mathrm{CLIQUE}\polyred\mathrm{IS}$ using:
+\[f_{C\to\mathrm{IS}}(\langle G=(V,E),k\rangle)=\langle G^c=(V,E^c),k\rangle.\]
+Clearly, $f_{C\to\mathrm{VC}}$ and $f_{C\to\mathrm{IS}}$ are ptc (the construction of $\langle G^c,|V|-k\rangle$ and $\langle G^c,k\rangle$ requires time $O(|\langle G,k\rangle|^2)$).

@@ -1,0 +1,24 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 4. Content remains in source order.
+\sourcepage{06}{4}
+We introduce two extra problems on graphs:
+
+\textbf{DEF:} Given $G=(V,E)$ undirected, a vertex cover of size $k$ is a subset of nodes $V'\subseteq V$, $|V'|=k$ such that each edge in $E$ has at least one endpoint in $V'$.
+\[
+\begin{gathered}
+V'\subseteq V,\ |V'|=k:\ \forall u\neq v\in V:\\
+\{u,v\}\in E\Rightarrow(u\in V')\lor(v\in V').
+\end{gathered}
+\]
+\textbf{EXAMPLE:}
+\sourcefigure[0.7]{assets/06/page-004-vertex-cover.png}
+We have:
+
+\textbf{VERTEX COVER (VC)}
+
+I: $\langle G=(V,E),k\rangle$, $G$ undirected graph, $1\leq k\leq|V|$.
+
+Q: Does $G$ contain a vertex cover of size $k$?
+
+The optimization version of this problem requires determining the vertex cover of min size.
+
+A vertex cover identifies a (possibly small) set of nodes from where all edges can be controlled. Crucial in networking, distributed computing, etc.\ldots

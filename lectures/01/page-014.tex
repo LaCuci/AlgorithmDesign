@@ -1,0 +1,19 @@
+% Source: 01 - Mon  Sep 28 2026.pdf, page 14. Content remains in source order.
+\sourcepage{01}{14}
+Once the length $k^*$ of the shortest path is established, it is easy to determine the actual path through $|E|$ calls to $A_{\mathrm{KUP}}$.
+
+\textbf{Algorithm idea:} progressively eliminate edges which are not necessary to guarantee the existence of a shortest path. To check this, we use $A_{\mathrm{KUP}}$ as an ORACLE.
+
+\textbf{$A_{\mathrm{SUP}}(\langle G=(V,E),u,z\rangle)$}
+\begin{tabbing}
+\quad\=\quad\=\quad\=\kill
+\> $k^*\leftarrow\text{P-LENGTH}(\langle G,u,z\rangle)$ \{see above\}\\
+\> if $(k^*=+\infty)$ then return ``no path''\\
+\> $*\ E=\{e_1,e_2,\ldots,e_{|E|}\}\ *$\\
+\> $E'\leftarrow E$\\
+\> for $i\leftarrow1$ to $|E|$ do\\
+\>\> if $A_{\mathrm{KUP}}(\langle G'=(V,E'-\{e_i\}),u,z,k^*\rangle)=\mathrm{yes}$\\
+\>\>\> then $E'\leftarrow E'-\{e_i\}$\\
+\>\> \{$\exists$ shortest path $\pi^*\in E'$ not using $e_i$\}
+\end{tabbing}
+$*\ E'$ contains only the edges of a s.p.!! $*$

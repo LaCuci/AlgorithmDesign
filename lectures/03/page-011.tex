@@ -1,0 +1,20 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 11. Content remains in source order.
+\sourcepage{03}{11}
+NP-complete problems are the ``hardest'' problems in NP! In fact, they are all somewhat equivalent, since
+\[
+\forall L_1,L_2\in\classNPC:\quad
+(\underbrace{L_1}_{\in\classNP}\polyred\underbrace{L_2}_{\in\classNPC})\land
+(\underbrace{L_2}_{\in\classNP}\polyred\underbrace{L_1}_{\in\classNPC}).
+\]
+\textbf{COROLLARY:}
+\[
+\text{If }\exists\bar L\in(\classNPC\cap\classP)\ \Rightarrow\ \classP=\classNP.
+\]
+\textbf{PROOF:} $\forall L\in\classNP$:
+\[
+(L\polyred\bar L)\land(\bar L\in\classP)\xRightarrow{\text{Theorem}}L\in\classP.
+\]
+Thus, $\classNP\subseteq\classP$, but also $\classP\subseteq\classNP\Rightarrow\classP=\classNP$.
+
+No poly-time algorithms are known for NP-complete problems. Evidence points towards $\classP\cap\classNPC=\varnothing$.
+If this is the case:

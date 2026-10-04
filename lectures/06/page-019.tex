@@ -1,0 +1,20 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 19. Content remains in source order.
+\sourcecontinuation{06}{19}
+(or otherwise the sum digit would be $\leq1+2=3$!).
+
+$\Rightarrow$ under $\vec b$ there is at least one true literal for each clause
+\[\Rightarrow\phi(\vec b)=1\Rightarrow\langle\phi\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}.\]
+\textbf{EXAMPLE:}
+\[\phi(x_1,x_2,x_3)=(x_1\lor\bar x_2\lor x_3)\land(x_1\lor x_2\lor x_3).\]
+Let $S'_\phi=\{\delta_1,\delta'_2,\delta_3,s_1,s'_2\}$. Then
+\[
+\begin{array}{rrl}
+10011&+&\delta_1+\\
+01010&+&\delta'_2+\\
+00111&+&\delta_3+\\
+00010&+&s_1+\\
+00002&=&s'_2=\\\cline{1-2}
+11144&&=t_\phi
+\end{array}
+\]
+We built $\vec b=(1,0,1)$. Under $\vec b$ there are 3 true literals in $C_1$ (only $s_1\in S'_\phi$) and 2 true literals in $C_2$ (only $s'_2\in S'_\phi$)

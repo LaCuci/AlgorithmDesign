@@ -1,0 +1,15 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 8. Content remains in source order.
+\sourcepage{02}{8}
+\textbf{QUESTION:} Is GAUSS good or bad?
+
+BAD! For $m=2^{32}$ GAUSS executes $m\simeq4$ billion sums!
+
+while
+
+\textbf{GAUSS2$(m)$}
+\begin{tabbing}\quad\=\kill\> return $m\cdot(m+1)/2$\end{tabbing}
+executes 3 operations between numbers of size $\leq64$.
+
+\textbf{MORALE:} The linear complexity under the unary encoding is MISLEADING. The fact that GAUSS is bad is masked by the sheer length of the unary encoding.
+
+We will use only concise encodings whose length is comparable (i.e., at most polynomially larger) with a minimum-length encoding.

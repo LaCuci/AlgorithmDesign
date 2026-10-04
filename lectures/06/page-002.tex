@@ -1,0 +1,21 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 2. Content remains in source order.
+\sourcepage{06}{2}
+We have to show that:
+\[
+\langle\phi\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}\Longleftrightarrow f(\langle\phi\rangle)=\langle G_\phi,k_\phi\rangle\in\mathrm{CLIQUE}.
+\]
+$(\Rightarrow)$ $\langle\phi\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}$: there exists a satisfying assignment $\vec b\in\bits^n:\phi(\vec b)=1$.
+Since $\phi$ is in 3-CNF, all clauses must be True under $\vec b\Rightarrow$ under $\vec b$ there is a true literal in each clause.
+Let these literals be:
+\[
+\{y_{j_1}^1,y_{j_2}^2,\ldots,y_{j_m}^m\},\qquad1\leq j_i\leq3,\quad1\leq i\leq m,
+\]
+and let $V'=\{v_{j_1}^1,v_{j_2}^2,\ldots,v_{j_m}^m\}$ (corresponding nodes in $G_\phi$).
+
+For two distinct nodes $v_{j_{i_1}}^{i_1},v_{j_{i_2}}^{i_2}\in V'$, we have:
+\[
+(i_1\neq i_2)\land(y_{j_{i_1}}^{i_1}\text{ and }y_{j_{i_2}}^{i_2}\text{ both True under }\vec b)
+\Rightarrow\{v_{j_{i_1}}^{i_1},v_{j_{i_2}}^{i_2}\}\in E.
+\]
+Thus $V'$ is a CLIQUE of size $k_\phi=m$.
+\[\Rightarrow f(\langle\phi\rangle)=\langle G_\phi,k_\phi\rangle\in\mathrm{CLIQUE}.\]

@@ -1,0 +1,18 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 13. Content remains in source order.
+\sourcepage{03}{13}
+Fortunately, $\polyred$ is transitive!
+
+If I know that a given language $\hat L\in\classNPC$, it suffices to prove that
+\[
+\underbrace{\hat L}_{\text{Known to be in NPC}}\polyred
+\underbrace{\bar L}_{\text{Candidate to be in NPC}}.
+\]
+If $\hat L\polyred\bar L$, since $\forall L\in\classNP:\ L\polyred\hat L$ we have:
+\[
+\forall L\in\classNP:\ (L\polyred\hat L)\land(\hat L\polyred\bar L)
+\xRightarrow{\text{transitivity of }\polyred}\forall L\in\classNP:\ L\polyred\bar L.
+\]
+A single reduction suffices!
+
+Unfortunately, the transitivity trick cannot be used for the first language/problem to be placed in NPC!
+The first problem requires a ``universal'' reduction from a generic problem in NP!

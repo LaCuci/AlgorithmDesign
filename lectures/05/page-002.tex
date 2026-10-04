@@ -1,0 +1,30 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 2. Content remains in source order.
+\sourcepage{05}{2}
+For each gate $g\in G$ we introduce a sub-formula $\Gamma_g$ describing the input-output relation of the gate:
+\begin{itemize}
+\item AND gate:
+\sourcefigure[0.3]{assets/05/page-002-and-gate.png}
+\[
+\Gamma_g:\ y_g\underbrace{\leftrightarrow}_{\text{``equation''}}x_{g_1}\land\cdots\land x_{g_k}\land y_{g_1}\land\cdots\land y_{g_h}.
+\]
+\item OR gate:
+\sourcefigure[0.3]{assets/05/page-002-or-gate.png}
+\[
+\Gamma_g:\ y_g\leftrightarrow x_{g_1}\lor\cdots\lor x_{g_k}\lor y_{g_1}\lor\cdots\lor y_{g_h}.
+\]
+\item NOT gate:
+\sourcefigure[0.3]{assets/05/page-002-not-gate.png}
+\[\Gamma_g:\ y_g\leftrightarrow\neg(z_{g_1}).\]
+\end{itemize}
+Observe that subexpression $\Gamma_g$ is true under a truth assignment iff $y_g$ is assigned the correct output value w.r.t. the values assigned to the gate's inputs.
+
+We can then obtain the formula
+\[\psi(\vec x,\vec y)=\bigwedge_{g\in G}\Gamma_g.\]
+Formula $\psi$ describes a configuration of the circuit $C$:
+\[
+\begin{aligned}
+\psi(\vec b_1,\vec b_2)=1
+&\Longleftrightarrow\text{the values of the outputs of the gates of }C(\vec b_1)\text{ are }(b_2)_g:g\in G\\
+&\Longleftrightarrow(\vec b_1,\vec b_2)\text{ is a valid configuration.}
+\end{aligned}
+\]

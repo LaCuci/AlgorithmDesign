@@ -1,0 +1,14 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 2. Content remains in source order.
+\sourcepage{03}{2}
+\textbf{$V_L(x,y)$}
+\begin{tabbing}\quad\=\kill\> return $A_L(x)$\end{tabbing}
+The verifier disregards $y$ and calls $A_L(x)$. Clearly we have
+\begin{enumerate}
+\item $L_V=L$ ($V_L(x,y)=1\Longleftrightarrow x\in L$).
+\item $y=\eps$ is a certificate $\forall x\in L$ ($|\eps|=O(|x|^0):\ k_1=0$).
+\item $T_V(|x|,|y|)=T_{A_L}(|x|)=O(|x|^k)=O((|x|+|y|)^k)$ ($k_2=k$).
+\end{enumerate}
+\sourcefigure[0.85]{assets/03/page-002-p-np.png}
+What can we say about $\classNP-\classP$?
+Could be empty! ($\classP=\classNP$)
+Could be nonempty! ($\classP\neq\classNP$)

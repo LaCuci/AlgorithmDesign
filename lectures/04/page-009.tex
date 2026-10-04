@@ -1,0 +1,14 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 9. Content remains in source order.
+\sourcepage{04}{9}
+\[
+\begin{aligned}
+f(x)=\langle C_{V_L,x}\rangle\in L_{\mathrm{BC\text{-}SAT}}\text{ (is satisfiable)}
+&\Longleftrightarrow\exists\text{ certificate }y\text{ of poly-length for }x\\
+&\Longleftrightarrow x\in L.
+\end{aligned}
+\]
+\textbf{IDEA:} $C_{V_L,x}(y)$ ``simulates'' the computation performed by $V_L(x,y)$.
+
+$C_{V_L,x}$ is built starting from a combinatorial circuit executing a single step of a Random Access Machine (RAM).
+\sourcefigure[0.8]{assets/04/page-009-ram-step.png}
+$C_{\mathrm{RAM}}$ implements the standard circuitry of a RAM (ALU, branches, etc. \ldots). Memory is ``simulated'' by passing along stored values on output wires.

@@ -1,0 +1,19 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 17. Content remains in source order.
+\sourcepage{02}{17}
+For instance, if $x=\langle G=(V,E)\rangle\in L_{\mathrm{HAMILTON}}$, a certificate for $x$ is
+\[
+\begin{aligned}
+y&=\langle v_1,\ldots,v_{|V|+1}\rangle,\quad v_1=v_{|V|+1},\\
+v_i&\neq v_j\quad1\leq i<j\leq|V|,\qquad(v_i,v_{i+1})\in E.
+\end{aligned}
+\]
+\textbf{IMPORTANT:} if $x\notin L$ then no certificate may exist!
+
+\textbf{DEF:} The language verified by a two-input algorithm $V$ is:
+\[
+\begin{aligned}
+L_V&=\{x\in\bits^*:\ V\text{ verifies }x\}\\
+&=\{x\in\bits^*:\exists y\in\bits^*:\ V(x,y)=1\}.
+\end{aligned}
+\]
+\textbf{OBSERVATION:} VERIFY-HAMILTON is a verification algorithm for $L_{\mathrm{HAMILTON}}$ (or, equivalently, for HAMILTON).

@@ -1,0 +1,19 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 14. Content remains in source order.
+\sourcepage{04}{14}
+2. $\mathrm{SAT}\in\classNPH$. We show that $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.
+
+Reduction function $f$: must transform a circuit $C$ into a formula $\phi_C$:
+\[
+C\text{ is satisfiable}\Longleftrightarrow f(C)=\phi_C\text{ is satisfiable},
+\]
+\[
+\langle C\rangle\in\mathrm{BC\text{-}SAT}\Longleftrightarrow\langle\phi_C\rangle=f(\langle C\rangle)\in\mathrm{SAT}.
+\]
+Seems easy: straightforward method: compute the subexpression associated to each wire. $\phi_C=$ expression associated to output wire.
+
+\textbf{EXAMPLE:}
+\sourcefigure[0.95]{assets/04/page-014-repeated-subexpression.png}
+\textbf{PROBLEM:} Repeated subexpressions may blow-up the length of the formula exponentially!
+
+CONSIDER:
+\sourcefigure[0.95]{assets/04/page-014-exponential-circuit.png}

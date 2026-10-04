@@ -1,0 +1,26 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 18. Content remains in source order.
+\sourcepage{06}{18}
+The sum in the column relative to
+
+$C_1$ is $3\Rightarrow$ we add $s_1=00010$.
+
+$C_2$ is $2\Rightarrow$ we add $s'_2=00002$.
+\[
+\sum_{s\in S'_\phi}s=
+\begin{array}{rrl}
+10011&+&\delta_1+\\
+1010&+&\delta'_2+\\
+111&+&\delta_3+\\
+10&+&s_1+\\
+2&&s'_2+\\\cline{1-2}
+11144&&=t_\phi
+\end{array}
+\]
+$(\Leftarrow)$ Let $f(\langle\phi\rangle)=\langle S_\phi,t_\phi\rangle\in\mathrm{SS}$ then $\exists S'_\phi:\sum_{s\in S'_\phi}s=t_\phi$.
+
+1. Since the sum digit in each of the $n$ most significant digits is 1, there is either $\delta_i$ or $\delta'_i$ in $S'_\phi$, for $1\leq i\leq n$.
+Let
+\[
+b_i=\begin{cases}1&\text{if }\delta_i\in S'_\phi,\\0&\text{if }\delta'_i\in S'_\phi.\end{cases}
+\]
+In each clause column $j$, since the sum digit is 4, there is a contribution $\geq1$ coming from $\delta_i$ or $\delta'_i$, for all $1\leq i\leq n$

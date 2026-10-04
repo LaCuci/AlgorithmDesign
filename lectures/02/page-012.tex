@@ -1,0 +1,17 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 12. Content remains in source order.
+\sourcepage{02}{12}
+\textbf{DEF:}
+\[
+L_A=\{x\in\bits^*:\ A(x)=1\}\quad\text{(language decided by }A\text{)}.
+\]
+\textbf{DEF:} A language $L$ is decided in polynomial time if $\exists A$:
+\begin{enumerate}
+\item $L=L_A$.
+\item $\exists k\in\mathbb N:\ \forall x\in\bits^*:\ T_A(|x|)=O(|x|^k)$ ($A$ runs in polynomial time).
+\end{enumerate}
+\textbf{DEF:} A complexity class is is a set of languages (equivalently: a set of concrete (decision) problems).
+
+\textbf{DEF:}
+\[
+\classP=\{L\subseteq\bits^*:\ L\text{ is decided in polynomial time}\}.
+\]

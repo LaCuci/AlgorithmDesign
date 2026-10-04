@@ -1,0 +1,25 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 1. Content remains in source order.
+\sourcepage{06}{1}
+\sourceheading{RECAP}
+\begin{itemize}
+\item $\mathrm{BC\text{-}SAT}\in\classNPC$ (Cook, 1971).
+\item $\mathrm{SAT}\in\classNPC$ ($\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$, make sure that $f(x)$ is polynomial).
+\item $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPC$ (reduction by restriction).
+\item $\mathrm{CLIQUE}\in\classNPC$ ($\mathrm{3\text{-}CNF\text{-}SAT}\polyred\mathrm{CLIQUE}$, ``context switch''):
+\end{itemize}
+\[
+f(\langle\phi(x_1,\ldots,x_n)=\bigwedge_{i=1}^m C_i\rangle)=\langle G_\phi,k_\phi\rangle,\qquad C_i=y_1^i\lor y_2^i\lor y_3^i.
+\]
+1. $k_\phi=m$.
+
+2. $G_\phi=(V_\phi,E_\phi)$.
+\[
+V_\phi=\{v_j^i:1\leq i\leq m,1\leq j\leq3\}\Rightarrow|V_\phi|=3m.
+\]
+One node per literal occurrence.
+
+$E_\phi$:
+\[
+\{v_{j_1}^{i_1},v_{j_2}^{i_2}\}\in E_\phi\Longleftrightarrow(i_1\neq i_2)\land(y_{j_1}^{i_1}\neq\neg y_{j_2}^{i_2}).
+\]
+Edges between literals of different clauses that can both be True under the same truth assignment.

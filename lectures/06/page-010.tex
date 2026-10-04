@@ -1,0 +1,23 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 10. Content remains in source order.
+\sourcepage{06}{10}
+We now introduce a problem in the realm of COMPUTER ARITHMETIC:
+
+\textbf{SUBSET-SUM (SS)}
+
+I: $\langle S,t\rangle:S\subseteq\mathbb N$ finite, $t\in\mathbb N$ (``target'').
+
+Q: $\exists S'\subseteq S:\sum_{s\in S'}s=t$?
+
+The problem asks whether there is a subset of the input set whose sum is equal to $t$ (the target).
+
+\textbf{EXAMPLE:}
+\[\langle\{10,15,4,3,17\},24\rangle\in L_{\mathrm{SS}}\]
+since $24=4+3+17$ ($S'=\{3,4,17\}$).
+
+\textbf{REMARK:} $|\langle S,t\rangle|$ is the total number of bits needed to encode $s\in S\ \forall s$ and $t$:
+\[|\langle S,t\rangle|=\Theta\Bigl(\sum_{s\in S}\log s+\log t\Bigr).\]
+Clearly, $\mathrm{SS}\in\classNP$.
+
+Candidate certificate: $y=\langle S'\rangle$, $S'\subseteq S$.
+
+Let us prove that $\mathrm{SS}\in\classNPH$ by proving that $\mathrm{3\text{-}CNF\text{-}SAT}\polyred\mathrm{SS}$.

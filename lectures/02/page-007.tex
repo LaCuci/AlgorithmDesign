@@ -1,0 +1,20 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 7. Content remains in source order.
+\sourcepage{02}{7}
+GAUSS computes $\sum_{i=0}^m i=m(m+1)/2$ executing $m$ iterations. But
+\[
+m=|e_u(m)|=\Theta(2^{|e_b(m)|}).
+\]
+$\Rightarrow$
+\[
+T^U_{\mathrm{GAUSS}}(\underbrace{|e_u(m)|}_{n})=\underbrace{|e_u(m)|}_{n}
+\quad\text{(independent parameter)}.
+\]
+GAUSS takes linear time in the size of the input under the UNARY encoding!
+
+BUT
+\[
+T^B_{\mathrm{GAUSS}}(\underbrace{|e_b(m)|}_{n'})=m=\Theta(\underbrace{2^{|e_b(m)|}}_{2^{n'}}).
+\]
+GAUSS takes exponential time in the size of the input under the BINARY encoding!
+
+The same algorithm is associated to drastically different complexities by the two encodings!

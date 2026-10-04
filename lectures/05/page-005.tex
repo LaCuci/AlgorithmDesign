@@ -1,0 +1,14 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 5. Content remains in source order.
+\sourcepage{05}{5}
+\textbf{LESSON LEARNED:} We have to make sure that the reduction is poly-time computable!
+
+\textbf{SIMILAR PITFALL:} $f_{L'\to L}$ cannot possibly know whether $x\in L'$ or $x\notin L'$ unless $L'\in\classP$! This is never the case if you are trying to prove that $L\in\classNPC$ (IMPORTANT).
+
+Next reduction is a special case of a large family: reductions by restriction.
+
+These reductions are used to prove that an NPC problem stays NPC even if we restrict the set of admissible instances.
+
+\textbf{DEF} Given a set of boolean variables $\{x_1,x_2,\ldots,x_n\}$:
+\begin{itemize}
+\item A literal is either a variable $x_i$ or its negation $\neg x_j$ ($\bar x_j$). We will use $y$ to denote a literal.
+\end{itemize}

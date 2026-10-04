@@ -1,0 +1,28 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 1. Content remains in source order.
+\sourcepage{03}{1}
+\sourceheading{RECAP}
+\begin{itemize}
+\item Encodings: $\Pi_A\xrightarrow{\mathcal I\to e(\mathcal I)}\Pi_C:\bits^*\to\{0,1\}$.
+\begin{itemize}\item reasonable/concise encodings.\end{itemize}
+\item \includegraphics[height=2.5ex]{assets/03/page-001-formal-language-symbol.png}: Formal languages.
+\[
+\underbrace{\Pi_C}_{\text{solution}}\longleftrightarrow
+\underbrace{L_{\Pi_C}=\{x\in\bits^*:\Pi_C(x)=1\}}_{\text{decision}}.
+\]
+\item Poly-time solution/decision: P.
+\item Verification: algorithm $V(x,y)$.
+\[
+L_V=\{x\in\bits^*:\exists y\in\bits^*:\ V(x,y)=1\}.
+\]
+\item Poly-time verification: NP.
+\begin{itemize}
+\item poly-size certificate $[|y|=O(|x|^{k_1})]$;
+\item poly-time algorithm $[T_V(x,y)=O((|x|+|y|)^{k_2})]$.
+\end{itemize}
+\end{itemize}
+\textbf{Theorem:} $\classP\subseteq\classNP$ ($L\in\classP\Rightarrow L\in\classNP$).
+
+\textbf{Proof:} Let $L\in\classP$. We'll prove $L\in\classNP$ by constructing a poly-time verifier:
+Recall that $L\in\classP\Rightarrow\exists A_L$ which decides $L$ in time
+$T_{A_L}(|x|)=O(|x|^k)$.
+Verifier $V_L(x,y)$ uses $A_L$ as a subroutine:

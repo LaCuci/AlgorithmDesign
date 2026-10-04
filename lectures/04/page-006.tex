@@ -1,0 +1,26 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 6. Content remains in source order.
+\sourcepage{04}{6}
+\sourcefigure[0.6]{assets/04/page-006-satisfying-circuit.png}
+$C$ is satisfied by the truth assignment $\vec b=(1,1,0,0,0,0)$.
+
+Configuration: $(1,1,0,0,0,0,1,1,1,0,1,1,1)=\gamma_C$ (in some prespecified order).
+\sourceheading{BOOLEAN CIRCUIT SATISFIABILITY (BC-SAT)}
+\[
+\begin{aligned}
+\text{I: }&\langle C(x_1,\ldots,x_n)\rangle=\langle(I\cup G\cup O,W)\rangle,\quad\text{boolean circuit},\\
+\text{Q: }&C\text{ is satisfiable?}\quad\exists\vec b\in\bits^n:\ C(\vec b)=1?
+\end{aligned}
+\]
+BC-SAT is an important problem in practice (e.g.: testing, circuit equivalence \ldots).
+It is easy to prove that
+
+\textbf{THEOREM:} $\mathrm{BC\text{-}SAT}\in\classNP$.
+
+Proof:
+
+\textbf{VERIFY-BCSAT$(x,y)$} \{high-level\}
+\begin{tabbing}
+\quad\=\kill
+\> if $x\neq\langle(I\cup G\cup\{y_0\},W)\rangle$ then return $0$\\
+\> if $y\neq\langle w_1,w_2,\ldots,w_{|W|}\rangle\in\bits^{|W|}$
+\end{tabbing}

@@ -1,0 +1,19 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 1. Content remains in source order.
+\sourcepage{05}{1}
+\sourceheading{RECAP}
+\begin{itemize}
+\item COOK'S THEOREM: $\mathrm{BCSAT}\in\classNPH$.
+\begin{itemize}\item ``simulate'' $V_L(x,y)$ with $C_{V_L,x}(y)$.\end{itemize}
+A certificate $y_x$ for $x\in L$ becomes a satisfying assignment for $f(x):\langle C_{V_L,x}(y)\rangle$.
+\item FORMULA SATISFIABILITY (SAT): $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.
+\begin{itemize}\item Trivial reduction based on subexpressions not ptc (poly-time computable).\end{itemize}
+\end{itemize}
+We need a more sophisticated approach!
+\[
+C=(\underbrace{I}_{x_i}\cup\underbrace{G}_{y_g\ \forall g\in G}\cup\underbrace{\{o\}}_{y_0},W).
+\]
+New variables $y_g:\ g\in G$.
+
+We add extra variables $y_g$ associated to the gates, describing the output of each gate $g\in G$ and create a formula that reflects valid configurations of the circuit.
+
+\textbf{RECALL:} A configuration is the set of all bits on the wires under a valid switching of the circuit: $(\underbrace{\vec b_1}_{\vec x},\underbrace{\vec b_2}_{\vec y\text{ (gate outputs)}})$.

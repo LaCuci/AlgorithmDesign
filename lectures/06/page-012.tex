@@ -1,0 +1,14 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 12. Content remains in source order.
+\sourcepage{06}{12}
+With no loss of generality:
+\begin{enumerate}
+\item Assume that each variable $x_k$ of $\phi(x_1,\ldots,x_n)$ appears in at least one clause (as $y_j^i=x_k$ or $y_j^i=\bar x_k$).
+\item Assume that no clause contains $x_k$ and $\bar x_k$.
+\end{enumerate}
+Otherwise: Eliminate variable (1) or clause (2) ($x_k\lor\bar x_k=1$!).
+
+We create:
+\begin{itemize}
+\item two numbers per variable $x_i$: $\delta_i,\delta'_i$, $1\leq i\leq n$ ($2n$).
+\item two numbers per clause $C_j$: $s_j,s'_j$, $1\leq j\leq m$ ($2m$).
+\end{itemize}

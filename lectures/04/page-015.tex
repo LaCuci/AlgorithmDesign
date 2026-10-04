@@ -1,0 +1,29 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 15. Content remains in source order.
+\sourcepage{04}{15}
+Two-input circuit made of $n$ stages. $|C(x_1,x_2)|=\Theta(n)$.
+
+Outputs of Stage 1: $(x\land(\neg y)),\quad((\neg x)\land y)$.
+
+Outputs of Stage 2:
+\[
+(x\land(\neg y))\land(\neg((\neg x)\land y)),\qquad
+(\neg(x\land(\neg y)))\land((\neg x)\land y),
+\]
+etc.
+
+The number of symbols in the subexpressions of Stage $i$ is more than double than that of Stage $i-1$.
+\[
+\Rightarrow\left\{\begin{aligned}\mathrm{Size}(i)&\geq2\,\mathrm{Size}(i-1),\\\mathrm{Size}(1)&=c.\end{aligned}\right.
+\]
+\[
+\Rightarrow|\phi_C(x,y)|\geq\mathrm{Size}(n)\geq c\cdot2^{n-1}!
+\]
+\textbf{OBSERVE!} $|C|=\Theta(n)$ but $|\phi_C(x,y)|=\Omega(2^n)$.
+
+This reduction cannot be ptc! (I can't generate an exponential number of symbols in polynomial time!)
+
+We need a more sophisticated approach!
+\[
+C=(\underbrace{I}_{x_i}\cup\underbrace{G}_{y_g\ \forall g\in G}\cup\underbrace{\{y_0\}}_{y_0},W).
+\]
+New variables $y_g:\ g\in G$ (associated to $G$).

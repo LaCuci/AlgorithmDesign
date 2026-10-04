@@ -1,0 +1,19 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 6. Content remains in source order.
+\sourcepage{03}{6}
+\textbf{NOTE:} An ``efficient'' reduction from $\Pi_1$ to $\Pi_2$ implies that $\Pi_1$ is ``less difficult'' than $\Pi_2$.
+
+(If I can solve $\Pi_2$ efficiently, then I can also solve $\Pi_1$ efficiently.)
+
+``Efficient'' reducibility creates an order between problems.
+
+\textbf{DEF:} A function $f:\bits^*\to\bits^*$ is polynomial-time computable (ptc) if $\exists$ algorithm $A_f:\bits^*\to\bits^*$:
+\[
+\forall x\in\bits^*:\ A_f(x)=f(x)\text{ and }T_{A_f}(|x|)=O(|x|^k)
+\]
+for some constant $k\geq0$.
+
+\textbf{DEF:} $L_1$ is poly-time reducible to $L_2$ (notation: $L_1\polyred L_2$) if:
+\[
+\exists f:\bits^*\to\bits^*\text{ ptc}:\qquad x\in L_1\Longleftrightarrow f(x)\in L_2.
+\]
+(w.r.t. problems: $\Pi_{L_1}(x)=\Pi_{L_2}(f(x))$)

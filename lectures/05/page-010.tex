@@ -1,0 +1,25 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 10. Content remains in source order.
+\sourcepage{05}{10}
+\textbf{QUESTION:} Why doesn't the decision problem ask ``size $\geq k$''? [Argue that the two questions are equivalent.]
+
+Important application in bioinformatics, computational chemistry, social network analysis.
+
+Let's prove that $\mathrm{CLIQUE}\in\classNPC$.
+\begin{enumerate}
+\item $\mathrm{CLIQUE}\in\classNP$ trivial. Candidate certificate: set of $k$ nodes.
+[Write $V_{\mathrm{CLIQUE}}(x,y)$ as an exercise.]
+\item $\mathrm{CLIQUE}\in\classNPH$. Reduction from 3-CNF-SAT.
+\[
+\underbrace{\mathrm{3\text{-}CNF\text{-}SAT}}_{\text{Known NPH}}\polyred\underbrace{\mathrm{CLIQUE}}_{\text{candidate}}.
+\]
+\end{enumerate}
+We start from $\phi(x_1,x_2,\ldots,x_m)=C_1\land C_2\land\cdots\land C_m$
+with $C_i=y_1^i\lor y_2^i\lor y_3^i$, $y_j^i\in\{x_k,\bar x_k:1\leq k\leq n\}$.
+
+We have to define a reduction function that takes $\phi$ and returns an instance of CLIQUE in poly-time:
+\[
+f(\langle\phi(x_1,\ldots,x_n)\rangle)=\langle G_\phi,k_\phi\rangle.
+\]
+1. We set $k_\phi=m$ ($\#$ of clauses of $\phi$).
+
+2. $G_\phi=(V_\phi,E_\phi)$.

@@ -1,0 +1,24 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 17. Content remains in source order.
+\sourcepage{06}{17}
+Observe that since $\phi(\vec b)=1$, thanks to 2), each sum digit in clause positions is $>0$! (either 1, 2, or 3).
+
+Then $\forall j$, $1\leq j\leq m$, I can ``adjust'' the digit in the $j$th position by adding to $S'_\phi$:
+\begin{enumerate}
+\item $s_j$, if the sum digit is 3 (3 true literals);
+\item $s'_j$, if the sum digit is 2 (2);
+\item $s_j$ AND $s'_j$, if the sum digit is 1 (1).
+\end{enumerate}
+Now, in $\sum_{s\in S'_\phi}s$, the digit in each of the $m$ least significant positions is 4!
+
+Thus,
+\[
+\sum_{s\in S'_\phi}s=\underbrace{1\cdots1}_{n}\underbrace{4\cdots4}_{m}=t_\phi,
+\]
+therefore $f(\langle\phi\rangle)=\langle S_\phi,t_\phi\rangle\in\mathrm{SS}$.
+
+\textbf{EXAMPLE:}
+\[\phi(x_1,x_2,x_3)=(x_1\lor\bar x_2\lor x_3)\land(x_1\lor x_2\lor x_3).\]
+Let $\vec b=(1,0,1)\Rightarrow\phi(\vec b)=1$.
+
+We put $\delta_1,\delta'_2,\delta_3$ in $S'_\phi$:
+\[\{\delta_1=10011,\delta'_2=01010,\delta_3=00111\}.\]

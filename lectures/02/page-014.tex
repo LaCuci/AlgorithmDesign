@@ -1,0 +1,21 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 14. Content remains in source order.
+\sourcepage{02}{14}
+\sourceheading{POLYNOMIAL-TIME VERIFICATION}
+\begin{tabular}{p{0.43\linewidth}p{0.49\linewidth}}
+SOLVING & VERIFYING\\
+build a solution from scratch & check that a given candidate is a solution
+\end{tabular}
+
+\textbf{Example: Recurrences}
+
+solving: build the closed formula.
+
+verifying: given a candidate closed formula check its correctness.
+
+\textbf{Formal languages}
+
+solving: algorithm that decides if $x\in L$.
+
+verifying: two-input algorithm: $x$ plus ``additional info'' $y$. Algorithm checks that $y$ certifies that $x\in L$ (e.g., $y=$ closed formula).
+
+Verifying is easier than solving!

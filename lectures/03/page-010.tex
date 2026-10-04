@@ -1,0 +1,22 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 10. Content remains in source order.
+\sourcepage{03}{10}
+\textbf{DEF:} $L\subseteq\bits^*$ is NP-hard if
+\[
+\forall L'\in\classNP:\quad L'\polyred L.
+\]
+\[
+\classNPH=\{L\in\bits^*:\ L\text{ NP-hard}\}.
+\]
+An NP-hard language/problem $L$ is ``more difficult'' than any problem in NP, in the sense that a poly-time algorithm for $L$ can be transformed into a poly-time algorithm for any problem in NP.
+
+\textbf{REMARK:} An NP-hard language $L$ need not be in NP itself!
+
+\textbf{DEF:} $L\subseteq\bits^*$ is NP-Complete if
+\begin{enumerate}
+\item $L\in\classNP$.
+\item $L\in\classNPH$.
+\end{enumerate}
+\[
+\classNPC=\{L\subseteq\bits^*:\ L\text{ NP-complete}\}.
+\]
+\textbf{REMARK:} Clearly, $\classNPC\subseteq\classNP$.

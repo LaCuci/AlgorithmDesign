@@ -1,0 +1,15 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 10. Content remains in source order.
+\sourcepage{04}{10}
+An algorithm executing $t$ steps can be simulated by cascading $t$ copies of $C_{\mathrm{RAM}}$:
+\sourcefigure[0.95]{assets/04/page-010-cascaded-ram.png}
+\textbf{Crucial points:}
+\begin{enumerate}
+\item $|\langle C_{\mathrm{RAM}}\rangle|$ is polynomial in $x$ and $y$.
+\begin{itemize}\item circuitry polynomial in the memory size.\end{itemize}
+\item It suffices to set $|y|=\Theta(|x|^{k_1})$.
+\item It suffices to consider $t=\Theta((|x|+|y|)^{k_2})$.
+\end{enumerate}
+($k_1,k_2$ from definition of poly-time verifier.)
+
+$\Rightarrow C_{V_L,x}$ has size polynomial in $x$!
+Therefore $f_{L\to\mathrm{BC\text{-}SAT}}$ is PTC.

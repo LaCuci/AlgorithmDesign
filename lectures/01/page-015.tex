@@ -1,0 +1,19 @@
+% Source: 01 - Mon  Sep 28 2026.pdf, page 15. Content remains in source order.
+\sourcepage{01}{15}
+\begin{tabbing}\quad\=\kill\> return $\pi^*$\end{tabbing}
+\textbf{Correctness:} if $k^*=+\infty$, $A_{\mathrm{SUP}}$ is correct.
+Otherwise, by contradiction, if after the for loop, $E'$ does not contain only the edges of a single shortest path $\pi^*$:
+\[
+\exists e_{\bar i}\in E'\text{ in }E'\text{ not used by }\pi^*.
+\]
+BUT at iteration $\bar i$ we would have:
+\[
+A_{\mathrm{KUP}}(\langle G'=(V,E'-\{e_{\bar i}\}),u,z,k^*\rangle)=\mathrm{yes}!
+\]
+Thus $e=e_{\bar i}$ would have been removed!
+
+$\rightarrow$ We have obtained a poly-time algorithm $A_{\mathrm{SUP}}$ for SUP!
+
+(EXERCISE: determine complexity)
+
+\textbf{Morale:} restriction to decision problems is without loss of generality (w.l.o.g.) if we are only interested in determining existence of poly-time algorithms.

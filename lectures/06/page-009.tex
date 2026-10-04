@@ -1,0 +1,21 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 9. Content remains in source order.
+\sourcepage{06}{9}
+Let's use the same technique to prove that $f_{C\to\mathrm{IS}}$ is a reduction:
+\[x=\langle G=(V,E),k\rangle\in\mathrm{CLIQUE}\]
+\[
+\Longleftrightarrow\exists V'\subseteq V,\ (|V'|=k)\land
+\bigl(\forall u\neq v\in V':(u\in V')\land(v\in V')\Rightarrow\{u,v\}\in E\bigr)
+\]
+\[
+\Longleftrightarrow\exists V'\subseteq V,\ (|V'|=k)\land
+\bigl(\forall u\neq v\in V':(u\in V')\land(v\in V')\Rightarrow\{u,v\}\notin E^c\bigr).
+\]
+\{this says that $V'$ is an IS of $G^c$\}
+\[\Longleftrightarrow f(x)=\langle G^c=(V,E^c),k\rangle\in\mathrm{IS}.\]
+\textbf{EXERCISE} Using the same technique, prove that $\mathrm{VC}\polyred\mathrm{IS}$.
+
+These reductions suggest that CLIQUE, VC and IS are mostly equivalent problems BUT this is true only for what concerns exact solutions! We will argue that the optimization versions of the three problems are radically different w.r.t. approximation. In particular:
+
+MINIMUM VC is ``easy'' to approximate.
+
+MAXIMUM CLIQUE/IS are ``hard'' to approximate.

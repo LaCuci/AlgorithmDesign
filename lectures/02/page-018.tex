@@ -1,0 +1,13 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 18. Content remains in source order.
+\sourcepage{02}{18}
+\textbf{IMPORTANT:} We only require that one certificate exists but do not ask the algorithm to compute it itself.
+
+The certificate is provided to the algorithm externally. ``Computing the certificate'' would imply solving the problem.
+
+\textbf{DEF:} A language $L$ is verified in polynomial time iff $\exists V(x,y)$ such that:
+\begin{enumerate}
+\item $L=L_V$.
+\item $\exists k_1\geq0:\ \forall x\in L\ \exists y:\ V(x,y)=1$ and $|y|=O(|x|^{k_1})$.
+\item $\exists k_2\geq0:\ T_V(|x|,|y|)=O((|x|+|y|)^{k_2})$.
+\end{enumerate}
+We need SHORT CERTIFICATES!

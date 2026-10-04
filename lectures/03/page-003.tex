@@ -1,0 +1,19 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 3. Content remains in source order.
+\sourcepage{03}{3}
+The question $\classP=\classNP$? is still open (1 million-dollar question).
+
+\textbf{Reasonable guess:} $\classP\neq\classNP$.
+
+\textbf{Evidence:}
+\begin{enumerate}
+\item Verifying seems intrinsically easier than solving.
+\item We'll define a partial order in NP (based on solution difficulty). For the most difficult problems in NP no poly-time algorithms are known.
+\item The most difficult problems in NP form an ``equivalence class'': NPC (NP-complete problems).
+\end{enumerate}
+\sourcefigure[0.8]{assets/03/page-003-np-complete.png}
+\[
+\text{If }\classP\neq\classNP\Rightarrow\classNPC\subset\classNP-\classP\quad\text{(LIKELY!)}
+\]
+\[
+\text{If }\classP=\classNP\Rightarrow\classNPC\subset\classP\quad\text{(UNLIKELY!)}
+\]

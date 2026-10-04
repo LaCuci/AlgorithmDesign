@@ -1,0 +1,37 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 8. Content remains in source order.
+\sourcepage{05}{8}
+Equivalence verified via truth tables (HOMEWORK).
+
+E.g.,
+\begin{center}
+\begin{tabular}{cc|c|c|c|c}
+$y_i$&$w_i$&$y_i\leftrightarrow\bar w_i$&$A:y_i\lor w_i$&$B:\bar y_i\lor\bar w_i$&$A\land B$\\\hline
+0&0&0&0&1&0\\
+0&1&1&1&1&1\\
+1&0&1&1&1&1\\
+1&1&0&1&0&0
+\end{tabular}
+\end{center}
+$y_i\leftrightarrow\bar w_i=A\land B$.
+\begin{itemize}
+\item After this transformation, $\psi(x;y)\land y_0$ has been rewritten as a conjunction of disjunctive clauses. However, some of the clauses have $<3$ literals!
+\item We add ``dummy'' variables to bring all clauses to 3 literals:
+\end{itemize}
+\[
+\begin{aligned}
+(y\lor w)&=(y\lor w)\lor0=(y\lor w)\lor(z\land\bar z)\\
+&=(y\lor w\lor z)\land(y\lor w\lor\bar z).
+\end{aligned}
+\]
+(For clause $y_0$ repeat twice.)
+\begin{itemize}
+\item We have obtained a 3-CNF-FORMULA $\phi_{C'}(\vec x,\vec y,\vec z)$ equivalent to $\psi_{C'}(\vec x,\vec y)\land y_0$.
+\end{itemize}
+\[
+\begin{aligned}
+C\in\mathrm{BC\text{-}SAT}&\Longleftrightarrow C'\in\mathrm{BC\text{-}SAT}\\
+&\Longleftrightarrow\psi_{C'}(\vec x,\vec y)\land y_0\in\mathrm{SAT}\\
+&\Longleftrightarrow\phi_{C'}(\vec x,\vec y,\vec z)\in\mathrm{3\text{-}CNF\text{-}SAT}.
+\end{aligned}
+\]
+\textbf{LESSON LEARNED:} Reductions by restriction must ``modify'' $f$ so that it maps into the set of restricted instances.

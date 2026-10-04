@@ -1,0 +1,1335 @@
+{
+  "schema_version": 1,
+  "source_directory": "pdf-prof",
+  "ordering": "numerical_filename",
+  "sources": [
+    {
+      "id": "01",
+      "filename": "01 - Mon  Sep 28 2026.pdf",
+      "sha256": "26f74de72f1ac43d04069ed7a3622d8a286cd6c286ae16e0242c9497d443546d",
+      "page_count": 15,
+      "lecture_file": "lectures/01/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/01/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/01/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/01/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/01/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/01/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/01/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/01/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/01/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/01/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/01/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/01/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/01/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 11
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/01/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/01/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/01/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 14
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "filename": "02 - Tue Sep 29 2026.pdf",
+      "sha256": "a090a74df6c01c07d3e00a106b289f5fd20a0e1875a149d3a690cfcee7067a30",
+      "page_count": 19,
+      "lecture_file": "lectures/02/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/02/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/02/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/02/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/02/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/02/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/02/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/02/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/02/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/02/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/02/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/02/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/02/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/02/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/02/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/02/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "02",
+              "page": 15,
+              "path": "assets/02/page-015-hamilton-cycle.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.45,
+                0.468,
+                0.953,
+                0.63
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 16,
+          "tex_file": "lectures/02/page-016.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 15
+        },
+        {
+          "page": 17,
+          "tex_file": "lectures/02/page-017.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 18,
+          "tex_file": "lectures/02/page-018.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 19,
+          "tex_file": "lectures/02/page-019.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "filename": "03 - Wed Sep 30 2026.pdf",
+      "sha256": "fb1986305f64db4a6991a86c97eebc03d650f4d388227fed09d62b304a5f11bb",
+      "page_count": 13,
+      "lecture_file": "lectures/03/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/03/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "03",
+              "page": 1,
+              "path": "assets/03/page-001-formal-language-symbol.png",
+              "kind": "unreadable",
+              "normalized_box": [
+                0.081,
+                0.187,
+                0.125,
+                0.225
+              ],
+              "note": "Short handwritten symbol preceding Formal languages; retained rather than assigning an uncertain mathematical meaning."
+            }
+          ],
+          "review_notes": [
+            "One ambiguous handwritten symbol is retained as a source fragment; see review-notes.md."
+          ]
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/03/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "03",
+              "page": 2,
+              "path": "assets/03/page-002-p-np.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.15,
+                0.638,
+                0.995,
+                0.825
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 1
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/03/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "03",
+              "page": 3,
+              "path": "assets/03/page-003-np-complete.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.065,
+                0.735,
+                0.781,
+                0.899
+              ],
+              "excluded_adjacent_regions": [
+                ".25,.735,.5,.739"
+              ],
+              "note": "Tiny adjacent descender from the preceding sentence excluded; sentence is transcribed above the diagram."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/03/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/03/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/03/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/03/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "03",
+              "page": 7,
+              "path": "assets/03/page-007-reduction-map.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.055,
+                0.433,
+                0.96,
+                0.655
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/03/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/03/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 8
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/03/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/03/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/03/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "03",
+              "page": 12,
+              "path": "assets/03/page-012-np-npc-hypothesis.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.195,
+                0.0,
+                0.83,
+                0.183
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/03/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "filename": "04 -Mon Oct 5 2026.pdf",
+      "sha256": "05896f99210942ff9a6c973c9971e08b1d1cec9693983e6a94a76826da418984",
+      "page_count": 15,
+      "lecture_file": "lectures/04/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/04/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/04/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 2,
+              "path": "assets/04/page-002-and-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.135,
+                0.267,
+                0.39,
+                0.37
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "04",
+              "page": 2,
+              "path": "assets/04/page-002-or-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.143,
+                0.447,
+                0.38,
+                0.555
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "04",
+              "page": 2,
+              "path": "assets/04/page-002-not-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.175,
+                0.63,
+                0.35,
+                0.765
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/04/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 3,
+              "path": "assets/04/page-003-circuit.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.075,
+                0.025,
+                0.98,
+                0.301
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/04/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 4,
+              "path": "assets/04/page-004-circuit-graph.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.075,
+                0.405,
+                0.72,
+                0.65
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/04/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 5,
+              "path": "assets/04/page-005-circuit-configuration.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.115,
+                0.04,
+                0.925,
+                0.35
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/04/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 6,
+              "path": "assets/04/page-006-satisfying-circuit.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.028,
+                0.007,
+                0.45,
+                0.144
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/04/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 7,
+              "path": "assets/04/page-007-incorrect-or.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.784,
+                0.314,
+                0.981,
+                0.364
+              ],
+              "excluded_adjacent_regions": [],
+              "note": ""
+            },
+            {
+              "lecture": "04",
+              "page": 7,
+              "path": "assets/04/page-007-incoherent-fanout.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.837,
+                0.134,
+                0.967,
+                0.267
+              ],
+              "excluded_adjacent_regions": [],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/04/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 8,
+              "path": "assets/04/page-008-verifier-circuit.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.329,
+                0.623,
+                0.894,
+                0.792
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/04/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 9,
+              "path": "assets/04/page-009-ram-step.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.145,
+                0.555,
+                0.837,
+                0.807
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 8
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/04/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 10,
+              "path": "assets/04/page-010-cascaded-ram.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.006,
+                0.152,
+                0.994,
+                0.467
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/04/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 10
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/04/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 12,
+              "path": "assets/04/page-012-formula-tree.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.25,
+                0.654,
+                0.718,
+                0.881
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/04/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 13,
+              "path": "assets/04/page-013-satisfying-formula-tree.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.349,
+                0.369,
+                0.7,
+                0.576
+              ],
+              "excluded_adjacent_regions": [
+                ".349,.51,.408,.55"
+              ],
+              "note": "Adjacent formula tail excluded from the diagram crop; the entire formula is transcribed immediately before it."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/04/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "04",
+              "page": 14,
+              "path": "assets/04/page-014-repeated-subexpression.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.53,
+                0.97,
+                0.644
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "04",
+              "page": 14,
+              "path": "assets/04/page-014-exponential-circuit.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.018,
+                0.844,
+                0.925,
+                0.997
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/04/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "filename": "05 - Tue Oct 6 2026.pdf",
+      "sha256": "0b1d1d523584601d8b655c8cdd0636e8b82c52fd5c1271922f1e31b2001124db",
+      "page_count": 12,
+      "lecture_file": "lectures/05/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/05/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/05/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "05",
+              "page": 2,
+              "path": "assets/05/page-002-and-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.082,
+                0.15,
+                0.364,
+                0.273
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "05",
+              "page": 2,
+              "path": "assets/05/page-002-or-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.083,
+                0.297,
+                0.365,
+                0.413
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "05",
+              "page": 2,
+              "path": "assets/05/page-002-not-gate.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.09,
+                0.427,
+                0.365,
+                0.477
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/05/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/05/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/05/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/05/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/05/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "05",
+              "page": 7,
+              "path": "assets/05/page-007-gate-cascade.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.185,
+                0.148,
+                0.92,
+                0.29
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/05/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 7
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/05/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "05",
+              "page": 9,
+              "path": "assets/05/page-009-clique.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.342,
+                0.51,
+                0.975,
+                0.659
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/05/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/05/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "05",
+              "page": 11,
+              "path": "assets/05/page-011-compatible-literals.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.265,
+                0.581,
+                0.946,
+                0.677
+              ],
+              "note": ""
+            },
+            {
+              "lecture": "05",
+              "page": 11,
+              "path": "assets/05/page-011-clique-reduction.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.241,
+                0.765,
+                0.771,
+                0.997
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 10
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/05/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "filename": "06 - Wed Oct 7 2026.pdf",
+      "sha256": "d2cc84092012616d41d0461514f0a7b0046478ace70895ddbc6b2edc7f5daf56",
+      "page_count": 21,
+      "lecture_file": "lectures/06/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/06/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/06/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/06/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "06",
+              "page": 3,
+              "path": "assets/06/page-003-clique-example.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.001,
+                0.745,
+                0.487,
+                0.998
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/06/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "06",
+              "page": 4,
+              "path": "assets/06/page-004-vertex-cover.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.333,
+                0.371,
+                0.955,
+                0.53
+              ],
+              "excluded_adjacent_regions": [],
+              "note": ""
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/06/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "06",
+              "page": 5,
+              "path": "assets/06/page-005-independent-set.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.014,
+                0.333,
+                0.96,
+                0.497
+              ],
+              "excluded_adjacent_regions": [
+                ".02,.339,.307,.371"
+              ],
+              "note": "Example heading is typeset immediately before the diagram; excluded its source lettering to avoid duplicating it."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/06/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "06",
+              "page": 6,
+              "path": "assets/06/page-006-complement.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.011,
+                0.723,
+                0.983,
+                0.992
+              ],
+              "note": ""
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/06/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/06/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/06/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/06/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/06/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/06/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/06/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/06/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/06/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 16,
+          "tex_file": "lectures/06/page-016.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "Handwritten content transcribed by visual inspection; this source page has no extractable text."
+          ]
+        },
+        {
+          "page": 17,
+          "tex_file": "lectures/06/page-017.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "Handwritten content transcribed by visual inspection; this source page has no extractable text."
+          ]
+        },
+        {
+          "page": 18,
+          "tex_file": "lectures/06/page-018.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "Handwritten content transcribed by visual inspection; this source page has no extractable text."
+          ],
+          "continues_from": 17
+        },
+        {
+          "page": 19,
+          "tex_file": "lectures/06/page-019.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "Handwritten content transcribed by visual inspection; this source page has no extractable text."
+          ],
+          "continues_from": 18
+        },
+        {
+          "page": 20,
+          "tex_file": "lectures/06/page-020.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "Trailing closing parenthesis transcribed in sequence; otherwise only box borders."
+          ],
+          "continues_from": 19
+        },
+        {
+          "page": 21,
+          "tex_file": "lectures/06/page-021.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Only box borders and a tiny isolated ink stroke; no substantive lecture content and no blank-page filler."
+          ]
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "build_succeeded": true,
+    "build_command": "latexmk -pdf -outdir=build main.tex",
+    "verified_at_utc": "2026-10-02T09:42:54.771749+00:00",
+    "compiled_pdf": "build/main.pdf",
+    "compiled_pdf_sha256": "2d14d491e252b5d1a024a362304248aa7fdd30b3a1a62e44c2982b1bcc17703f",
+    "compiled_page_count": 36,
+    "inputs_sha256": "387d661a5aba430ced3df384062c2925e1ec0c7c1ccf7caa9854bdc4785b9a02",
+    "review_method": "Visual inspection of every source page and rendered notes; retained crops checked with their surrounding text."
+  }
+}

@@ -1,0 +1,27 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx,xcolor,enumitem,booktabs,array}
+\usepackage[hidelinks,unicode]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=*}
+\newcommand{\sourcepage}[2]{\par\phantomsection\label{source:#1:#2}}
+\newcommand{\sourceheading}[1]{\subsection*{#1}}
+\newcommand{\sourcesubheading}[1]{\paragraph*{#1}}
+\newcommand{\sourcefigure}[2][0.9]{\par\begin{center}\includegraphics[width=#1\linewidth,height=0.85\textheight,keepaspectratio]{#2}\end{center}\par}
+\newcommand{\bits}{\{0,1\}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\polyred}{\leq_p}
+\newcommand{\classP}{\mathrm{P}}
+\newcommand{\classNP}{\mathrm{NP}}
+\newcommand{\classNPC}{\mathrm{NPC}}
+\newcommand{\classNPH}{\mathrm{NPH}}
+\newcommand{\problem}[1]{\textnormal{\textsc{#1}}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\xRightarrow}[1]{\overset{#1}{\Longrightarrow}}
+\raggedbottom
+\newcommand{\sourcecontinuation}[2]{\phantomsection\label{source:#1:#2}}

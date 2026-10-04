@@ -1,0 +1,21 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 16. Content remains in source order.
+\sourcepage{02}{16}
+\textbf{VERIFY-HAMILTON$(x,y)$}
+\begin{tabbing}
+\quad\=\quad\=\quad\=\kill
+\> if $(x\neq\langle G=(V,E)\rangle)$ then return $0$\\
+\> if $(y\neq\langle v_1,\ldots,v_{|V|+1}\rangle,\ v_i\in V)$ then return $0$\\
+\> \{check that input is ``well formed''\}\\
+\> if $(v_1\neq v_{|V|+1})$ then return $0$\\
+\> \{candidate cannot be a cycle!\}\\
+\> if $(\exists i,j:\ 1\leq i<j\leq|V|:\ v_i=v_j)$ then return $0$\\
+\> \{check that $y$ contains all nodes\}\\
+\> for $i\leftarrow1$ to $|V|$ do\\
+\>\> if $(\{v_i,v_{i+1}\}\notin E)$ then return $0$\\
+\> \{check cycle edges\}\\
+\> return $1$
+\end{tabbing}
+The algorithm is at most quadratic in the size of the input!
+
+\textbf{DEF:} A two-input algorithm $V$ verifies string $x\in\bits^*$ iff $\exists y\in\bits^*:\ V(x,y)=1$.
+Any $y:\ V(x,y)=1$ is called a certificate for $x$.

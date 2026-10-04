@@ -1,0 +1,16 @@
+% Source: 04 -Mon Oct 5 2026.pdf, page 11. Content remains in source order.
+\sourcepage{04}{11}
+We have
+\[
+\begin{aligned}
+x\in L&\Longleftrightarrow\exists\bar y,\ |\bar y|=O(|x|^{k_1}):\ V_L(x,\bar y)=1\\
+&\Longleftrightarrow C_{V_L,x}(\bar y)=1\\
+&\qquad\{C_{V_L,x}\text{ simulates }V_L(x,y)\}\\
+&\Longleftrightarrow\langle C_{V_L,x}\rangle\in\mathrm{BC\text{-}SAT}\\
+&\Longleftrightarrow f_{L\to\mathrm{BC\text{-}SAT}}(x)\in\mathrm{BC\text{-}SAT}.
+\end{aligned}
+\]
+Thus $L\polyred\mathrm{BC\text{-}SAT}$.
+This proves that $\mathrm{BC\text{-}SAT}\in\classNPH$.
+
+In what follows we will prove that a number of problems are in NPC. The details of the reductions will teach us general approaches and highlight pitfalls to avoid.

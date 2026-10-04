@@ -1,0 +1,27 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 5. Content remains in source order.
+\sourcepage{03}{5}
+Map $f$ must transform positive instances into positive instances and negative instances into negative instances.
+\sourcesubheading{SIMPLE EXAMPLE}
+\[
+\Pi_1:\quad\left\{\begin{aligned}
+\text{I: }&\langle a,b,x\rangle,\quad a,b,x\in\mathbb C,\\
+\text{Q: }&ax+b=0?
+\end{aligned}\right.
+\]
+(decision version of first degree equations)
+\[
+\Pi_2:\quad\left\{\begin{aligned}
+\text{I: }&\langle c,e,f,x\rangle,\quad c,e,f,x\in\mathbb C,\\
+\text{Q: }&cx^2+ex+f=0?
+\end{aligned}\right.
+\]
+(decision version of second degree equations)
+
+We can reduce $\Pi_1$ to $\Pi_2$ as follows
+\[
+i_1=\langle a,b,x\rangle\xrightarrow{f}\langle\underbrace{0}_{c},\underbrace{a}_{e},\underbrace{b}_{f},x\rangle=i_2.
+\]
+Clearly, $\Pi_1(i_1)=\Pi_2(f(i_1))=\Pi_2(i_2)$.
+\[
+0\cdot x^2+ax+b=ax+b=0?
+\]

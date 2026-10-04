@@ -1,0 +1,21 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 3. Content remains in source order.
+\sourcepage{02}{3}
+An encoding turns an abstract decision problem $\Pi_A$ into a concrete decision problem:
+\[
+\begin{array}{rcl}
+\Pi_A:\mathcal I&\longrightarrow&\{0,1\}\\
+\downarrow e(\cdot)&&\\
+\Pi_C:\bits^*&\longrightarrow&\{0,1\}.
+\end{array}
+\]
+The two problems are related as follows:
+\[
+\forall x\in\bits^*:\quad
+\text{(1)}\quad\Pi_C(x)=1\Longleftrightarrow
+\exists i\in\mathcal I:(x=e(i))\land(\Pi_A(i)=\mathrm{yes}).
+\]
+\textbf{NOTE 1:} $\Pi_C(x)$ is defined on all strings in $\bits^*$. From $(1,\Rightarrow)$ we have:
+\[
+\forall x\in\bits^*:\quad\nexists i\in\mathcal I:x=e(i)\ \Rightarrow\ \Pi_C(x)=0.
+\]
+\textbf{NOTE 2:} The size of a concrete instance is $|x|$!

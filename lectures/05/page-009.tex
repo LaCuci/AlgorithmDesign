@@ -1,0 +1,20 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 9. Content remains in source order.
+\sourcepage{05}{9}
+\sourceheading{PROBLEMS ON GRAPHS}
+We will prove the NP-Completeness of three decision problems on graphs, related to very important optimization problems.
+
+\textbf{DEF} Given $G=(V,E)$ undirected, a clique of size $k$ is a subset $V'\subseteq V$ of $k$ nodes such that each pair of distinct nodes in $V'$ is connected by an edge (clique: complete subgraph).
+\[
+V'\subseteq V:\ (|V'|=k)\land\bigl(\forall u\neq v\in V:(u\in V')\land(v\in V')\Rightarrow\{u,v\}\in E\bigr).
+\]
+\textbf{EXAMPLE:}
+\sourcefigure[0.7]{assets/05/page-009-clique.png}
+We have:
+
+\textbf{CLIQUE}
+
+I: $\langle G=(V,E),k\rangle$, $G$ undirected graph, $1\leq k\leq|V|$.
+
+Q: Does $G$ contain a clique of size $k$?
+
+The optimization version of this problem requires determining the clique of max size.

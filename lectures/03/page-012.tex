@@ -1,0 +1,15 @@
+% Source: 03 - Wed Sep 30 2026.pdf, page 12. Content remains in source order.
+\sourcepage{03}{12}
+\sourcefigure[0.75]{assets/03/page-012-np-npc-hypothesis.png}
+We will often prove results under the hypothesis that $\classP\neq\classNP$ (or, equivalently, $\classP\cap\classNPC=\varnothing$).
+\sourceheading{NP-COMPLETENESS PROOFS}
+We have defined NPC but how do we place problems in NPC?
+
+Given a candidate language $\bar L$:
+\begin{enumerate}
+\item Prove $\bar L\in\classNP$.
+\item Prove that $\forall L\in\classNP:\ L\polyred\bar L$.
+\end{enumerate}
+1. is usually easy (come up with a verification algorithm) (e.g., HAMILTON).
+
+2. more difficult because of $\forall$! Infinite reductions!

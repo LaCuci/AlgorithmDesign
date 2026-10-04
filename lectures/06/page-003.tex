@@ -1,0 +1,24 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 3. Content remains in source order.
+\sourcepage{06}{3}
+$(\Leftarrow)$ $f(\langle\phi\rangle)=\langle G_\phi,k_\phi\rangle\in\mathrm{CLIQUE}$.
+
+Let us build a satisfying assignment $\vec b$ starting from a clique $V'=\{v_{j_1}^1,v_{j_2}^2,\ldots,v_{j_m}^m\}$.
+
+For $1\leq i\leq m$:
+\begin{enumerate}
+\item If $y_{j_i}^i=x_k$ then set $b_k=1$.
+\item If $y_{j_i}^i=\bar x_k$ then set $b_k=0$.
+\end{enumerate}
+If some value $b_\ell$ is still unfixed, set it to an arbitrary value.
+
+Assignment $\vec b$ is well-defined since I cannot set $b_k=0$ for some $i_1$ and $b_k=1$ for some $i_2$, or otherwise $y_{j_{i_1}}^{i_1}=\bar y_{j_{i_2}}^{i_2}$ (impossible, since $V'$ is a clique).
+
+Under $\vec b$ there is at least one true literal in each clause
+\[\Rightarrow\phi(\vec b)=1\Rightarrow\langle\phi\rangle\in\mathrm{3\text{-}CNF\text{-}SAT}.\]
+\sourcefigure[0.65]{assets/06/page-003-clique-example.png}
+A 3-clique contains 3 literals (one per clause) that can be made all True under the same truth assignment.
+\[
+v_3^1\leftrightarrow x_3\longrightarrow b_3=1,\qquad
+v_2^2\leftrightarrow x_2\longrightarrow b_2=1,\qquad
+v_3^3\leftrightarrow x_3\longrightarrow b_3=1,\qquad b_1=0/1.
+\]

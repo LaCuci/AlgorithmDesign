@@ -1,0 +1,30 @@
+% Source: 06 - Wed Oct 7 2026.pdf, page 8. Content remains in source order.
+\sourcepage{06}{8}
+Let's prove that $f_{C\to\mathrm{VC}}$ is a reduction by logical manipulations of the definition of CLIQUE:
+\[
+x=\langle G=(V,E),k\rangle\in\mathrm{CLIQUE}
+\]
+\[
+\Longleftrightarrow\exists V'\subseteq V,\ (|V'|=k)\land
+\bigl(\forall u\neq v\in V:(u\in V')\land(v\in V')\Rightarrow\{u,v\}\in E\bigr).
+\]
+\{transform using contrapositive\} + \{$\neg(a\land b)=\neg a\lor\neg b$\}
+\[
+\Longleftrightarrow\exists V'\subseteq V,\ (|V'|=k)\land
+\bigl(\forall u\neq v\in V':\{u,v\}\notin E\Rightarrow(u\notin V')\lor(v\notin V')\bigr).
+\]
+\[\{u,v\}\notin E\Longleftrightarrow\{u,v\}\in E^c,\qquad u\notin V'\Longleftrightarrow u\in V-V'.\]
+\[
+\begin{aligned}
+\Longleftrightarrow\exists V'\subseteq V,\ (|V'|=k)\land\bigl(\forall u\neq v\in V':\{u,v\}\in E^c\Rightarrow{}& (u\in V-V')\\&\lor(v\in V-V')\bigr).
+\end{aligned}
+\]
+\{now, set $V''=V-V':|V''|=|V|-k$\}
+\[
+\begin{aligned}
+\Longleftrightarrow\exists V''\subseteq V,\ (|V''|=|V|-k)\land\bigl(\forall u\neq v\in V':\{u,v\}\in E^c\Rightarrow{}&(u\in V'')\\&\lor(v\in V'')\bigr).
+\end{aligned}
+\]
+\{this says that $V''$ is a VC of $G^c$\}
+\[\Longleftrightarrow f(x)=\langle G^c=(V,E^c),|V|-k\rangle\in\mathrm{VC}.\]
+\textbf{REMARK:} The proof proceeds by logical equivalences (can be read both $\Downarrow$ and $\Uparrow$).

@@ -1,0 +1,26 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 4. Content remains in source order.
+\sourcepage{05}{4}
+We are left to prove that $x\in L_1\Longleftrightarrow f(x)\in L_2$.
+\[
+\left\{\begin{aligned}x\in L_1&\Rightarrow f(x)\in L_2,\\f(x)\in L_2&\Rightarrow x\in L_1\end{aligned}\right.
+\quad\text{OR}\quad
+\left\{\begin{aligned}x\in L_1&\Rightarrow f(x)\in L_2,\\x\notin L_1&\Rightarrow f(x)\notin L_2.\end{aligned}\right.
+\]
+\[
+\langle C(\vec x)\rangle\in\mathrm{BC\text{-}SAT}\Longleftrightarrow
+f(\langle C(\vec x)\rangle)=\langle\phi_C(\vec x,\vec y)\rangle\in\mathrm{SAT}.
+\]
+$(\Rightarrow)$ If $\langle C(\vec x)\rangle\in\mathrm{BC\text{-}SAT}$ then $\exists\vec b_1\in\bits^n:C(\vec b_1)=1$.
+Consider the configuration of the circuit under $\vec b_1$, and let $\vec b_2$ be the values carried by the wires at the outputs of the gates.
+We have $\psi(\vec b_1,\vec b_2)=1$.
+Moreover, since $C(\vec b_1)=1$ we have $\underbrace{b_0}_{y_0}=1$.
+\[
+\Rightarrow\phi_C(\vec b_1,\vec b_2)=\psi(\vec b_1,\vec b_2)\land b_0=1
+\Rightarrow f(\langle C(\vec x)\rangle)\in\mathrm{SAT}.
+\]
+$(\Leftarrow)$ $f(\langle C(\vec x)\rangle)\in\mathrm{SAT}\Rightarrow\exists\vec b_1,\vec b_2:\phi_C(\vec b_1,\vec b_2)=1$.
+\begin{enumerate}
+\item $\psi(\vec b_1,\vec b_2)=1$: the truth assignments represent a legal configuration $(\vec b_1,\vec b_2)$ of the circuit $C$.
+\item Under $(\vec b_1,\vec b_2):b_0=1\Rightarrow C(\vec b_1)=1$.
+\end{enumerate}
+Thus $\langle C(\vec x)\rangle\in\mathrm{BC\text{-}SAT}$.

@@ -1,0 +1,26 @@
+% Source: 02 - Tue Sep 29 2026.pdf, page 11. Content remains in source order.
+\sourcepage{02}{11}
+\begin{itemize}
+\item Kleene star of a
+\[
+\begin{split}
+L^*=\bigcup_{i=0}^\infty L^i
+&=\{z\in\Sigma^*:\exists k\geq1:\exists x_1,\ldots,x_k\in L:\\
+&\qquad z=\langle x_1,x_2,\ldots,x_k\rangle\}\cup\{\eps\}.
+\end{split}
+\]
+ALL FINITE CONCATENATIONS OF STRINGS $\in L$.
+\end{itemize}
+There is a one-to-one correspondence between concrete problems and formal languages over $\Sigma=\{0,1\}$:
+\[
+\Pi_C\ \longleftrightarrow\ L_{\Pi_C}=\{x\in\bits^*:\Pi_C(x)=1\}
+\quad\text{(encodings of positive instances)}.
+\]
+We will use the two concepts interchangeably.
+\[
+\begin{aligned}
+\text{Problem }\Pi_C&\longleftrightarrow\text{Algorithm solving }\Pi_C,\\
+\text{Language }L_{\Pi_C}&\longleftrightarrow\text{Algorithm deciding }L_{\Pi_C}\ \text{(Automaton)}.
+\end{aligned}
+\]
+\textbf{DEF:} $A$ accepts $x$ if $A(x)=1$. $A$ rejects $x$ if $A(x)=0$.

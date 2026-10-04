@@ -1,0 +1,16 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 3. Content remains in source order.
+\sourcepage{05}{3}
+\textbf{OBSERVATION:} $\psi(\vec x,\vec y)$ is always satisfiable (HOMEWORK: how many satisfying assignments?)
+
+We have that
+\[|\langle\psi(\vec x,\vec y)\rangle|=\Theta(|\langle C(\vec x)\rangle|)\]
+since each subexpression uses a number of symbols linear in the size of the corresponding gate!
+
+The reduction function $f$ uses $\psi$ as follows:
+\[
+f(\langle C(\vec x)\rangle)=\phi_C(\vec x,\vec y)=\psi(\vec x,\vec y)\land\underbrace{y_0}_{\text{variable associated to gate of output wire}}.
+\]
+\[
+|\langle\phi_C(x,y)\rangle|=\Theta(|\langle\psi(\vec x,\vec y)\rangle|)=\Theta(|\langle C(x)\rangle|).
+\]
+Thus $f$ is ptc.

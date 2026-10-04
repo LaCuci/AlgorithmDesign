@@ -1,0 +1,23 @@
+% Source: 05 - Tue Oct 6 2026.pdf, page 7. Content remains in source order.
+\sourcepage{05}{7}
+Replace each AND or OR gate with fan-in $\geq3$ with a cascade of gates with fan-in 2, e.g.,
+\sourcefigure[0.9]{assets/05/page-007-gate-cascade.png}
+The resulting circuit $C'$ is equivalent to $C$. Moreover $|\langle C'\rangle|=\Theta(|\langle C\rangle|)$ ($\#\text{ new gates}\leq\#\text{ wires of }C$).
+\begin{itemize}
+\item Next, we write the formula $\psi(\vec x,\vec y)\land y_0$ as done for formula satisfiability.
+We have four types of subexpressions $\Gamma$:
+\[
+y_i\leftrightarrow w_i^1\lor w_i^2,\qquad y_i\leftrightarrow w_i^1\land w_i^2,\qquad y_i\leftrightarrow\bar w_i,\qquad y_0.
+\]
+($w_i$ either $x_k$ or $y_j$.)
+\item We can re-write each subexpression as a conjunction of disjunctions:
+\end{itemize}
+\[
+\begin{aligned}
+y_i\leftrightarrow w_i^1\lor w_i^2
+&\equiv(y_i\lor\bar w_i^1)\land(y_i\lor\bar w_i^2)\land(\bar y_i\lor w_i^1\lor w_i^2),\\
+y_i\leftrightarrow w_i^1\land w_i^2
+&\equiv(\bar y_i\lor w_i^1)\land(\bar y_i\lor w_i^2)\land(y_i\lor\bar w_i^1\lor\bar w_i^2),\\
+y_i\leftrightarrow\bar w_i&\equiv(y_i\lor w_i)\land(\bar y_i\lor\bar w_i).
+\end{aligned}
+\]
