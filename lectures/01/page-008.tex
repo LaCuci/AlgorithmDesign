@@ -1,16 +1,20 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 8. Content remains in source order.
 \sourcepage{01}{8}
-\sourceheading{PROBLEM CATEGORIES}
+\subsection{Problem Categories}
 \begin{enumerate}
-\item Problems admitting polynomial algorithms: TRACTABLE.
+\item Tractable problems: Problems admitting polynomial algorithms
 \[
 \exists A_\Pi:\quad T_{A_\Pi}(n)=O(n^k),\quad k\geq0.
 \]
-\item Problems admitting an exponential lower bound: PROVABLY INTRACTABLE.
+\item Provably intractable problems : Problems admitting an exponential lower bound
 \[
 \exists c>1:\ \forall A_\Pi:\quad T_{A_\Pi}(n)=\Omega(c^n).
 \]
-\item Problems not admitting any algorithm (e.g. HALTING PROBLEM): UNDECIDABLE/UNSOLVABLE.
+\item Undecidable /Unsolvable problems : Problems not admitting any algorithm 
+\item Intractable problems: problems for which neither an exponential lower bound nor a polynomial upper bound is known
+\end{enumerate}
+
+\subsection{HALTING PROBLEM}
 \[
 \Pi_{\mathrm{HALT}}:\quad
 \mathcal I=\{\langle M,x\rangle:\ M\text{ Turing Machine},\ x\in\bits^*\},
@@ -20,4 +24,3 @@
 \langle M,x\rangle\mathrel\Pi_{\mathrm{HALT}}\mathrm{yes}
 \quad\Longleftrightarrow\quad M(x)\text{ halts}.
 \]
-\end{enumerate}

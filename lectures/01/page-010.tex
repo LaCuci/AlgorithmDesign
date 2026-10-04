@@ -1,27 +1,32 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 10. Content remains in source order.
 \sourcepage{01}{10}
-Formulation of an abstract decision problem:
+
+\section{Abstract Decision Problems}
+\[
+\Pi_D\subseteq\mathcal I\times\mathcal S,\qquad\mathcal S=\{\mathrm{yes},\mathrm{no}\}.
+\]
+Fundamental parts in the formulation of an abstract decision problem:
 \begin{itemize}
-\item description of the generic instance;
+\item description of the generic instance.
 \item question on the instance.
+\item the solution is a yes/no answer to the question.
 \end{itemize}
-Yes/no answer is the solution.
 
-\textbf{EXAMPLE: Membership of integer key in a set}
+\subsection{EXAMPLE: Membership of integer key in a set}
 
-SEARCH:
 \[
 \left\{\begin{aligned}
 \text{INSTANCE: }&\langle S,m\rangle:\ S\subseteq\mathbb N\text{, finite},\ m\in\mathbb N,\\
 \text{QUESTION: }&m\in S?
 \end{aligned}\right.
 \]
-\textbf{OBS:} A decision problem is a function
+ 
+A decision problem is a function
 \[
-\Pi_D:\mathcal I\longrightarrow\{\mathrm{si},\mathrm{no}\}.
+\Pi_D:\mathcal I\longrightarrow\{\mathrm{yes},\mathrm{no}\}.
 \]
-Positive/negative instances.
+Yes/No instances are also called Positive/negative instances.
 
-Restriction to decision problems: excessive?
-
-In practice we usually solve more complex optimization problems!
+\subsection{Restriction to decision problems: excessive?}
+We restrict our analysis on computational problems to decision problems. This is not a severe restriction since many optimization problems can be reduced to decision problems.
+In practice we usually solve more complex optimization problems.

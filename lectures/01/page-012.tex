@@ -1,8 +1,9 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 12. Content remains in source order.
 \sourcecontinuation{01}{12}
+An optimization problem can be easily associated to a decision problem
 using the following standard technique: augment instance with a natural value representing an upper (MIN) or lower (MAX) limitation to the objective function, for all feasible solutions.
 
-\textbf{EXAMPLE: $k$-UNWEIGHTED-PATH (KUP)}
+\subsection{Example : K Unweighted Path Problem (KUP)}
 \[
 \begin{aligned}
 \text{I: }&\langle G=(V,E),u,z,k\rangle:\ V\subseteq\mathbb N\text{, finite},\ E\subseteq V\times V,\\
@@ -10,6 +11,6 @@ using the following standard technique: augment instance with a natural value re
 \text{D: }&\exists\text{ path from }u\text{ to }z\text{ of length }\leq k?
 \end{aligned}
 \]
-\textbf{NOTE:} The decision problem is not fully equivalent but it holds that:
 
-A polynomial algorithm for KUP can be used as a subroutine to solve SUP in polynomial time!
+The decision problem is not fully equivalent but it holds that:
+A polynomial algorithm for KUP can be used as a subroutine to solve SUP in polynomial time

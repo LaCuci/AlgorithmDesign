@@ -1,25 +1,34 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 7. Content remains in source order.
 \sourcepage{01}{7}
-\sourceheading{COMPLEXITY CLASSES AND THEORY OF INTRACTABILITY (NP-COMPLETENESS)}
-\textbf{Objective:} CATEGORIZE computational problems according to the complexity of the algorithms for their solution.
+\section{Complexity Classes and Theory of Intractability (NP-Completeness)}
 
-\textbf{RECAP: Computational Problem}
+The objective is to categorize computational problems according to the complexity of the algorithms for their solution.
+
+\subsection{Computational Problem}
 \[
 \Pi\subseteq\mathcal I\times\mathcal S\quad\text{(relation)},\qquad
 (i,s)\in\Pi\quad[i\mathrel\Pi s]\quad\Longleftrightarrow\quad s\text{ is a solution to }i.
 \]
-Many-to-many!
 
-Algorithm that solves $\Pi$: implements
+The computational problem is a set of instance solution pairs ($i,s$) such that $s$ is a solution to $i$.
+
+It is a many to many correspondence: an instance $i\in\mathcal I$ may have many solutions $s\in\mathcal S$ and a solution $s\in\mathcal S$ may be a solution to many instances $i\in\mathcal I$.
+
+Algorithm that solves $\Pi$ implements this function:
 \[
 A_\Pi:\mathcal I\longrightarrow\mathcal S,\qquad
 \forall i\in\mathcal I:\quad i\mathrel\Pi A_\Pi(i)\in\mathcal S.
 \]
-We are interested in upper/lower bounds (on algorithms) for $\Pi$:
+
+\subsection{Complexity of a problem}
+
+We are interested in upper/lower complexity bounds on algorithms for $\Pi$:
 \[
 \underbrace{\exists A_\Pi\text{ solving }\Pi:\ T_A(n)=O(f(n))}_{\text{UPPER BOUND}},
 \]
 \[
-\underbrace{\forall A_\Pi\text{ solving }\Pi:\ T_A(n)=\Omega(f(n))}_{\text{LOWER BOUND (HARDER!)}}.
+\underbrace{\forall A_\Pi\text{ solving }\Pi:\ T_A(n)=\Omega(f(n))}_{\text{LOWER BOUND}}.
 \]
+
+The lower bound is generally more difficult to prove than the upper bound.
 The order of $f(n)$ captures the difficulty of $\Pi$.

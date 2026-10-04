@@ -1,15 +1,17 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 11. Content remains in source order.
 \sourcepage{01}{11}
-\sourceheading{OPTIMIZATION PROBLEM}
+\section{Optimization Problem}
 \[
 \Pi_{\mathrm{opt}}\subseteq\mathcal I\times\mathcal S,\qquad
 c:\mathcal S\longrightarrow\mathbb N\cup\{+\infty\}.
 \]
-$\forall i\in\mathcal I$: determine $s^*\in\mathcal S(i)=\{s:i\mathrel\Pi s\}$ (FEASIBLE SOLUTIONS):
+$\forall i\in\mathcal I$: determine $s^*\in\mathcal S(i)=\{s:i\mathrel\Pi s\}$ (feasible solutions) such that:
 \[
 c(s^*)=\mathop{\mathrm{min/max}}\{c(s):s\in\mathcal S(i)\}.
 \]
-\textbf{EXAMPLE: SHORTEST-UNWEIGHTED PATH (SUP)}
+
+
+\subsection{Example : Shortest Unweighted Path Problem (SUP)}
 \[
 \mathcal I=\{\langle G=(V,E),u,z\rangle:\ V\subseteq\mathbb N\text{, finite},\ E\subseteq V\times V,\ u,z\in V\}.
 \]
@@ -26,6 +28,5 @@ where $i=\langle G=(V,E),u,z\rangle$.
 \[
 c(\langle v_1,\ldots,v_k\rangle)=k-1,\quad k\geq1;\qquad c(\eps)=+\infty.
 \]
-Minimization problem.
+This is a minimization problem.
 
-An optimization problem can be easily associated to a decision problem
