@@ -1,6 +1,10 @@
 % Source: 03 - Wed Sep 30 2026.pdf, page 10. Content remains in source order.
 \sourcepage{03}{10}
-\textbf{DEF:} $L\subseteq\bits^*$ is NP-hard if
+\subsection{NP-Hard Languages} 
+
+A language is NP-Hard if all languages in NP can be reduced to it in polynomial time.
+
+$L\subseteq\bits^*$ is NP-hard if
 \[
 \forall L'\in\classNP:\quad L'\polyred L.
 \]
@@ -9,7 +13,10 @@
 \]
 An NP-hard language/problem $L$ is ``more difficult'' than any problem in NP, in the sense that a poly-time algorithm for $L$ can be transformed into a poly-time algorithm for any problem in NP.
 
-\textbf{REMARK:} An NP-hard language $L$ need not be in NP itself!
+\textbf{Note:} An NP-hard language $L$ need not be in NP itself!
+
+\subsection{NP-Complete languages}
+A language is NP-Complete if it is both in NP and NP-Hard.
 
 \textbf{DEF:} $L\subseteq\bits^*$ is NP-Complete if
 \begin{enumerate}
@@ -19,4 +26,4 @@ An NP-hard language/problem $L$ is ``more difficult'' than any problem in NP, in
 \[
 \classNPC=\{L\subseteq\bits^*:\ L\text{ NP-complete}\}.
 \]
-\textbf{REMARK:} Clearly, $\classNPC\subseteq\classNP$.
+\textbf{Note:} NPC Languages form an overset of NP, $\classNPC\subseteq\classNP$.

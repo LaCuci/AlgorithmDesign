@@ -1,7 +1,16 @@
 % Source: 03 - Wed Sep 30 2026.pdf, page 5. Content remains in source order.
 \sourcepage{03}{5}
-Map $f$ must transform positive instances into positive instances and negative instances into negative instances.
-\sourcesubheading{SIMPLE EXAMPLE}
+
+\section{Reducibility between problems}
+Intuitively, $\Pi_1$ can be reduced to $\Pi_2$ if any instance $i_1$ of $\Pi_1$ can be 'easily' transformed into an instance $i_2$ of $\Pi_2$ so that a solution to $i_2$ provides a solution to $i_1$.
+
+For decision problems:
+\[
+i_1\longmapsto f(i_1)=i_2,\qquad\Pi_1(i_1)=\Pi_2(i_2).
+\]
+The map function $f$ must transform positive instances into positive instances and negative instances into negative instances.
+
+\subsection{Example: reducibility between first and second degree equations}
 \[
 \Pi_1:\quad\left\{\begin{aligned}
 \text{I: }&\langle a,b,x\rangle,\quad a,b,x\in\mathbb C,\\

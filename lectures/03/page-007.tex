@@ -1,17 +1,17 @@
 % Source: 03 - Wed Sep 30 2026.pdf, page 7. Content remains in source order.
 \sourcepage{03}{7}
-$\Longleftrightarrow$ means that:
+$\Longleftrightarrow$ means that we need to prove two implications:
 \begin{itemize}
 \item strings in $L_1$ are mapped to strings in $L_2$ ($\Rightarrow$);
 \item strings not in $L_1$ are mapped to strings not in $L_2$ ($\Leftarrow\ \equiv\ \not\Rightarrow$: COUNTERPOSITIVE).
 \end{itemize}
-WE NEED TO PROVE TWO IMPLICATIONS.
 
 \textbf{Remark:} $f$ need not be neither injective or surjective.
 \sourcefigure[0.9]{assets/03/page-007-reduction-map.png}
-Poly-time reducibility captures the concept of ``lesser difficulty'' of $L_1$ with respect to $L_2$ in the following sense: $L_1\polyred L_2$.
 
-\textbf{THEOREM:} Given $L_1,L_2\subseteq\bits^*$:
-\[
-(L_1\polyred L_2)\land(L_2\in\classP)\ \Rightarrow\ L_1\in\classP.
-\]
+Poly-time reducibility captures the concept of ``lesser difficulty'' of $L_1$ with respect to $L_2$ in the following sense: $L_1\polyred L_2$. 
+
+ $L_1$ is at most as difficult as $L_2$ but it cannot be more difficult than $L_2$ (otherwise, we would not be able to reduce $L_1$ to $L_2$). This is a way to put an order between problems. 
+
+ We can now study $L_2$ to get information about $L_1$. If  $L_2$ can be solved in polynomial time, then $L_1$ must be solvable in polynomial time as well. If $L_2$ is not solvable in polynomial time, then we cannot conclude anything about $L_1$.
+

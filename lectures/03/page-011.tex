@@ -1,16 +1,21 @@
 % Source: 03 - Wed Sep 30 2026.pdf, page 11. Content remains in source order.
 \sourcepage{03}{11}
-NP-complete problems are the ``hardest'' problems in NP! In fact, they are all somewhat equivalent, since
+NP-complete problems are the ``hardest'' problems in NP! In fact, they are all somewhat equivalent, since for all languages in NPC, we can reduce any one of them to any other in polynomial time (this comes from the fact that both are in NP).
 \[
 \forall L_1,L_2\in\classNPC:\quad
 (\underbrace{L_1}_{\in\classNP}\polyred\underbrace{L_2}_{\in\classNPC})\land
 (\underbrace{L_2}_{\in\classNP}\polyred\underbrace{L_1}_{\in\classNPC}).
 \]
-\textbf{COROLLARY:}
+This means that if we can solve one NP-complete problem in polynomial time, then we can solve all NP-complete problems in polynomial time.
+
+\textbf{Note :}
+If there was a language that was both NP-complete and in P, then all problems in NP would be solvable in polynomial time.
 \[
 \text{If }\exists\bar L\in(\classNPC\cap\classP)\ \Rightarrow\ \classP=\classNP.
 \]
-\textbf{PROOF:} $\forall L\in\classNP$:
+\textbf{Proof:} 
+Since $\bar L\in\classNPC$, we can reduce any languadge $L\in\classNP$ to $\bar L$ in polynomial time. Since $\bar L\in\classP$, we can solve $\bar L$ in polynomial time. Thus, we can solve any language $L\in\classNP$ in polynomial time.
+$\forall L\in\classNP$:
 \[
 (L\polyred\bar L)\land(\bar L\in\classP)\xRightarrow{\text{Theorem}}L\in\classP.
 \]

@@ -7,7 +7,7 @@ If I know that a given language $\hat L\in\classNPC$, it suffices to prove that
 \underbrace{\hat L}_{\text{Known to be in NPC}}\polyred
 \underbrace{\bar L}_{\text{Candidate to be in NPC}}.
 \]
-If $\hat L\polyred\bar L$, since $\forall L\in\classNP:\ L\polyred\hat L$ we have:
+If $\hat L\polyred\bar L$, since $\forall L\in\classNP:\ L\polyred\hat L$ (because $\hat L\in\classNPC$) we have that for every language in NP, we can reduce it to $\hat L$ in polinomial time, and then reduce $\hat L$ to $\bar L$ in polynomial time. By transitivity of $\polyred$, we have that for every language in NP, we can reduce it to $\bar L$ in polynomial time. So $\bar L$ is NP-hard, and if we can also show that $\bar L\in\classNP$, then we have shown that $\bar L\in\classNPC$.
 \[
 \forall L\in\classNP:\ (L\polyred\hat L)\land(\hat L\polyred\bar L)
 \xRightarrow{\text{transitivity of }\polyred}\forall L\in\classNP:\ L\polyred\bar L.
@@ -15,4 +15,4 @@ If $\hat L\polyred\bar L$, since $\forall L\in\classNP:\ L\polyred\hat L$ we hav
 A single reduction suffices!
 
 Unfortunately, the transitivity trick cannot be used for the first language/problem to be placed in NPC!
-The first problem requires a ``universal'' reduction from a generic problem in NP!
+The first problem requires a ``universal'' reduction from a generic problem in NP, proving all languages in NP can be reduced to it. Computer scientist Cook was the first to show that the SAT problem is NP-complete, by showing that every language in NP can be reduced to SAT in polynomial time. This is known as Cook's Theorem.

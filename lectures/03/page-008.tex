@@ -1,19 +1,34 @@
 % Source: 03 - Wed Sep 30 2026.pdf, page 8. Content remains in source order.
 \sourcepage{03}{8}
-(If $L_2$ can be decided in poly-time, so can $L_1$!)
 
-\textbf{PROOF:} We have two hypotheses:
+\subsection{Reductions and Order}
+\textbf{Theorem:}
+Given $L_1,L_2\subseteq\bits^*$:
+\[
+(L_1\polyred L_2)\land(L_2\in\classP)\ \Rightarrow\ L_1\in\classP.
+\]
 
-HP1: $L_1\polyred L_2:\ \exists f$ ptc: $x\in L_1\Longleftrightarrow f(x)\in L_2$.
-Let $T_{A_f}(|x|)=O(|x|^{k_1})$, $k_1\geq0$.
+If $L_1$ is reducible to $L_2$ and $L_2$ can be decided in poly-time, then $L_1$ can also be decided in poly-time
 
-HP2: $L_2\in\classP:\ \exists A_{L_2}$ which decides $L_2$ in poly time. Let
-$T_{A_{L_2}}(|x|)=O(|x|^{k_2})$.
+\textbf{Proof:} We have two hypotheses:
 
-I can write the following algorithm:
+HP1: $L_1$ is poly-time reducible to $L_2$:
+$L_1\polyred L_2:\ \exists f$ polynomially time computable (ptc) : $x\in L_1\Longleftrightarrow f(x)\in L_2$.
+
+So we hypothesize that an algorithm $A_f$ exists that computes $f$ in polynomial time. Let $T_{A_f}(|x|)=O(|x|^{k_1})$, $k_1\geq0$.
+
+HP2:
+$L_2\in\classP:\ \exists A_{L_2}$ which decides $L_2$ in poly time. Let
+
+$L_2$ is in P, so there exists an algorithm $A_{L_2}$ which decides $L_2$ in polynomial time. Let$T_{A_{L_2}}(|x|)=O(|x|^{k_2})$.
+
+We can unite these two hypothesis into the following algorithm:
 
 \textbf{$A_{L_1}(x)$}
 \begin{tabbing}\quad\=\kill\> $y\leftarrow A_f(x)$\\\> return $A_{L_2}(y)$\end{tabbing}
+
+So to solve instances of $L_1$, we first compute $y=f(x)$ and then we decide if $y\in L_2$. Since both f and $A_{L_2}$ are polynomial time computable, we can compute the running time of $A_{L_1}$:
+
 Running time:
 \[
 T_{A_{L_1}}(|x|)=O(|x|^{k_1}+|y|^{k_2}).
@@ -24,5 +39,7 @@ How large can $y$ be? $A_f$ may use all of its steps to create bits of $y$, thus
 \]
 Hence
 \[
-T_{A_{L_1}}=O(|x|^{k_1}+|x|^{k_1k_2})=O(|x|^{k_3})
+T_{A_{L_1}}(|x|)=O(|x|^{k_1}+|x|^{k_1k_2})=O(|x|^{k_3}),
+\quad \text{where } k_3=\max\{k_1, k_1k_2\}.
 \]
+Which is still polynomial in $|x|$. 
