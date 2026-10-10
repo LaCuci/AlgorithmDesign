@@ -1,5 +1,7 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 9. Content remains in source order.
 \sourcepage{04}{9}
+
+\subsection{Cook's Reduction}
 \[
 \begin{aligned}
 f(x)=\langle C_{V_L,x}\rangle\in L_{\mathrm{BC\text{-}SAT}}\text{ (is satisfiable)}
@@ -8,7 +10,22 @@ f(x)=\langle C_{V_L,x}\rangle\in L_{\mathrm{BC\text{-}SAT}}\text{ (is satisfiabl
 \end{aligned}
 \]
 \textbf{IDEA:} $C_{V_L,x}(y)$ ``simulates'' the computation performed by $V_L(x,y)$.
+\textbf{Problem : } We have to prove that this reduction is obtainable in polynomial time. 
+
+\subsection{Buinding the circuit}
+A computer is basically a sequential circuit with memory. Can we emulate it with combinatorial circuits? Yes! We can emulate the random access aspect with a sequential circuit, and the memory aspect is dealt with by associating every single bit of memory to a wire. 
+
+The initial value is passed on as input, and the corresponding output wire will hold the same bit's value after 1 step of computation of the random access machine.
+
+The memory, register, and program counter initial values are hard coded into the first Circuit RAM  of the circuit.
+
+The whole circuit will have just one output : the return value of $V\_L(x,y)$ 
+
+We will not see how cook implemented the entire architecture parts like the ALU, the branch unit and the interpreter with only and or and not gates. 
+
 
 $C_{V_L,x}$ is built starting from a combinatorial circuit executing a single step of a Random Access Machine (RAM).
 \sourcefigure[0.8]{assets/04/page-009-ram-step.png}
 $C_{\mathrm{RAM}}$ implements the standard circuitry of a RAM (ALU, branches, etc. \ldots). Memory is ``simulated'' by passing along stored values on output wires.
+
+We simulate an algorithm execution on a Random access machine with jusapposition of many $C\_RAM$ circuits : one circuit per computational step of the algorithm. 

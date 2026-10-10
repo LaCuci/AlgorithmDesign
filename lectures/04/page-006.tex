@@ -4,23 +4,37 @@
 $C$ is satisfied by the truth assignment $\vec b=(1,1,0,0,0,0)$.
 
 Configuration: $(1,1,0,0,0,0,1,1,1,0,1,1,1)=\gamma_C$ (in some prespecified order).
-\sourceheading{BOOLEAN CIRCUIT SATISFIABILITY (BC-SAT)}
+
+
+\section{Boolean Circuit Satisfiability Problem BC-SAT}
+The boolean circuit satisfiability problem is a decision problem where the input is a boolean function associated to a circuit and the question is wether or not a truth assignment that satisfies the circuit exists. 
 \[
 \begin{aligned}
 \text{I: }&\langle C(x_1,\ldots,x_n)\rangle=\langle(I\cup G\cup O,W)\rangle,\quad\text{boolean circuit},\\
 \text{Q: }&C\text{ is satisfiable?}\quad\exists\vec b\in\bits^n:\ C(\vec b)=1?
 \end{aligned}
 \]
-BC-SAT is an important problem in practice (e.g.: testing, circuit equivalence \ldots).
-It is easy to prove that
+
+BC-SAT is an important problem in practice (It is used to do circuit testing, circuit equivalence \ldots).
+
+\subsection{BC-SAT is a NP problem }
 
 \textbf{THEOREM:} $\mathrm{BC\text{-}SAT}\in\classNP$.
 
-Proof:
+Proof steps:
+\begin{itemize}
+    \item Make sure that the input is well formed (Is it the encoding of a combinatorial circuit?)
+    \item Make sure that the candidate solution is a feasible configuration of the circuit : every wire that comes from the same gate has to have the same value and the input output relation of the gate must be correct according to the function of the gate.
+    \item Return the value associated to the output in the certificate.  
+\end{itemize}
 
-\textbf{VERIFY-BCSAT$(x,y)$} \{high-level\}
-\begin{tabbing}
-\quad\=\kill
-\> if $x\neq\langle(I\cup G\cup\{y_0\},W)\rangle$ then return $0$\\
-\> if $y\neq\langle w_1,w_2,\ldots,w_{|W|}\rangle\in\bits^{|W|}$
-\end{tabbing}
+\textbf{HOMEWORK : Correctness} : The verifier returns the value of the certificate as output only if the certificate is valid, else returns 0. This is correct because if the certificate is valid and the output is 0 we do not have the guarantee that a valid certificate exists. Instead, if the value is 1, we just proved that certificate to be a valid certificate and therefore the circuit is satisfiable. 
+
+This is the proof we need to give to say that the language verified by this verifier is the set of all encodings of circuits that are satisfiable. 
+
+\textbf{HOMEWORK : Running Time} Prove that it is linear in the dimension of the input and the certificate. Going through the graph with an adjacency list of gates to check if the values are feasible is just a linear scan of the graph : 
+\begin{itemize}
+    \item Checking that all the outputs of a gate are the same is done by checking all outgoing edges of each node. 
+    \item Checking that the I/O relationship is valid can also be done with a check on all incoming edges and outgoing edges of a node.
+\end{itemize}
+This makes checks proportional on the size of the encoding (x+y)

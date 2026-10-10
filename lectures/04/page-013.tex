@@ -1,12 +1,14 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 13. Content remains in source order.
 \sourcepage{04}{13}
-The value $\phi(\vec b)$ can be computed in time linear in the formula's size by using the tree.
+\subsection{Boolean formula truth assignment}
+A truth-assignment is a vector of boolean values $\vec b\in\bits^n$, one for each variable.
+The value $\phi(\vec b)$ can be computed in time linear in the formula's size by using the tree. You go up on the tree and progressively associate every internal node with the value obtained from the truth table of the operator of that node according to the values of its children.
 
-A satisfying assignment $\vec b$ is such that $\phi(\vec b)=1$. If $\vec b$ exists, $\phi$ is said satisfiable.
-\sourceheading{FORMULA SATISFIABILITY (SAT)}
+A satisfying assignment $\vec b$ is such that the formula under that truth assignment is true : $\phi(\vec b)=1$. If $\vec b$ exists, $\phi$ is said satisfiable.
+\subsection{Formula SAT problem formulation}
 \[
 \begin{aligned}
-\text{I: }&\langle\phi(x_1,\ldots,x_n)\rangle,\quad\phi\text{ boolean formula},\\
+\text{I: }&\langle\phi(x_1,\ldots,x_n)\rangle,\quad\phi\text{encoding of the boolean formula},\\
 \text{Q: }&\text{is }\phi\text{ satisfiable?}
 \end{aligned}
 \]
@@ -20,6 +22,10 @@ $\phi$ is satisfiable $[\phi(\vec b)=1]$.
 Very similar to BC-SAT (in fact, this is Cook's original problem).
 Nonetheless, the reduction is nontrivial.
 
-1. $\mathrm{SAT}\in\classNP$: Trivial: for $\langle\phi(x_1,\ldots,x_n)\rangle$ a candidate certificate is $\vec b\in\bits^n$. $\phi(\vec b)$ can be computed in linear time using the tree representation.
+1. $\mathrm{SAT}\in\classNP$: Trivial: for $\langle\phi(x_1,\ldots,x_n)\rangle$ a candidate certificate is $\vec b\in\bits^n$. $\phi(\vec b)$ can be computed in linear time using the tree representation. 
 
-(write code of VERIFY-SAT$(x,y)$ as an exercise)
+\begin{itemize}
+    \item Check wether the first input represents a tree
+    \item check weteher the second input is a truth assignment
+    \item Implement bottom up ascent to check if the truth assignment is a positive one. 
+\end{itemize}

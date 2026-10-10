@@ -1,30 +1,25 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 7. Content remains in source order.
 \sourcepage{04}{7}
-\begin{tabbing}\quad\=\kill\> then return $0$\end{tabbing}
-\{``candidate'' certificate looks like a configuration $\gamma_C$ (1 value/wire)\}
+
+\textbf{VERIFY-BCSAT$(x,y)$}
+\begin{tabbing}
+\quad\=\kill
+\> if $x\neq\langle(I\cup G\cup\{y_0\},W)\rangle$ then return $0$\\
+\> if $y\neq\langle w_1,w_2,\ldots,w_{|W|}\rangle\in\bits^{|W|}$
+\quad\=\kill\> then return $0$\end{tabbing}
 \begin{tabbing}
 \quad\=\quad\=\kill
 \> if $\exists w_i\neq w_j$ outgoing from same gate\\
-\>\> then return $0$ \{incoherent configuration!\}
+\>\> then return $0$ 
 \end{tabbing}
-\sourcefigure[0.2]{assets/04/page-007-incoherent-fanout.png}
 \begin{tabbing}
 \quad\=\quad\=\kill
 \> for each gate $g\in G$\\
 \>\> if (I/O relation for $g$ incorrect) then return $0$
 \end{tabbing}
-e.g.:
-\sourcefigure[0.25]{assets/04/page-007-incorrect-or.png}
-\{check that the configuration is coherent\}
 \begin{tabbing}\quad\=\kill\> return wire value associated to $y_0$\end{tabbing}
-\{$=1\Rightarrow y=\gamma$ certifies that $C$ is satisfiable\}
 \[
 T_{VB}(|x|,|y|)=\Theta(|x|+|y|)\quad\Rightarrow\quad\mathrm{BC\text{-}SAT}\in\classNP.
 \]
-Difficult part:
 
-\textbf{THEOREM (Cook, 1971)}
-\[
-\mathrm{BC\text{-}SAT}\in\classNPH.
-\]
-The proof of Cook's theorem is complex in the details but relies on a simple intuition.
+

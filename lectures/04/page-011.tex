@@ -1,6 +1,9 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 11. Content remains in source order.
 \sourcepage{04}{11}
-We have
+
+if x is accepted by a language in NP \textbf{if and only if}  a certificate y exists such that y is small and the verification algorithm for L returns 1 for (x,y) \textbf{if and only if} our circuit built for VL on x returns 1 for the certificate y  \textbf{if and only if} the circuit for VL on x is satisfiable (so belongs to BC SAT)  \textbf{if and only if} the output of the reduction function from L to BC SAT given when x is the input belongs to BC SAT 
+
+Formally we have :
 \[
 \begin{aligned}
 x\in L&\Longleftrightarrow\exists\bar y,\ |\bar y|=O(|x|^{k_1}):\ V_L(x,\bar y)=1\\
@@ -12,5 +15,7 @@ x\in L&\Longleftrightarrow\exists\bar y,\ |\bar y|=O(|x|^{k_1}):\ V_L(x,\bar y)=
 \]
 Thus $L\polyred\mathrm{BC\text{-}SAT}$.
 This proves that $\mathrm{BC\text{-}SAT}\in\classNPH$.
+
+We have come up with a uniform reduction of a general language in NP to a language associated to boolean circuit satisfiability. 
 
 In what follows we will prove that a number of problems are in NPC. The details of the reductions will teach us general approaches and highlight pitfalls to avoid.

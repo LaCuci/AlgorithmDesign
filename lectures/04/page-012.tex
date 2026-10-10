@@ -1,12 +1,14 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 12. Content remains in source order.
 \sourcepage{04}{12}
-\sourceheading{FORMULA SATISFIABILITY (SAT)}
-A boolean formula $\phi(x_1,x_2,\ldots,x_n):\bits^n\to\{0,1\}$ is a (parenthesized) expression built on
+\section{Formula satisfiability problem (SAT)}
+A boolean formula $\phi(x_1,x_2,\ldots,x_n):\bits^n\to\{0,1\}$ is a fully parenthesized expression built on
 \begin{itemize}
 \item $n$ variables $x_1,x_2,\ldots,x_n$;
 \item binary operators: $\lor$ (OR), $\land$ (AND), $\to$ (IMPLIES), $\leftrightarrow$ (EQUALS);
 \item unary operator: $\neg$ (NOT).
 \end{itemize}
+
+The new operators implies and equals : 
 \begin{center}
 \begin{tabular}{c|cc}
 $x,y$ & $x\to y$ & $x\leftrightarrow y$\\\hline
@@ -20,10 +22,11 @@ $11$ & 1 & 1
 x\to y\ \equiv\ (\neg x)\lor y,\qquad
 x\leftrightarrow y\ \equiv\ (x\land y)\lor(\neg x\land\neg y).
 \]
-\textbf{EXAMPLE:}
+\subsection{formula encoding : a tree}
+We assume that the boolean formulas are always represented as their relative parenthesized trees. 
 \[
 \phi(x_1,x_2,x_3,x_4)=(x_1\to x_2)\lor(\neg((\neg x_1\leftrightarrow x_3)\lor x_4)).
 \]
-Can be represented by the parenthesization tree (leafs: variables; internal nodes: operators).
+Boolean formulas can be represented by the parenthesization tree. The leafs are the  variables; the internal nodes are operators.
 \sourcefigure[0.65]{assets/04/page-012-formula-tree.png}
-A truth-assignment is a vector of boolean values $\vec b\in\bits^n$, one for each variable.
+

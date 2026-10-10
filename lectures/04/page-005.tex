@@ -2,9 +2,16 @@
 \sourcepage{04}{5}
 \sourcefigure[0.85]{assets/04/page-005-circuit-configuration.png}
 The circuit implements a boolean function $y=C(x_1,x_2,\ldots,x_n)$.
+Y (the output) is the result of the values given in input to the function ( the circuit) 
 
-For a circuit with $n$ inputs, a truth assignment is $\vec b\in\bits^n$.
+For a circuit with $n$ inputs, a truth assignment is a vector with one bit per input $\vec b\in\bits^n$.
 
-\textbf{DEF:} The set of boolean values carried by all wires of a circuit $C$ under a truth-assignment $\vec b$ is called Configuration $\gamma_C$ of $C$ under $\vec b$.
+\subsection{Configuration} 
 
-\textbf{DEF:} A boolean circuit $C(x_1,x_2,\ldots,x_n)$ is satisfiable if there exists a truth assignment $\vec b\in\bits^n:\ C(\vec b)=1$.
+After the circuit has commuted every wire in the circuit will carry a stable boolean value.
+
+The set of boolean values carried by all wires of a circuit $C$ under a truth-assignment $\vec b$ is called Configuration $\gamma_C$ of $C$ under $\vec b$. 
+
+Since the input is part of the configuration, and the truth assignemnt has N bits, there are 2 to the N possible truth assignments and therefore 2 to the N possible configurations. 
+
+\textbf{DEF:} A boolean circuit $C(x_1,x_2,\ldots,x_n)$ is satisfiable if there exists a truth assignment such that the output of the circuit has value 1 :  $\vec b\in\bits^n:\ C(\vec b)=1$.

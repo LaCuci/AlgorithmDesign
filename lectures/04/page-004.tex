@@ -1,14 +1,16 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 4. Content remains in source order.
 \sourcepage{04}{4}
-A circuit can be represented by a directed graph
+A circuit can be represented by a directed graph (circuits are in a 1 to 1 correspondence on a directed graph). 
 \[
 C=(I\cup G\cup O,W).
 \]
 \begin{itemize}
-\item One labeled node per input, gate, output.
-\item One edge for each wire.
+\item The nodes are the inputs (I), the gated (G) and the outputs of the circuit (O). They are labelled according to what they represent. 
+\item The set of edges contains one edge for each wire (W). The edges are directed.
 \end{itemize}
-\sourcefigure[0.7]{assets/04/page-004-circuit-graph.png}
-\textbf{DEF:} A truth-assignment to the inputs of a circuit associates a boolean value to each input.
 
-Under a truth-assignment each wire in the circuit will switch to the correct boolean value according to the gates traversed:
+\sourcefigure[0.7]{assets/04/page-004-circuit-graph.png}
+\subsection{Truth assignments} 
+A truth-assignment is a boolean vector that associates to the inputs of a circuit a boolean value to each input.
+
+Under a truth-assignment each wire in the circuit will switch to the correct boolean value according to the gates traversed. The circuit commutes. 

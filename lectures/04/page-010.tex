@@ -2,14 +2,18 @@
 \sourcepage{04}{10}
 An algorithm executing $t$ steps can be simulated by cascading $t$ copies of $C_{\mathrm{RAM}}$:
 \sourcefigure[0.95]{assets/04/page-010-cascaded-ram.png}
-\textbf{Crucial points:}
+
+\subsection{Crucial points:}
 \begin{enumerate}
 \item $|\langle C_{\mathrm{RAM}}\rangle|$ is polynomial in $x$ and $y$.
-\begin{itemize}\item circuitry polynomial in the memory size.\end{itemize}
-\item It suffices to set $|y|=\Theta(|x|^{k_1})$.
-\item It suffices to consider $t=\Theta((|x|+|y|)^{k_2})$.
+\begin{itemize}\item circuitry polynomial in the memory size \textbf{NON CHIARO}.\end{itemize}
+\item It suffices to set $|y|=\Theta(|x|^{k_1})$. 
+\item(we can avoid examining every possible input length : we can limit from above the quantity of input wires.)
+\item the number of wires is polynomial : parallelism with the implementation of the ALU. The Sum component which is  the basic component to work needs a number of bits that is at most quadratic in the size of the operands. 
+\item It suffices to consider $t=\Theta((|x|+|y|)^{k_2})$. 
+\item (We will not need more than $(|x|+|y|)^{k_2}$ copies of the circuit to run the verification algorithm, because we know that since L is in NP it will run in polynomial time )
 \end{enumerate}
 ($k_1,k_2$ from definition of poly-time verifier.)
 
-$\Rightarrow C_{V_L,x}$ has size polynomial in $x$!
+We have a polynomial number of circuits with a polynomial number of wires : the product of a polynomial is a polynomial $\Rightarrow C_{V_L,x}$ has size polynomial in $x$!
 Therefore $f_{L\to\mathrm{BC\text{-}SAT}}$ is PTC.

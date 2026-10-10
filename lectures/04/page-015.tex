@@ -11,14 +11,14 @@ Outputs of Stage 2:
 \]
 etc.
 
-The number of symbols in the subexpressions of Stage $i$ is more than double than that of Stage $i-1$.
+The number of symbols in the subexpressions of Stage $i$ is more than double than that of Stage $i-1$. This is because we have repeated subexpressions : Both outputs of the gates go into both inputs of the next gates, so if we have 2 outputs we have to repeat them twice because they will appear in both inputs of the next gates. 
 \[
 \Rightarrow\left\{\begin{aligned}\mathrm{Size}(i)&\geq2\,\mathrm{Size}(i-1),\\\mathrm{Size}(1)&=c.\end{aligned}\right.
 \]
 \[
 \Rightarrow|\phi_C(x,y)|\geq\mathrm{Size}(n)\geq c\cdot2^{n-1}!
 \]
-\textbf{OBSERVE!} $|C|=\Theta(n)$ but $|\phi_C(x,y)|=\Omega(2^n)$.
+\textbf{Solved the recurrence by unfolding : } $|C|=\Theta(n)$ but $|\phi_C(x,y)|=\Omega(2^n)$.
 
 This reduction cannot be ptc! (I can't generate an exponential number of symbols in polynomial time!)
 

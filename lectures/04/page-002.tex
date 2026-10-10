@@ -1,8 +1,11 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 2. Content remains in source order.
 \sourcepage{04}{2}
+\section{Boolean Circuits}
 In 1971 Cook proved the first NP-completeness result on a problem in boolean logic. We'll work with an equivalent variant defined on boolean circuits.
 
-\textbf{DEF:} A gate is an elementary switching circuit of three types:
+We only look at combinatorial circuits, so acyclic interconnection of boolean gates, because a cycle in a circuit implies that the circuit has memory. 
+
+\subsection{Boolean gates} A gate is an elementary switching circuit of three types:
 \begin{enumerate}
 \item AND
 \sourcefigure[0.25]{assets/04/page-002-and-gate.png}
@@ -14,4 +17,10 @@ output wire $y=1\Longleftrightarrow$ at least one input wire carries 1. Thus $y=
 \sourcefigure[0.175]{assets/04/page-002-not-gate.png}
 output wire $y=1\Longleftrightarrow$ input wire $x=0$. Thus $y=\neg(x)$ ($=\bar x$).
 \end{enumerate}
+
+Some subsets create a Elementary universal family of gates 
+
+\subsection{Boolean Circuit}
 \textbf{DEF:} A Boolean Circuit (BC) is an acyclic interconnection of gates, where the output of a gate can become input to one or more other gates.
+
+Acyclic because we are interested in combinatorial circuits 

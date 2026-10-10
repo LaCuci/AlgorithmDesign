@@ -5,13 +5,16 @@
 \item Classes P and NP. $\classP\subseteq\classNP$.
 \item Poly-time reducibility: $L_1\polyred L_2$. ``relative difficulty'' of problems:
 \[
-\underbrace{(L_1\polyred L_2)}_{\text{``LESS DIFFICULT''}}\land(L_2\in\classP)\Rightarrow L_1\in\classP.
+\underbrace{(L_1\polyred L_2)}\land(L_2\in\classP)\Rightarrow L_1\in\classP.
 \]
 \item Classes NPH and NPC:
 \[
 L'\in\classNPC:\quad(L'\in\classNP)\land
 \underbrace{(\forall L\in\classNP:\ L\polyred L')}_{\mathrm{NPH}}.
 \]
+Reducibility between languages suggests a "less difficult than" relation. 
+NP-Hard languages are all languages such that all languages in NP reduce to them, NP-Complete languages are all NP-Hard lanugages that are also in NP.
+
 \item Facts:
 \[
 (\classP\cap\classNPC\neq\varnothing)\Rightarrow\classP=\classNP.
@@ -21,8 +24,16 @@ L_1,L_2\in\classNPC:\ (L_1\polyred L_2)\land(L_2\polyred L_1).
 \]
 \item Membership in NPC: use transitivity of $\polyred$ by proving:
 \[
-L_{\mathrm{KNOWN\text{-}NPC}}\polyred L_{\mathrm{CANDIDATE}},\qquad
+L_{\mathrm{KNOWN\text{-}NPC}}\polyred L_{\mathrm{CANDIDATE}}.
+\] 
+
+
+\item First language in NPC requires direct application of definition: $\infty$ reductions! \[ 
 \forall L\in\classNP,\ L\polyred L_{\mathrm{KNOWN\text{-}NP}}.
 \]
-\item First language in NPC requires direct application of definition: $\infty$ reductions!
+but after we put the forst language in NPC, we can prove that other problems are in NPC just by proving that they can be reduced to problems already in NPC.
+
+\item Remember that the direction of the reduction is important. We need to prove that the candidate NPC language is harder that a language that is already in NPC, not the other way around : \[
+L_{\mathrm{KNOWN\text{-}NPC}}\polyred L_{\mathrm{CANDIDATE}}.
+\]
 \end{itemize}
