@@ -1,17 +1,21 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 13. Content remains in source order.
 \sourcepage{04}{13}
 \subsection{Boolean formula truth assignment}
+\begin{notesdefinition}
 A truth-assignment is a vector of boolean values $\vec b\in\bits^n$, one for each variable.
+\end{notesdefinition}
+
 The value $\phi(\vec b)$ can be computed in time linear in the formula's size by using the tree. You go up on the tree and progressively associate every internal node with the value obtained from the truth table of the operator of that node according to the values of its children.
 
+\begin{notesdefinition}
 A satisfying assignment $\vec b$ is such that the formula under that truth assignment is true : $\phi(\vec b)=1$. If $\vec b$ exists, $\phi$ is said satisfiable.
+\end{notesdefinition}
+
 \subsection{Formula SAT problem formulation}
-\[
-\begin{aligned}
+\begin{notesproblem}
 \text{I: }&\langle\phi(x_1,\ldots,x_n)\rangle,\quad\phi\text{encoding of the boolean formula},\\
 \text{Q: }&\text{is }\phi\text{ satisfiable?}
-\end{aligned}
-\]
+\end{notesproblem}
 \textbf{EXAMPLE:} $\vec b=(0,0,1,1)$.
 \[
 \phi(x_1,x_2,x_3,x_4)=(x_1\to x_2)\lor(\neg((\neg x_1\leftrightarrow x_3)\lor x_4)).

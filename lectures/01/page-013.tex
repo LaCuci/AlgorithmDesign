@@ -4,15 +4,16 @@ Let $A_{\mathrm{KUP}}(G=(V,E),u,z,k)$ be a polynomial time algorithm for KUP.
 
 We first show that $A_{\mathrm{KUP}}$ can be employed to determine the length of the shortest path between $u$ and $z$ as follows:
 
+\begin{notesalgorithm}
 \textbf{P-LENGTH$(\langle G=(V,E),u,z\rangle)$}
-\begin{tabbing}
-\quad\=\quad\=\quad\=\kill
-\> $n\leftarrow |V|$\\
-\> for $k\leftarrow0$ to $n-1$ do\\
-\>\> if $A_{\mathrm{KUP}}(\langle G=(V,E),u,z,k\rangle)=\mathrm{yes}$\\
-\>\>\> then return $k$\\
-\> return $+\infty$
-\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{$n\leftarrow |V|$}
+\pseudocodeline{0}{\textbf{for} $k\leftarrow0$ \textbf{to} $n-1$ \textbf{do}}
+\pseudocodeline{1}{\textbf{if} $A_{\mathrm{KUP}}(\langle G=(V,E),u,z,k\rangle)=\mathrm{yes}$}
+\pseudocodeline{2}{\textbf{then} \textbf{return} $k$}
+\pseudocodeline{0}{\textbf{return} $+\infty$}
+\end{notespseudocode}
+\end{notesalgorithm}
 Clearly, P-LENGTH$(G,u,z)$ returns the smallest value of $k$ such that $\exists$ a path from $u$ to $z$ ($+\infty$ if no path exists).
 
 Since $|V|=n\leq|\langle G,u,z\rangle|$ (SIZE OF THE INSTANCE) and

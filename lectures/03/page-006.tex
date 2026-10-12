@@ -9,16 +9,20 @@
 
 \subsection{Polynomial time reducibility}
 
+\begin{notesdefinition}
 \textbf{DEF:} A function $f:\bits^*\to\bits^*$ is polynomial-time computable (ptc) if $\exists$ algorithm $A_f:\bits^*\to\bits^*$:
 \[
 \forall x\in\bits^*:\ A_f(x)=f(x)\text{ and }T_{A_f}(|x|)=O(|x|^k)
 \]
 for some constant $k\geq0$.
+\end{notesdefinition}
 
+\begin{notesdefinition}
 \textbf{DEF:} $L_1$ is poly-time reducible to $L_2$ (notation: $L_1\polyred L_2$) if:
 \[
 \exists f:\bits^*\to\bits^*\text{ ptc}:\qquad x\in L_1\Longleftrightarrow f(x)\in L_2.
 \]
 (w.r.t. problems: $\Pi_{L_1}(x)=\Pi_{L_2}(f(x))$)
+\end{notesdefinition}
 
 So if a polinomial time function $f$ exists that transforms instances of $\Pi_1$ into instances of $\Pi_2$ such that the answer is preserved, then we say that $\Pi_1$ is poly-time reducible to $\Pi_2$.

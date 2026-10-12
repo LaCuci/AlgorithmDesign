@@ -1,12 +1,14 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 12. Content remains in source order.
 \sourcepage{04}{12}
 \section{Formula satisfiability problem (SAT)}
+\begin{notesdefinition}
 A boolean formula $\phi(x_1,x_2,\ldots,x_n):\bits^n\to\{0,1\}$ is a fully parenthesized expression built on
 \begin{itemize}
 \item $n$ variables $x_1,x_2,\ldots,x_n$;
 \item binary operators: $\lor$ (OR), $\land$ (AND), $\to$ (IMPLIES), $\leftrightarrow$ (EQUALS);
 \item unary operator: $\neg$ (NOT).
 \end{itemize}
+\end{notesdefinition}
 
 The new operators implies and equals : 
 \begin{center}
@@ -29,4 +31,3 @@ We assume that the boolean formulas are always represented as their relative par
 \]
 Boolean formulas can be represented by the parenthesization tree. The leafs are the  variables; the internal nodes are operators.
 \sourcefigure[0.65]{assets/04/page-012-formula-tree.png}
-

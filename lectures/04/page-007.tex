@@ -1,25 +1,25 @@
 % Source: 04 -Mon Oct 5 2026.pdf, page 7. Content remains in source order.
 \sourcepage{04}{7}
 
+\begin{notesalgorithm}
 \textbf{VERIFY-BCSAT$(x,y)$}
-\begin{tabbing}
-\quad\=\kill
-\> if $x\neq\langle(I\cup G\cup\{y_0\},W)\rangle$ then return $0$\\
-\> if $y\neq\langle w_1,w_2,\ldots,w_{|W|}\rangle\in\bits^{|W|}$
-\quad\=\kill\> then return $0$\end{tabbing}
-\begin{tabbing}
-\quad\=\quad\=\kill
-\> if $\exists w_i\neq w_j$ outgoing from same gate\\
-\>\> then return $0$ 
-\end{tabbing}
-\begin{tabbing}
-\quad\=\quad\=\kill
-\> for each gate $g\in G$\\
-\>\> if (I/O relation for $g$ incorrect) then return $0$
-\end{tabbing}
-\begin{tabbing}\quad\=\kill\> return wire value associated to $y_0$\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{\textbf{if} $x\neq\langle(I\cup G\cup\{y_0\},W)\rangle$ \textbf{then} \textbf{return} $0$}
+\pseudocodeline{0}{\textbf{if} $y\neq\langle w_1,w_2,\ldots,w_{|W|}\rangle\in\bits^{|W|}$}
+\pseudocodeline{1}{\textbf{then} \textbf{return} $0$}
+
+
+\pseudocodeline{0}{\textbf{if} $\exists w_i\neq w_j$ outgoing from same gate}
+\pseudocodeline{1}{\textbf{then} \textbf{return} $0$}
+
+
+\pseudocodeline{0}{\textbf{for} each gate $g\in G$}
+\pseudocodeline{1}{\textbf{if} (I/O relation for $g$ incorrect) \textbf{then} \textbf{return} $0$}
+
+
+\pseudocodeline{0}{\textbf{return} wire value associated to $y_0$}
+\end{notespseudocode}
+\end{notesalgorithm}
 \[
 T_{VB}(|x|,|y|)=\Theta(|x|+|y|)\quad\Rightarrow\quad\mathrm{BC\text{-}SAT}\in\classNP.
 \]
-
-

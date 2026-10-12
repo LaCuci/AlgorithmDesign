@@ -16,11 +16,10 @@
 
 \subsection{HALTING PROBLEM}
 \[
-\Pi_{\mathrm{HALT}}:\quad
-\mathcal I=\{\langle M,x\rangle:\ M\text{ Turing Machine},\ x\in\bits^*\},
-\qquad\mathcal S=\{\mathrm{yes},\mathrm{no}\}.
-\]
-\[
-\langle M,x\rangle\mathrel\Pi_{\mathrm{HALT}}\mathrm{yes}
+\Pi_{\mathrm{HALT}}:\quad\left\{\begin{aligned}
+& \mathcal I=\{\langle M,x\rangle:\ M\text{ Turing Machine},\ x\in\bits^*\},\\
+& \mathcal S=\{\mathrm{yes},\mathrm{no}\}.\\
+& \langle M,x\rangle\mathrel\Pi_{\mathrm{HALT}}\mathrm{yes}
 \quad\Longleftrightarrow\quad M(x)\text{ halts}.
+\end{aligned}\right.
 \]

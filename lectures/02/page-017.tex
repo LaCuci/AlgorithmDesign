@@ -9,6 +9,7 @@ v_i&\neq v_j\quad1\leq i<j\leq|V|,\qquad(v_i,v_{i+1})\in E.
 \]
 \textbf{IMPORTANT:} if $x\notin L$ then no certificate may exist!
 
+\begin{notesdefinition}
 The language verified by a two-input algorithm $V$ is a language that contains all encodings of instances that have a certificate (so all encodings of graphs that have a Hamiltonian cycle):
 \[
 \begin{aligned}
@@ -16,4 +17,6 @@ L_V&=\{x\in\bits^*:\ V\text{ verifies }x\}\\
 &=\{x\in\bits^*:\exists y\in\bits^*:\ V(x,y)=1\}.
 \end{aligned}
 \]
-\textbf{OBSERVATION:} VERIFY-HAMILTON is a verification algorithm for $L_{\mathrm{HAMILTON}}$ (or, equivalently, for HAMILTON). 
+\end{notesdefinition}
+
+\textbf{OBSERVATION:} VERIFY-HAMILTON is a verification algorithm for $L_{\mathrm{HAMILTON}}$ (or, equivalently, for HAMILTON).

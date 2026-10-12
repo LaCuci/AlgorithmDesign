@@ -11,7 +11,7 @@ latexmk -pdf -outdir=build main.tex
 python3 scripts/validate_sources.py
 ```
 
-The compiled notes are **`build/main.pdf`**. A convenience copy is also available as `main.pdf`; refresh it after rebuilding with `cp build/main.pdf main.pdf`. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
+The compiled notes are **`build/main.pdf`**. A convenience copy is also available as `main.pdf`; refresh it after rebuilding with `cp build/main.pdf main.pdf`. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `microtype`, `titlesec`, `tcolorbox` with its `breakable` and `skins` libraries, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
 
 The original `pdf-prof/` ignore rule is retained. Build products and temporary extraction/review files are also ignored. The compiled PDF remains available locally under `build`.
 
@@ -33,6 +33,16 @@ build/main.pdf             compiled deliverable (ignored)
 ```
 
 Each page file contains an exact source-filename comment and a `source:<lecture ID>:<page>` label. `\sourcepage{01}{1}` starts a paragraph; `\sourcecontinuation{01}{12}` places the same label without breaking a continued sentence. Source page boundaries do not force output page breaks. Diagrams use nonfloating `\sourcefigure` inclusions and stay in content order.
+
+## Formatting
+
+The shared preamble applies muted blue headings, consistent paragraph/list/equation spacing, and `microtype` typography while retaining the 11-point A4 layout and 25 mm margins. Definitions use `notesdefinition`; theorem statements use `notestheorem`; facts, properties, corollaries and propositions use `notesresult`. These lightly shaded, unnumbered boxes preserve the existing source labels and can break across output pages. Keep each statement's formulas and conditions inside its box, with proofs and subsequent analysis following in source order.
+
+Problem statements use `notesproblem`, which renders aligned math rows under one large left curly brace, following the source PDFs. Keep the existing instance/question labels and all input details; wrap prose in `\text{...}` and keep formulas directly in math mode. Long descriptions may continue on additional aligned rows.
+
+Algorithms use an amber, nonfloating `notesalgorithm` box, distinct from the blue statement boxes, containing the existing name and a `notespseudocode` environment. Keep the function signature outside `notespseudocode`. Write each instruction as `\pseudocodeline{0}{...}`, using `1`, `2`, etc. for nesting. The body starts one indentation level below the signature. Lines wrap with hanging indentation; control keywords use `\textbf`. No line numbers, additional instructions or closing keywords are generated. A block may begin in one source file and end in the next when the original statement or algorithm continues; retain every intervening source anchor and comment.
+
+Formatting does not change the transcription's wording, mathematical expressions, repetitions, apparent errors, diagrams or content order. After formatting changes, rebuild and inspect the PDF. Refresh the verified build record only when source integrity validation passes; existing tracking discrepancies must be resolved separately.
 
 `sources.json` records each exact PDF filename, SHA-256, page count, lecture path and every ascending source page. Page states are `pending`, `transcribed`, and `visually_verified`. PDF states are `pending`, `in_progress`, and `complete`. An unreadable fragment may be visually verified as a faithful retained crop while its textual reading remains unresolved; the separate review notes describe it. Crop records include source page, normalized top-left-origin coordinates, kind, path and any excluded adjacent lettering that is transcribed separately.
 

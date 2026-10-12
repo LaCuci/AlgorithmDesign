@@ -2,21 +2,27 @@
 \sourcepage{02}{12}
 \subsection{Polynomial-time decision problems and the complexity class P}
 
+\begin{notesdefinition}
 A language $L$ is decided in polynomial time if $\exists A$:
 \begin{enumerate}
 \item $L=L_A$.
 \item $\exists k\in\mathbb N:\ \forall x\in\bits^*:\ T_A(|x|)=O(|x|^k)$ ($A$ runs in polynomial time).
 \end{enumerate}
+\end{notesdefinition}
 
+\begin{notesdefinition}
 Equivalently, a concrete decision problem $\Pi_C$ is solved in polynomial time if $\exists A$:
 \begin{enumerate}
 \item $\forall x\in\bits^*:\ A(x)=\Pi_C(x)$.
 \item $\exists k\in\mathbb N:\ \forall x\in\bits^*:\ T_A(|x|)=O(|x|^k)$ ($A$ runs in polynomial time).
 \end{enumerate}
+\end{notesdefinition}
 
-
+\begin{notesdefinition}
 \subsubsection{DEF complexity class:} A complexity class is a set of languages .(equivalently: a set of concrete decision problems).
+\end{notesdefinition}
 
+\begin{notesdefinition}
 \subsubsection{DEF class P:}
 \[
 \classP=\{L\subseteq\bits^*:\ L\text{ is decided in polynomial time}\}.
@@ -25,3 +31,4 @@ Alternatively
 \[
 \classP=\{\Pi_C:\bits^*\to\{0,1\}:\ \Pi_C\text{ is solved in polynomial time}\}.
 \]
+\end{notesdefinition}

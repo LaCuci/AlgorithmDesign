@@ -4,6 +4,7 @@ We only require that one certificate exists but do not ask the algorithm to comp
 
 The certificate is provided to the algorithm externally. ``Computing the certificate'' would imply solving the problem.
 
+\begin{notesdefinition}
 A language $L$ is verified in polynomial time if and only if there exists a two input algorithm $V=(x,y)$ that verifies that y is a certificate for x in polynomial time in the size of the input $x$ and the size of the certificate $y$ for all $x\in L$, where y is a certificate for x that must be polynomial in the size of the input $x$.
 
 
@@ -13,7 +14,7 @@ L is verified in polynomial time iff $\exists V$:
 \item $\exists k_1\geq0:\ \forall x\in L\ \exists y:\ V(x,y)=1$ and $|y|=O(|x|^{k_1})$.
 \item $\exists k_2\geq0:\ T_V(|x|,|y|)=O((|x|+|y|)^{k_2})$.
 \end{enumerate}
-
+\end{notesdefinition}
 
 The certificate $y$ must also be of polynomial size in the size of the input $x$ otherwise the complexity would be dominated by the size of the certificate and not by the size of the input.
 

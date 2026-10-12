@@ -5,13 +5,14 @@ Consider the following problem:
 
 \textbf{KNAPSACK}
 
-\textbf{I:} $\langle a_1,a_2,\ldots,a_n,b;\ c_1,c_2,\ldots,c_n,K\rangle$,
-\begin{description}[style=multiline,leftmargin=2em,labelwidth=1.5em]
-\item[$a_i$:] weights of $n$ items;
-\item[$b$:] total weight bound (capacity);
-\item[$c_i$:] profit/value of the $n$ items;
-\item[$K$:] lower bound on total profit ($K\in\mathbb N$).
-\end{description}
-\textbf{Q:} Is there a subset of items of total weight $\leq b$ and total profit $\geq K$?
+\begin{notesproblem}
+\text{\textbf{I:}} & \langle a_1,a_2,\ldots,a_n,b;\ c_1,c_2,\ldots,c_n,K\rangle\text{,}\\
+& a_i\text{: weights of }n\text{ items;}\\
+& b\text{: total weight bound (capacity); }\\
+& c_i\text{: profit/value of the }n\text{ items;}\\
+& K\text{: lower bound on total profit (}K\in\mathbb N\text{).}\\[4pt]
+\text{\textbf{Q:}} & \text{Is there a subset of items of total weight }\leq b\\
+& \text{and total profit }\geq K\text{?}
+\end{notesproblem}
 
 Prove that $\mathrm{KNAPSACK}\in\classNPH$.

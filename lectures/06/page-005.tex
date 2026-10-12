@@ -2,6 +2,7 @@
 \sourcepage{06}{5}
 Second problem:
 
+\begin{notesdefinition}
 \textbf{DEF:} Given $G=(V,E)$ undirected, an independent set of size $k$ is a subset of nodes $V'\subseteq V$, $|V'|=k$ such that there is no edge in $E$ with both endpoints in $V'$!
 \[
 \begin{gathered}
@@ -9,15 +10,18 @@ V'\subseteq V,\ |V'|=k:\ \forall u\neq v\in V:\\
 (u\in V')\land(v\in V')\Rightarrow\{u,v\}\notin E.
 \end{gathered}
 \]
+\end{notesdefinition}
+
 \textbf{EXAMPLE:}
 \sourcefigure[0.95]{assets/06/page-005-independent-set.png}
 We have:
 
 \textbf{INDEPENDENT SET (IS)}
 
-I: $\langle G=(V,E),k\rangle$, $G$ undirected graph, $1\leq k\leq|V|$.
-
-Q: Does $G$ contain an independent set of size $k$?
+\begin{notesproblem}
+\text{I:} & \langle G=(V,E),k\rangle\text{, }G\text{ undirected graph, }1\leq k\leq|V|\text{.}\\
+\text{Q:} & \text{Does }G\text{ contain an independent set of size }k\text{?}
+\end{notesproblem}
 
 The optimization version of this problem requires determining the independent set of max size.
 

@@ -6,8 +6,12 @@ poly-time approximation algorithm for MAX-CLIQUE, for any fixed $\varepsilon$ [A
 
 There are also ``easier hard'' problems which admit very ``precise'' approximation algorithms:
 
+\begin{notesdefinition}
 \textbf{DEF:} An approximation scheme for an optimization problem $\Pi$ is a two-input algorithm
 \[A_\Pi(i,\varepsilon):\quad i\in\mathcal I,\quad\varepsilon>0\]
 such that, for any fixed $\varepsilon$, $A_\Pi(i,\varepsilon)$ is a $\rho(n)=(1+\varepsilon)$-approximation algorithm for $\Pi$.
+\end{notesdefinition}
 
+\begin{notesdefinition}
 \textbf{DEF:} An Approximation Scheme is Polynomial-Time (PTAS) if, for any fixed $\varepsilon$, $A_\Pi(i,\varepsilon)$ runs in time polynomial in $n=|i|$.
+\end{notesdefinition}

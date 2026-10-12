@@ -2,6 +2,7 @@
 \sourcepage{03}{8}
 
 \subsection{Reductions and Order}
+\begin{notestheorem}
 \textbf{Theorem:}
 Given $L_1,L_2\subseteq\bits^*$:
 \[
@@ -9,6 +10,7 @@ Given $L_1,L_2\subseteq\bits^*$:
 \]
 
 If $L_1$ is reducible to $L_2$ and $L_2$ can be decided in poly-time, then $L_1$ can also be decided in poly-time
+\end{notestheorem}
 
 \textbf{Proof:} We have two hypotheses:
 
@@ -24,8 +26,13 @@ $L_2$ is in P, so there exists an algorithm $A_{L_2}$ which decides $L_2$ in pol
 
 We can unite these two hypothesis into the following algorithm:
 
+\begin{notesalgorithm}
 \textbf{$A_{L_1}(x)$}
-\begin{tabbing}\quad\=\kill\> $y\leftarrow A_f(x)$\\\> return $A_{L_2}(y)$\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{$y\leftarrow A_f(x)$}
+\pseudocodeline{0}{\textbf{return} $A_{L_2}(y)$}
+\end{notespseudocode}
+\end{notesalgorithm}
 
 So to solve instances of $L_1$, we first compute $y=f(x)$ and then we decide if $y\in L_2$. Since both f and $A_{L_2}$ are polynomial time computable, we can compute the running time of $A_{L_1}$:
 
@@ -42,4 +49,4 @@ Hence
 T_{A_{L_1}}(|x|)=O(|x|^{k_1}+|x|^{k_1k_2})=O(|x|^{k_3}),
 \quad \text{where } k_3=\max\{k_1, k_1k_2\}.
 \]
-Which is still polynomial in $|x|$. 
+Which is still polynomial in $|x|$.

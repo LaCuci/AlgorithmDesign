@@ -5,12 +5,10 @@
 The Search problem is a problem that asks whether a given element $m$ is contained in a given finite set $S\subseteq\mathbb N$.
 
 It can be formalized as a concrete decision problem $L_{\mathrm{SEARCH}}$. 
-\[
-\begin{aligned}
+\begin{notesproblem}
 \text{INSTANCE: }&\langle S,m\rangle:\ S\subseteq\mathbb N\text{ finite},\ m\in\mathbb N,\\
 \text{QUESTION: }&m\in S?
-\end{aligned}
-\]
+\end{notesproblem}
 
 We can write the relative formal language  $L_{\mathrm{SEARCH}}$ as follows: 
 \[
@@ -19,16 +17,17 @@ L_{\mathrm{SEARCH}}=\{x\in\bits^*:\ (x=\langle S,m\rangle)\land m\in S\}.
 Where x is a binary string, and x is in the language only if it is the encoding of a pair $\langle S,m\rangle$ where m is inside S. 
 
 We can solve the search problem with a simple algorithm $A_{\mathrm{SEARCH}}$ that first checks if the input is a valid encoding, and then iterates through the elements of S to check if m is present. If m is found, it returns 1 (yes), otherwise it returns 0 (no).
+\begin{notesalgorithm}
 \textbf{$A_{\mathrm{SEARCH}}(x)$}
-\begin{tabbing}
-\quad\=\quad\=\kill
-\> if $(x\neq\langle S,m\rangle)$ then return $0$\\
-\> $k\leftarrow|S|$\\
-\> $*\ S=\{s_1,\ldots,s_k\}\ *$\\
-\> for $i\leftarrow1$ to $k$ do\\
-\>\> if $(s_i=m)$ then return $1$\\
-\> return $0$
-\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{\textbf{if} $(x\neq\langle S,m\rangle)$ \textbf{then} \textbf{return} $0$}
+\pseudocodeline{0}{$k\leftarrow|S|$}
+\pseudocodeline{0}{$*\ S=\{s_1,\ldots,s_k\}\ *$}
+\pseudocodeline{0}{\textbf{for} $i\leftarrow1$ \textbf{to} $k$ \textbf{do}}
+\pseudocodeline{1}{\textbf{if} $(s_i=m)$ \textbf{then} \textbf{return} $1$}
+\pseudocodeline{0}{\textbf{return} $0$}
+\end{notespseudocode}
+\end{notesalgorithm}
 
 Since we expect x to be a concise encoding, we can assume that the size of the set S is $|S|=O(|x|)$. Therefore, the algorithm runs in linear time with respect to the size of the input string x:
 \[

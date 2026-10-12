@@ -2,7 +2,9 @@
 \sourcepage{03}{2}
 
 \section{Theorem and proof: P is a subset of NP} 
+\begin{notestheorem}
 $\classP\subseteq\classNP$ ($L\in\classP\Rightarrow L\in\classNP$).
+\end{notestheorem}
 
 \textbf{Proof:} Let $L\in\classP$. We'll prove $L\in\classNP$ by constructing a poly-time verifier:
 Recall that $L\in\classP$ implies that $\exists A_L$ which decides $L$ in time $T_{A_L}(|x|)=O(|x|^k)$.
@@ -10,8 +12,14 @@ Recall that $L\in\classP$ implies that $\exists A_L$ which decides $L$ in time $
 We can build a 2 input verifier $V_L(x,y)$ uses the algorithm $A_L$ as a subroutine:
 
 
-\begin{tabbing}\quad\=\kill\>$V_L(x,y)   $\end{tabbing}
-\begin{tabbing}\quad\=\kill\> return $A_L(x)$\end{tabbing}
+\begin{notesalgorithm}
+$V_L(x,y)   $
+\begin{notespseudocode}
+
+
+\pseudocodeline{0}{\textbf{return} $A_L(x)$}
+\end{notespseudocode}
+\end{notesalgorithm}
 
 
 The verifier disregards $y$ and calls $A_L(x)$.

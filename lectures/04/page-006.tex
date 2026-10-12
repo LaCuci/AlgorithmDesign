@@ -8,18 +8,18 @@ Configuration: $(1,1,0,0,0,0,1,1,1,0,1,1,1)=\gamma_C$ (in some prespecified orde
 
 \section{Boolean Circuit Satisfiability Problem BC-SAT}
 The boolean circuit satisfiability problem is a decision problem where the input is a boolean function associated to a circuit and the question is wether or not a truth assignment that satisfies the circuit exists. 
-\[
-\begin{aligned}
+\begin{notesproblem}
 \text{I: }&\langle C(x_1,\ldots,x_n)\rangle=\langle(I\cup G\cup O,W)\rangle,\quad\text{boolean circuit},\\
 \text{Q: }&C\text{ is satisfiable?}\quad\exists\vec b\in\bits^n:\ C(\vec b)=1?
-\end{aligned}
-\]
+\end{notesproblem}
 
 BC-SAT is an important problem in practice (It is used to do circuit testing, circuit equivalence \ldots).
 
 \subsection{BC-SAT is a NP problem }
 
+\begin{notestheorem}
 \textbf{THEOREM:} $\mathrm{BC\text{-}SAT}\in\classNP$.
+\end{notestheorem}
 
 Proof steps:
 \begin{itemize}

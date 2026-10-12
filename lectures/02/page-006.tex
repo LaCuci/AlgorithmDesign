@@ -19,10 +19,11 @@ $T(n)$ uses encoding length as the independent variable $n$.
 
 Consider this algorithm:
 
+\begin{notesalgorithm}
 \textbf{GAUSS$(m)$}
-\begin{tabbing}
-\quad\=\kill
-\> $\mathrm{sum}\leftarrow0$\\
-\> for $i\leftarrow1$ to $m$ do $\mathrm{sum}\leftarrow\mathrm{sum}+i$\\
-\> return sum
-\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{$\mathrm{sum}\leftarrow0$}
+\pseudocodeline{0}{\textbf{for} $i\leftarrow1$ \textbf{to} $m$ \textbf{do} $\mathrm{sum}\leftarrow\mathrm{sum}+i$}
+\pseudocodeline{0}{\textbf{return} sum}
+\end{notespseudocode}
+\end{notesalgorithm}

@@ -1,10 +1,14 @@
 % Source: 09 - Wed Oct 15 2025.pdf, page 11. Content remains in source order.
 \sourcepage{09}{11}
+\begin{notesresult}
 \textbf{FACT:} If a graph $G=(V,E)$ contains a matching $A\subseteq E$, then for any vertex-cover $V'\subseteq V$ we have $|V'|\geq|A|$.
+\end{notesresult}
 
 \textbf{PROOF:} There must be at least one endpoint of each edge $e$ in $A$ in $V'$, or otherwise $e$ would not be covered.
 \sourcefigure[0.75]{assets/09/page-011-matching-cover.png}
+\begin{notesresult}
 \textbf{COROLLARY:} $|V^*|\geq|A|$.
+\end{notesresult}
 
 Algorithm A-V-C $(G)$ returns a vertex cover $V'$, with $|V'|=2|A|$.
 

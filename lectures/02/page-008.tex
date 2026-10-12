@@ -6,8 +6,12 @@ It's bad! For $m=2^{32}$ GAUSS executes $m\simeq4$ billion sums.
 
 while
 
+\begin{notesalgorithm}
 \textbf{GAUSS2$(m)$}
-\begin{tabbing}\quad\=\kill\> return $m\cdot(m+1)/2$\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{\textbf{return} $m\cdot(m+1)/2$}
+\end{notespseudocode}
+\end{notesalgorithm}
 executes 3 operations between numbers of size $\leq64$.
 
 \textbf{MORALE:} The linear complexity under the unary encoding is MISLEADING. The fact that GAUSS is bad is masked by the sheer length of the unary encoding.

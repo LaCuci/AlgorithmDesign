@@ -1,9 +1,13 @@
 % Source: 09 - Wed Oct 15 2025.pdf, page 9. Content remains in source order.
 \sourcepage{09}{9}
 \sourceheading{A TWO-APPROXIMATION ALGORITHM FOR (MINIMUM) VERTEX COVER}
-Optimization version: given $G=(V,E)$ undirected, determine its vertex cover $V^*\subseteq V$
-\[(\forall\{u,v\}\in E:(u\in V^*)\lor(v\in V^*))\]
-of minimum size.
+Optimization version:
+\begin{notesproblem}
+& \text{given }G=(V,E)\text{ undirected,}\\
+& \text{determine its vertex cover }V^*\subseteq V\\
+& (\forall\{u,v\}\in E:(u\in V^*)\lor(v\in V^*))\\
+& \text{of minimum size.}
+\end{notesproblem}
 
 We will prove that a simple greedy approach yields a good quality solution.
 
@@ -13,14 +17,15 @@ We will prove that a simple greedy approach yields a good quality solution.
 \item \textbf{CLEAN-UP:} remove all covered edges from $E$:
 $E'=E-\{e\in E:\{u,v\}\cap e\ne\varnothing\}$.
 \end{enumerate}
+\begin{notesalgorithm}
 \textbf{APPROX-VERTEX-COVER ($G=(V,E)$)}
-\begin{tabbing}
-\qquad\=\qquad\=\kill
-$V'\gets\varnothing$\\
-$E'\gets E$\\
-\textbf{while} $(E'\ne\varnothing)$ \textbf{do}\\
-\> * select $\{u,v\}\in E'$ arbitrary * GC\\
-\> $V'\gets V'\cup\{u\}\cup\{v\}$\\
-\> $E'\gets E'-\{e\in E':\{u,v\}\cap e\ne\varnothing\}$ * C.U.\\
-\textbf{return} $V'$
-\end{tabbing}
+\begin{notespseudocode}
+\pseudocodeline{0}{$V'\gets\varnothing$}
+\pseudocodeline{0}{$E'\gets E$}
+\pseudocodeline{0}{\textbf{while} $(E'\ne\varnothing)$ \textbf{do}}
+\pseudocodeline{1}{* select $\{u,v\}\in E'$ arbitrary * GC}
+\pseudocodeline{1}{$V'\gets V'\cup\{u\}\cup\{v\}$}
+\pseudocodeline{1}{$E'\gets E'-\{e\in E':\{u,v\}\cap e\ne\varnothing\}$ * C.U.}
+\pseudocodeline{0}{\textbf{return} $V'$}
+\end{notespseudocode}
+\end{notesalgorithm}

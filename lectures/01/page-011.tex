@@ -1,6 +1,7 @@
 % Source: 01 - Mon  Sep 28 2026.pdf, page 11. Content remains in source order.
 \sourcepage{01}{11}
 \section{Optimization Problem}
+\begin{notesdefinition}
 \[
 \Pi_{\mathrm{opt}}\subseteq\mathcal I\times\mathcal S,\qquad
 c:\mathcal S\longrightarrow\mathbb N\cup\{+\infty\}.
@@ -9,24 +10,18 @@ $\forall i\in\mathcal I$: determine $s^*\in\mathcal S(i)=\{s:i\mathrel\Pi s\}$ (
 \[
 c(s^*)=\mathop{\mathrm{min/max}}\{c(s):s\in\mathcal S(i)\}.
 \]
-
+\end{notesdefinition}
 
 \subsection{Example : Shortest Unweighted Path Problem (SUP)}
-\[
-\mathcal I=\{\langle G=(V,E),u,z\rangle:\ V\subseteq\mathbb N\text{, finite},\ E\subseteq V\times V,\ u,z\in V\}.
-\]
-$\mathcal S=\mathbb N^*$ (sequences of naturals: paths).
-\begin{itemize}
-\item $i\mathrel\Pi s$ if
-\[
-(s=\langle v_1,v_2,\ldots,v_k\rangle,\ v_i\in V)\ \land\ (v_1=u,\ v_k=z)
-\ \land\ (v_i,v_{i+1})\in E,\quad1\leq i<k,
-\]
-where $i=\langle G=(V,E),u,z\rangle$.
-\item $i\mathrel\Pi\eps$ if $\nexists$ path from $u$ to $z$ in $G$.
-\end{itemize}
-\[
-c(\langle v_1,\ldots,v_k\rangle)=k-1,\quad k\geq1;\qquad c(\eps)=+\infty.
-\]
+\begin{notesproblem}
+& \mathcal I=\{\langle G=(V,E),u,z\rangle:\ V\subseteq\mathbb N\text{, finite},\\
+& \qquad E\subseteq V\times V,\ u,z\in V\}.\\
+& \mathcal S=\mathbb N^*\text{ (sequences of naturals: paths).}\\
+& i\mathrel\Pi s\text{ if}\\
+& (s=\langle v_1,v_2,\ldots,v_k\rangle,\ v_i\in V)\ \land\ (v_1=u,\ v_k=z)\\
+& \qquad \ \land\ (v_i,v_{i+1})\in E,\quad1\leq i<k,\\
+& \text{where }i=\langle G=(V,E),u,z\rangle\text{.}\\
+& i\mathrel\Pi\eps\text{ if }\nexists\text{ path from }u\text{ to }z\text{ in }G\text{.}\\
+& c(\langle v_1,\ldots,v_k\rangle)=k-1,\quad k\geq1;\qquad c(\eps)=+\infty.
+\end{notesproblem}
 This is a minimization problem.
-
