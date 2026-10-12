@@ -1,6 +1,17 @@
 % Source: 05 - Tue Oct 6 2026.pdf, page 2. Content remains in source order.
 \sourcepage{05}{2}
-For each gate $g\in G$ we introduce a sub-formula $\Gamma_g$ describing the input-output relation of the gate:
+\subsubsection{Step 2 : Build the formula with the clauses}
+Clauses are subformulas that describe the behavior (input\-output relation) of every gate. 
+
+To describe the relation we use the equality operator because it is used for the logical description of the behvior of a variable with respect to a combination of other variables.
+
+The combination of the variables is in accordance with the logic of the gate. They can be output wires from other gates or input variables. Some, but noth both, may not be present.  
+
+A Clause is true under a truth assignment if and only if the variable associated to the output of the gate obeys the logical function associated to the gate. 
+
+The subexpression $\Gamma_g$ is true under a truth assignment iff $y_g$ is assigned the correct output value with respect to the values assigned to the gate's inputs.
+
+For each gate $g\in G$ we introduce a specific sub-formula $\Gamma_g$:
 \begin{itemize}
 \item AND gate:
 \sourcefigure[0.3]{assets/05/page-002-and-gate.png}
@@ -16,11 +27,11 @@ For each gate $g\in G$ we introduce a sub-formula $\Gamma_g$ describing the inpu
 \sourcefigure[0.3]{assets/05/page-002-not-gate.png}
 \[\Gamma_g:\ y_g\leftrightarrow\neg(z_{g_1}).\]
 \end{itemize}
-Observe that subexpression $\Gamma_g$ is true under a truth assignment iff $y_g$ is assigned the correct output value w.r.t. the values assigned to the gate's inputs.
 
 We can then obtain the formula
 \[\psi(\vec x,\vec y)=\bigwedge_{g\in G}\Gamma_g.\]
-Formula $\psi$ describes a configuration of the circuit $C$:
+
+Formula $\psi$ describes a correct configuration under b1 and b2 $C$ \textbf{if and only if}  all the clauses that the circuit is made of  are true at the same time \textbf{if and only if} the relative circuit under the truth assignment b1 and with gate outputs b2 the output values at the various gates match ecactly b2 
 \[
 \begin{aligned}
 \psi(\vec b_1,\vec b_2)=1

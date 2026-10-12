@@ -1,6 +1,6 @@
 % Source: 05 - Tue Oct 6 2026.pdf, page 1. Content remains in source order.
 \sourcepage{05}{1}
-\sourceheading{RECAP}
+\section{Recap lesson 4}
 \begin{itemize}
 \item COOK'S THEOREM: $\mathrm{BCSAT}\in\classNPH$.
 \begin{itemize}\item ``simulate'' $V_L(x,y)$ with $C_{V_L,x}(y)$.\end{itemize}
@@ -8,12 +8,20 @@ A certificate $y_x$ for $x\in L$ becomes a satisfying assignment for $f(x):\lang
 \item FORMULA SATISFIABILITY (SAT): $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.
 \begin{itemize}\item Trivial reduction based on subexpressions not ptc (poly-time computable).\end{itemize}
 \end{itemize}
+
+\section{Proof that Formula Satisfiability problem is NP Complete}
+\subsection{Step 1 : proove that Formula Satisfiability is in NP}
+Already done in the previous lesson
+\subsection{Step 2 : Create a reduction of a problem in NPC to this problem}
 We need a more sophisticated approach!
+We will take an approach based on simulation : we have a boolean circuit that can be represented by a graph, we create subformulas that represent the behavior of each gate in the circuit, and create a formula by doing subjunction of the subformulas that make up the graph. 
+A satisfiable formula reflects a satisfiable configuration of the circuit. 
+
+\subsubsection{Step 1 : Add new variables $y_g:\ g\in G$.}
 \[
 C=(\underbrace{I}_{x_i}\cup\underbrace{G}_{y_g\ \forall g\in G}\cup\underbrace{\{o\}}_{y_0},W).
 \]
-New variables $y_g:\ g\in G$.
-
 We add extra variables $y_g$ associated to the gates, describing the output of each gate $g\in G$ and create a formula that reflects valid configurations of the circuit.
+We need a new set of variables per gate : a set of input variables, a set of output variables (one for each gate for which the output is an input) and one for the gate itself.  
 
 \textbf{RECALL:} A configuration is the set of all bits on the wires under a valid switching of the circuit: $(\underbrace{\vec b_1}_{\vec x},\underbrace{\vec b_2}_{\vec y\text{ (gate outputs)}})$.

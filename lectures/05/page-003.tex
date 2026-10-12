@@ -1,10 +1,19 @@
 % Source: 05 - Tue Oct 6 2026.pdf, page 3. Content remains in source order.
 \sourcepage{05}{3}
-\textbf{OBSERVATION:} $\psi(\vec x,\vec y)$ is always satisfiable (HOMEWORK: how many satisfying assignments?)
+\section{Step 3 : Proove that the reduction is done in linear time}
+\textbf{OBSERVATION:} $\psi(\vec x,\vec y)$ is always satisfiable
+
+\textbf{HOMEWORK:} how many satisfying assignments? 2 to the x because for each truth assignment there is just one b2 configuration that is correct.
+
+Can this reduction be done in linear time? It depends on how many symbols there can be on a clause associated to any gate. 
+
+Each subexpression uses a number of symbols proportional to the number of wires associated to the corresponding gate. Therefore, the conjunction of all clauses is a formula whose size is proportional to the number of wires in the circuit, so its size is linear in the size of the circuit. 
+Therefore, the formula is polynomial time computable. 
+
+\textbf{Non chiaro}
 
 We have that
 \[|\langle\psi(\vec x,\vec y)\rangle|=\Theta(|\langle C(\vec x)\rangle|)\]
-since each subexpression uses a number of symbols linear in the size of the corresponding gate!
 
 The reduction function $f$ uses $\psi$ as follows:
 \[

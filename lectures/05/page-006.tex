@@ -1,6 +1,15 @@
 % Source: 05 - Tue Oct 6 2026.pdf, page 6. Content remains in source order.
 \sourcepage{05}{6}
+\section{Reductions by restriction}
+
+These reductions are used to prove that an NPC problem stays NPC even if we restrict the set of admissible instances.
+We will find the smallest subset of instances of a NPC problem for which the problem remains in NPC. 
+
+\subsection{Restriction on Formula satisfiability}
+\begin{notesdefinition}
+\textbf{DEF} Given a set of boolean variables $\{x_1,x_2,\ldots,x_n\}$:
 \begin{itemize}
+\item A literal is either a variable $x_i$ or its negation $\neg x_j$ ($\bar x_j$). We will use $y$ to denote a literal.
 \item A clause is a disjunction of 3 distinct literals, e.g. $C_i=x_1\lor\bar x_3\lor x_5$.
 \item A 3-CNF formula $\phi(x_1,\ldots,x_n)$ is a conjunction of clauses built on the $n$ variables.
 \end{itemize}
@@ -8,20 +17,23 @@ E.g. $\phi(x_1,x_2,x_3,x_4)=(x_1\lor\bar x_2\lor x_3)\land(\bar x_1\lor x_2\lor\
 
 \end{notesdefinition}
 
-\textbf{3-CNF-SAT:}
+\subsection{3-Conjunctive Normal Form -SAT}
+We are restricting the set of legal inputs of Formula Satisfiability to 3 CNF.
 
 \begin{notesproblem}
 \text{I:} & \langle\phi(x_1,x_2,\ldots,x_n)=\bigwedge_{i=1}^m C_i\rangle\text{, }\phi\text{ 3-CNF formula.}\\
 \text{Q:} & \text{Is }\phi(\vec x)\text{ satisfiable?}
 \end{notesproblem}
 
-We will prove that $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPC$.
+\section{3-CNF-SAT is in NPC}
 
-Meaning: Even restricting the shape of the formula to a very simple one, the problem stays difficult!
+We will prove that $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPC$ : Even restricting the shape of the formula to a very simple one, the problem stays difficult.
 
+\subsection{Step 1 : Proove that 3-CNF-SAT is in NP }
+\textbf{Homework : }
 $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNP$ (trivial, exercise).
 
+\subsection{Step 2 : Proove that 3-CNF-SAT is in NPH }
 $\mathrm{3\text{-}CNF\text{-}SAT}\in\classNPH$:
 
-We reduce again from BC-SAT, using a similar idea to $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.
-\begin{itemize}\item PREPROCESSING STEP: we modify $C$ to get an equivalent one:\end{itemize}
+We reduce from BC-SAT, using a similar idea to $\mathrm{BC\text{-}SAT}\polyred\mathrm{SAT}$.

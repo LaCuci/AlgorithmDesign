@@ -1,9 +1,9 @@
 % Source: 05 - Tue Oct 6 2026.pdf, page 7. Content remains in source order.
 \sourcepage{05}{7}
+\begin{itemize}\item PREPROCESSING STEP: we modify $C$ to get an equivalent one:
 Replace each AND or OR gate with fan-in $\geq3$ with a cascade of gates with fan-in 2, e.g.,
 \sourcefigure[0.9]{assets/05/page-007-gate-cascade.png}
 The resulting circuit $C'$ is equivalent to $C$. Moreover $|\langle C'\rangle|=\Theta(|\langle C\rangle|)$ ($\#\text{ new gates}\leq\#\text{ wires of }C$).
-\begin{itemize}
 \item Next, we write the formula $\psi(\vec x,\vec y)\land y_0$ as done for formula satisfiability.
 We have four types of subexpressions $\Gamma$:
 \[
