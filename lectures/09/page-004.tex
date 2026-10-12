@@ -1,0 +1,16 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 4. Content remains in source order.
+\sourcepage{09}{4}
+\textbf{DEF:} Let $A_\Pi$ be an algorithm such that $\forall i\in\mathcal I:A_\Pi(i)\in\mathcal S(i)$. We say that $A_\Pi$ is a $\rho(n)$-approximation algorithm for $\Pi$ if $\forall i\in\mathcal I$, $|i|=n$:
+\[\max\left\{\frac{C(s^*(i))}{C(A_\Pi(i))},\frac{C(A_\Pi(i))}{C(s^*(i))}\right\}
+\leq\underbrace{\rho(n)}_{\text{approximation ratio}}.\]
+\textbf{OBSERVATION 1:} The above max is always $\geq1$:
+$\Rightarrow\rho(n)\geq1$, $\forall n$. Better approximation achieved for $\rho(n)$ closer to 1. ($\forall n:\rho(n)=1$: EXACT ALGORITHM).
+
+\textbf{OBSERVATION 2:} For maximization problems the above max is always the first term, and for minimization problems the second. Equivalently:
+\[
+\begin{array}{ll}
+C(A_\Pi(i))\geq\dfrac{C(s^*(i))}{\rho(n)}&\text{MAX. PROBLEMS (factor $\rho(n)$)},\\[8pt]
+C(A_\Pi(i))\leq C(s^*(i))\cdot\rho(n)&\text{MIN. PROBLEMS (factor $\rho(n)$)}.
+\end{array}
+\]
+An approximation algorithm finds feasible solutions of controlled quality. Also, it provides bounds on the optimal solution.

@@ -1,6 +1,6 @@
 # Advanced Algorithm Design lecture notes
 
-Editable, source-only transcription of the six PDFs in `pdf-prof`, in numerical filename order. All 95 source pages are accounted for: **15, 19, 13, 15, 12, 21**. The document uses continuous 11-point A4 typesetting, source headings without added numbering, filename bookmarks and no added front matter or printed contents page. Original language, repetitions and apparent errors are retained.
+Editable transcription of ten source PDFs, in numerical filename order. All 139 source pages are accounted for: **15, 19, 13, 15, 12, 21, 6, 10, 15, 13**. The document uses continuous 11-point A4 typesetting, the existing lecture headings and filename bookmarks, plus an added title page and linked table of contents. The contents use Roman page numbers; lecture notes start at Arabic page 1. Original language, repetitions and apparent errors are retained.
 
 ## Build
 
@@ -8,10 +8,10 @@ From the project root, with a LaTeX installation containing `latexmk` and pdfLaT
 
 ```sh
 latexmk -pdf -outdir=build main.tex
-python3 scripts/validate_sources.py --require-sources
+python3 scripts/validate_sources.py
 ```
 
-The compiled notes are **`build/main.pdf`**. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
+The compiled notes are **`build/main.pdf`**. A convenience copy is also available as `main.pdf`; refresh it after rebuilding with `cp build/main.pdf main.pdf`. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
 
 The original `pdf-prof/` ignore rule is retained. Build products and temporary extraction/review files are also ignored. The compiled PDF remains available locally under `build`.
 
@@ -20,10 +20,11 @@ The original `pdf-prof/` ignore rule is retained. Build products and temporary e
 ```text
 main.tex                    explicit ordered lecture inclusions
 tex/preamble.tex            reusable layout and source macros
+tex/frontmatter.tex         title page and linked table of contents
 lectures/01/lecture.tex     filename bookmark and ordered page inclusions
 lectures/01/page-001.tex    editable content from one source page
-lectures/02/ … 06/          same structure for each lecture
-assets/02/ … 06/           stored source-derived diagram/fragment crops
+lectures/02/ … 09/          same structure, including separate 07a/ and 07b/
+assets/02/ … 09/           stored source-derived diagram/fragment crops
 sources.json               ordered inclusion and review record
 review-notes.md             retained handwriting and contentless-page notes
 scripts/                   integrity, expansion and inspection helpers
@@ -37,12 +38,12 @@ Each page file contains an exact source-filename comment and a `source:<lecture 
 
 ## Add another PDF
 
-1. Put the PDF in `pdf-prof`, using a unique numerical filename prefix (for example `07 - … .pdf`). Confirm its page count visually, including pages without extractable text.
+1. Put the PDF in `pdf-prof`, using a unique numerical filename prefix, for example `10 - … .pdf`. An optional letter suffix is supported, such as `07a` and `07b`. Confirm its page count visually, including pages without extractable text.
 2. Scaffold the lecture and tracking records:
 
    ```sh
    python3 scripts/add_source.py '07 - Additional lecture.pdf' --pages 10
-   python3 scripts/validate_sources.py --require-sources --skip-build
+   python3 scripts/validate_sources.py --skip-build
    ```
 
    This creates one page file per source page, an ordered lecture wrapper, an ordered `main.tex` inclusion and a checksum entry. Every new page stays **pending**. Existing content is not overwritten. The previous build record becomes stale until recompilation.
@@ -53,17 +54,17 @@ Each page file contains an exact source-filename comment and a `source:<lecture 
    ```sh
    latexmk -pdf -outdir=build main.tex
    python3 scripts/record_build.py
-   python3 scripts/validate_sources.py --require-sources
+   python3 scripts/validate_sources.py
    python3 -m unittest discover -s tests
    ```
 
-   `record_build.py` preserves manually assigned page states; it marks a source complete only when all its pages are visually verified and a current successful build exists. It stores the compiled PDF checksum and a digest of all LaTeX inputs and assets. After changing content or crops, review the affected pages, rebuild and refresh this record.
+   `record_build.py` preserves manually assigned page states; it marks a source complete only when all its pages are visually verified and a current successful build exists. Originals that are present are checksum-checked; absent originals are reported explicitly. Add `--require-sources` to both build recording and validation to require every original PDF. It stores the compiled PDF checksum and a digest of all LaTeX inputs and assets. After changing content or crops, review the affected pages, rebuild and refresh this record.
 
 The validator checks source order, duplicate PDFs/IDs/paths/pages, complete page coverage, source labels, inclusion order, stored assets and original checksums. Unrecorded PDFs are reported as **pending** with a nonzero exit status; the validator does not silently insert them. Use `--json` for machine-readable output. Without `--require-sources`, missing originals are reported as skipped checksum checks, allowing validation of a distributed, self-contained LaTeX project. Successful build evidence is checked against current inputs; when the compiled PDF is present, its checksum is checked too. Direct page-object counts are checked for the supplied PDFs; PDFs using compressed object streams need separate visual or PDF-tool page counting.
 
 ## Optional inspection tools
 
-On macOS, these helpers use PDFKit and AppKit. They are inspection aids, not build requirements:
+On macOS, these helpers use PDFKit and AppKit. On Linux, `pdfinfo`, `pdftotext -layout` and `pdftoppm -png` (Poppler) can be used to count, extract and render PDFs for review. They are inspection aids, not build requirements:
 
 ```sh
 swift scripts/extract.swift
@@ -79,3 +80,11 @@ python3 scripts/crop.py 07 1 example 0.1,0.2,0.9,0.5
 ```
 
 Use `--kind unreadable --note '…'` for a retained fragment. The helper writes a stored asset and temporary provenance to `build/extraction/crops.json`; copy the relevant record into the matching page in `sources.json`. Optional `--exclude` rectangles remove adjacent lettering already transcribed elsewhere, while preserving diagram geometry and labels. Do not omit source information. Inspect each saved crop and its rendered size.
+
+## Latest conversion
+
+Added the four supplied sources in order: `07a` (6 pages), `07b` (10), `08` (15), and `09` (13). The repeated subset-sum proof, unsolved exercise prompts, approximation definitions, vertex-cover algorithm and graph examples are retained. Thirteen ruled answer-space pages are tracked without inserting empty output pages. The original filename dates are retained exactly, including the 2025 dates.
+
+Only the four new originals are currently present in `pdf-prof`; the earlier six lectures remain self-contained in LaTeX and assets. Validation checks all available originals and reports the missing ones. One ambiguous handwritten asymptotic symbol in lecture 09 is retained as an inline crop; see `review-notes.md`.
+
+The front matter is editorial material requested for this document. Contents entries group the notes by lecture and include the existing section/subsection headings; exercise prompts use descriptive navigation labels while their printed headings stay as in the source.

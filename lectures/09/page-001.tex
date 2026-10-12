@@ -1,0 +1,15 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 1. Content remains in source order.
+\sourcepage{09}{1}
+\sourceheading{APPROXIMATION ALGORITHMS}
+\begin{itemize}
+\item NPC decision problems often correspond to hard optimization problems of huge practical impact: we cannot give up on them!
+\end{itemize}
+Different approaches:
+
+\textbf{1. Non-polynomial algorithms:} sometimes suitable for ``small'' instances. Interesting sub-category: pseudopolynomial algorithms: complexity polynomial in the values (and NOT the size of their encoding).
+
+\textbf{EXAMPLE:} Using dynamic programming we can obtain an algorithm for SS with running time $O(|S|\cdot t)$ (homework! $|S|\times t$ boolean table $A$:
+\[A(i,j)=1\Longleftrightarrow\exists S'\subseteq\{s_1,\ldots,s_i\}:\sum_{s\in S'}s=j,\]
+$1\leq i\leq|S|$, $0\leq j\leq t$. Solution in $A[|S|,t]$. Work out recurrence).
+
+$|S|\cdot t$ is polynomial in the value $t$ but NOT in the length of its encoding $O(\log t)$.

@@ -1,0 +1,15 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 7. Content remains in source order.
+\sourcepage{09}{7}
+Observe that under the above definition, running times such as
+\[O(n^{1/\varepsilon})\]
+are polynomial in $n$ (for fixed $\varepsilon$).
+
+This is not completely satisfactory: e.g. if I want to reduce the ``error'' $\varepsilon$ by a factor $k$:
+\[O(n^{1/\varepsilon})\rightsquigarrow O(n^{1/(\varepsilon/k)})=O(n^{k/\varepsilon})!\]
+Time exponential in the improvement.
+
+It would be desirable that a constant-factor improvement in quality yields a constant-factor increase in running time:
+
+\textbf{DEF:} An Approximation Scheme is Fully-Polynomial-Time (FPTAS) if the running time of $A_\Pi(i,\varepsilon)$ is polynomial both in $n=|i|$ and $\dfrac1\varepsilon$.
+
+E.g. $T_{A_\Pi}(n,\varepsilon)=O\left(\dfrac1{\varepsilon^2}n^3\right)$.

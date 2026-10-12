@@ -1,0 +1,12 @@
+% Source: 07a - Mon Oct 12 2026.pdf, page 1. Content remains in source order.
+\sourcepage{07a}{1}
+\sourceheading[3-CNF-SAT to SUBSET SUM (SS)]{3-CNF-SAT $\polyred$ SUBSET SUM (SS)}
+\[\bigl(\langle S,t\rangle;\ \exists S'\subseteq S:\sum_{s\in S'}s=t\ ?\bigr)\]
+\[
+\langle\phi(x_1,\ldots,x_n)=C_1\land\cdots\land C_m\rangle
+\xrightarrow{f}\langle S_\phi,t_\phi\rangle
+\]
+\[S_\phi=\{\delta_i,\delta'_i:1\leq i\leq n;\ s_j,s'_j:1\leq j\leq m\}.\]
+$2n+2m$ numbers (REPRESENTED IN BASE 10).
+\sourcefigure[0.9]{assets/07a/page-001-digit-construction.png}
+\textbf{Crucial property:} In each position, the sum of the digits of all numbers in $S_\phi$ is $\leq6$. NO CARRIES!

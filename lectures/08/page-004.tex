@@ -1,0 +1,14 @@
+% Source: 08 - Tue Oct 14 2025 - Exercise session (no solutions).pdf, page 4. Content remains in source order.
+\sourcepage{08}{4}
+\sourceheading[Exercise: Dominating sets]{EXERCISE}
+\textbf{DEF:} Given an undirected graph $G=(V,E)$, a \textbf{dominating set} $V'\subseteq V$ is such that
+\[\forall v\in V':(v\in V')\lor(\exists\{u,v\}\in E:u\in V').\]
+In other words, a node is either in the dominating set or adjacent to a node in the dominating set.
+
+\textbf{EXAMPLE:}
+\sourcefigure[0.72]{assets/08/page-004-dominating-set.png}
+Observe that a dominating set is not a vertex-cover.
+
+\textbf{VICEVERSA:} In a graph with no isolated nodes, a vertex cover is also a dominating set:
+\sourcefigure[0.64]{assets/08/page-004-vertex-cover-endpoints.png}
+(each vertex is the endpoint of an edge: either it is in the vertex cover or the other endpoint must be for the edge to be covered).

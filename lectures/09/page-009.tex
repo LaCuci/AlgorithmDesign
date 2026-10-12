@@ -1,0 +1,26 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 9. Content remains in source order.
+\sourcepage{09}{9}
+\sourceheading{A TWO-APPROXIMATION ALGORITHM FOR (MINIMUM) VERTEX COVER}
+Optimization version: given $G=(V,E)$ undirected, determine its vertex cover $V^*\subseteq V$
+\[(\forall\{u,v\}\in E:(u\in V^*)\lor(v\in V^*))\]
+of minimum size.
+
+We will prove that a simple greedy approach yields a good quality solution.
+
+\textbf{IDEA:}
+\begin{enumerate}
+\item \textbf{GREEDY CHOICE:} consider an arbitrary edge $\{u,v\}$ and ADD BOTH $u$ and $v$ to the vertex cover. (OBS: NOT INTUITIVE!)
+\item \textbf{CLEAN-UP:} remove all covered edges from $E$:
+$E'=E-\{e\in E:\{u,v\}\cap e\ne\varnothing\}$.
+\end{enumerate}
+\textbf{APPROX-VERTEX-COVER ($G=(V,E)$)}
+\begin{tabbing}
+\qquad\=\qquad\=\kill
+$V'\gets\varnothing$\\
+$E'\gets E$\\
+\textbf{while} $(E'\ne\varnothing)$ \textbf{do}\\
+\> * select $\{u,v\}\in E'$ arbitrary * GC\\
+\> $V'\gets V'\cup\{u\}\cup\{v\}$\\
+\> $E'\gets E'-\{e\in E':\{u,v\}\cap e\ne\varnothing\}$ * C.U.\\
+\textbf{return} $V'$
+\end{tabbing}

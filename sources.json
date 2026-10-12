@@ -1320,16 +1320,620 @@
           ]
         }
       ]
+    },
+    {
+      "id": "07a",
+      "filename": "07a - Mon Oct 12 2026.pdf",
+      "sha256": "1104b0d915d461d484c8b965d7c83d39fe4b8764fa8816985fa935ee193dc444",
+      "page_count": 6,
+      "lecture_file": "lectures/07a/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/07a/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "07a",
+              "page": 1,
+              "path": "assets/07a/page-001-digit-construction.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.025,
+                0.309,
+                0.947,
+                0.825
+              ],
+              "excluded_adjacent_regions": [
+                "0.025,0.309,0.3,0.341",
+                "0.44,0.309,0.947,0.325",
+                "0,0.309,1,0.318",
+                "0.44,0.309,0.60,0.338"
+              ],
+              "note": "Digit-position construction, all indices and relationship arrows retained. Adjacent lettering already transcribed separately is excluded.",
+              "excluded_adjacent_ink": {
+                "normalized_box": [
+                  0.3,
+                  0.309,
+                  0.6,
+                  0.345
+                ],
+                "rgb_condition": "B > 120 and R < 130 and G < 130",
+                "note": "Only blue ink from adjacent prose removed in this region; diagram ink and labels preserved."
+              }
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/07a/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/07a/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/07a/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/07a/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 4
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/07a/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 5
+        }
+      ]
+    },
+    {
+      "id": "07b",
+      "filename": "07b - Mon Oct 12 2026 - Exercise session (no solutions).pdf",
+      "sha256": "34e75f54e5e6e0d57526ccaf77e07d66b820cbcf4542bead4309d6906467e89e",
+      "page_count": 10,
+      "lecture_file": "lectures/07b/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/07b/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/07b/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/07b/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/07b/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/07b/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/07b/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/07b/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/07b/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/07b/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/07b/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "filename": "08 - Tue Oct 14 2025 - Exercise session (no solutions).pdf",
+      "sha256": "277a2f51ec34f31adba03a073e9fa8ced1c592339fd0ef35d4280fc07645c02f",
+      "page_count": 15,
+      "lecture_file": "lectures/08/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/08/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "08",
+              "page": 1,
+              "path": "assets/08/page-001-p-np-co-np.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.14,
+                0.218,
+                0.835,
+                0.321
+              ],
+              "excluded_adjacent_regions": [],
+              "note": "Class diagram and labels."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/08/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/08/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/08/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "08",
+              "page": 4,
+              "path": "assets/08/page-004-dominating-set.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.18,
+                0.392,
+                0.96,
+                0.521
+              ],
+              "excluded_adjacent_regions": [
+                "0.18,0.392,0.29,0.427"
+              ],
+              "note": "Triangle, highlighted dominating vertex and annotation. Adjacent lettering already transcribed separately is excluded."
+            },
+            {
+              "lecture": "08",
+              "page": 4,
+              "path": "assets/08/page-004-vertex-cover-endpoints.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.245,
+                0.748,
+                0.938,
+                0.837
+              ],
+              "excluded_adjacent_regions": [
+                "0.31,0.822,0.938,0.837",
+                "0.29,0.821,0.31,0.837"
+              ],
+              "note": "Endpoint arrows and adjacent annotation retained. Adjacent lettering already transcribed separately is excluded.",
+              "excluded_adjacent_ink": {
+                "normalized_box": [
+                  0.65,
+                  0.748,
+                  0.75,
+                  0.78
+                ],
+                "rgb_condition": "B > 120 and R < 130 and G < 130",
+                "note": "Only blue ink from adjacent prose removed in this region; diagram ink and labels preserved."
+              }
+            }
+          ],
+          "review_notes": [
+            "Source definition quantifies over V' as written; apparent error retained."
+          ]
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/08/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/08/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space and tiny isolated ink stroke; no substantive content."
+          ]
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/08/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/08/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/08/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/08/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/08/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/08/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/08/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/08/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Ruled answer space only; no substantive content."
+          ]
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/08/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "filename": "09 - Wed Oct 15 2025.pdf",
+      "sha256": "0f8de018028b7d2b40e76d48e56cf80bebd629a3d2857125f2f07eb6d88d43ea",
+      "page_count": 13,
+      "lecture_file": "lectures/09/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/09/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/09/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/09/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/09/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/09/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/09/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "09",
+              "page": 6,
+              "path": "assets/09/page-006-asymptotic-symbol.png",
+              "kind": "unreadable",
+              "normalized_box": [
+                0.574,
+                0.047,
+                0.631,
+                0.085
+              ],
+              "excluded_adjacent_regions": [],
+              "note": "Ambiguous handwritten asymptotic symbol before (|V|^(1-epsilon)); retained inline without interpretation."
+            }
+          ],
+          "review_notes": [
+            "Ambiguous asymptotic symbol retained inline as an original crop; textual interpretation unresolved. Source attribution and year retained as written."
+          ]
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/09/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/09/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "09",
+              "page": 8,
+              "path": "assets/09/page-008-optimization-reduction.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.053,
+                0.478,
+                0.98,
+                0.724
+              ],
+              "excluded_adjacent_regions": [
+                "0.053,0.478,0.225,0.516",
+                "0.225,0.478,0.5,0.5"
+              ],
+              "note": "Instance and solution mappings, function arrows and optimal-solution labels. Adjacent lettering already transcribed separately is excluded."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/09/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/09/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/09/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "09",
+              "page": 11,
+              "path": "assets/09/page-011-matching-cover.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.113,
+                0.345,
+                0.948,
+                0.48
+              ],
+              "excluded_adjacent_regions": [],
+              "note": "Matching edges and endpoint choices in the proof."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/09/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "09",
+              "page": 12,
+              "path": "assets/09/page-012-greedy-cover-sequence.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.025,
+                0.29,
+                0.977,
+                0.674
+              ],
+              "excluded_adjacent_regions": [],
+              "note": "Four graph states, arrows, selected edges and handwritten cover sets; repeated {e,f} annotation retained."
+            },
+            {
+              "lecture": "09",
+              "page": 12,
+              "path": "assets/09/page-012-optimal-cover.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.235,
+                0.77,
+                0.972,
+                0.896
+              ],
+              "excluded_adjacent_regions": [],
+              "note": "Highlighted optimal cover and its source label."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/09/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
     }
   ],
   "verification": {
     "build_succeeded": true,
     "build_command": "latexmk -pdf -outdir=build main.tex",
-    "verified_at_utc": "2026-10-02T09:42:54.771749+00:00",
+    "verified_at_utc": "2026-10-12T13:00:24.222668+00:00",
     "compiled_pdf": "build/main.pdf",
-    "compiled_pdf_sha256": "2d14d491e252b5d1a024a362304248aa7fdd30b3a1a62e44c2982b1bcc17703f",
-    "compiled_page_count": 36,
-    "inputs_sha256": "387d661a5aba430ced3df384062c2925e1ec0c7c1ccf7caa9854bdc4785b9a02",
-    "review_method": "Visual inspection of every source page and rendered notes; retained crops checked with their surrounding text."
+    "compiled_pdf_sha256": "79a3fb8b6fe6bf3422e72330fac95bc9a66889a0dbeafae1725db81e356b55a5",
+    "compiled_page_count": 56,
+    "inputs_sha256": "ac36b3a626d64ea144b900ad8370f5823bae6a23e3bcaf909859f3b7fabfc2ba",
+    "review_method": "Visual inspection of available source pages and rendered notes; retained crops checked with their surrounding text. Earlier review states are preserved when originals are absent.",
+    "available_originals": [
+      "07a - Mon Oct 12 2026.pdf",
+      "07b - Mon Oct 12 2026 - Exercise session (no solutions).pdf",
+      "08 - Tue Oct 14 2025 - Exercise session (no solutions).pdf",
+      "09 - Wed Oct 15 2025.pdf"
+    ],
+    "absent_originals": [
+      "01 - Mon  Sep 28 2026.pdf",
+      "02 - Tue Sep 29 2026.pdf",
+      "03 - Wed Sep 30 2026.pdf",
+      "04 -Mon Oct 5 2026.pdf",
+      "05 - Tue Oct 6 2026.pdf",
+      "06 - Wed Oct 7 2026.pdf"
+    ]
   }
 }

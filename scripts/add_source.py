@@ -15,7 +15,7 @@ root = Path(__file__).resolve().parents[1]
 if Path(args.filename).name != args.filename or args.pages < 1:
     sys.exit("Supply a PDF basename and a positive page count")
 pdf = root / "pdf-prof" / args.filename
-match = re.match(r"(\d+)", args.filename)
+match = re.match(r"(\d+[a-zA-Z]*)(?=\s|[-_.]|$)", args.filename)
 if not pdf.is_file() or pdf.suffix.lower() != ".pdf" or not match:
     sys.exit("PDF must exist in pdf-prof and have a numerical filename prefix")
 lecture_id = match[1]
@@ -43,7 +43,8 @@ for number in range(1, args.pages + 1):
 escapes = {"\\": r"\textbackslash{}", "{": r"\{", "}": r"\}", "%": r"\%",
            "&": r"\&", "#": r"\#", "_": r"\_", "$": r"\$", "~": r"\textasciitilde{}", "^": r"\textasciicircum{}"}
 bookmark = "".join(escapes.get(c, c) for c in args.filename)
-wrapper = f"% Source: {args.filename}\n\\pdfbookmark[0]{{{bookmark}}}{{lecture-{lecture_id}}}\n"
+wrapper = f"% Source: {args.filename}\n\\lecturecontents{{Lecture {lecture_id}}}\n"
+wrapper += f"\\pdfbookmark[0]{{{bookmark}}}{{lecture-{lecture_id}}}\n"
 wrapper += "".join("\\input{" + p["tex_file"][:-4] + "}\n" for p in pages)
 (folder / "lecture.tex").write_text(wrapper)
 manifest["sources"].append({"id": lecture_id, "filename": args.filename, "sha256": sha256(pdf),

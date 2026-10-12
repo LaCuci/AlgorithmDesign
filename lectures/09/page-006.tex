@@ -1,0 +1,13 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 6. Content remains in source order.
+\sourcepage{09}{6}
+\textbf{EXAMPLE:} If $\classP\ne\classNP$ there cannot exist a
+\[\rho(|V|)=\text{\includegraphics[height=1.6ex]{assets/09/page-006-asymptotic-symbol.png}}(|V|^{1-\varepsilon})\]
+poly-time approximation algorithm for MAX-CLIQUE, for any fixed $\varepsilon$ [Arora et al. 1990].
+
+There are also ``easier hard'' problems which admit very ``precise'' approximation algorithms:
+
+\textbf{DEF:} An approximation scheme for an optimization problem $\Pi$ is a two-input algorithm
+\[A_\Pi(i,\varepsilon):\quad i\in\mathcal I,\quad\varepsilon>0\]
+such that, for any fixed $\varepsilon$, $A_\Pi(i,\varepsilon)$ is a $\rho(n)=(1+\varepsilon)$-approximation algorithm for $\Pi$.
+
+\textbf{DEF:} An Approximation Scheme is Polynomial-Time (PTAS) if, for any fixed $\varepsilon$, $A_\Pi(i,\varepsilon)$ runs in time polynomial in $n=|i|$.

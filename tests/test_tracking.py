@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -26,11 +27,11 @@ class TrackingIntegrity(unittest.TestCase):
         (self.root / "sources.json").write_text(json.dumps(self.manifest))
 
     def assert_error(self, phrase):
-        errors = validate(self.root, require_sources=True)["errors"]
+        errors = validate(self.root)["errors"]
         self.assertTrue(any(phrase in error for error in errors), errors)
 
     def test_complete_project(self):
-        result = validate(self.root, require_sources=True)
+        result = validate(self.root)
         self.assertEqual(result["errors"], [])
         self.assertEqual(result["source_pages"], sum(s["page_count"] for s in self.manifest["sources"]))
 
@@ -51,12 +52,12 @@ class TrackingIntegrity(unittest.TestCase):
         self.assert_error("Duplicate page entry")
 
     def test_changed_pdf(self):
-        source = self.root / "pdf-prof" / self.manifest["sources"][0]["filename"]
+        source = next((self.root / "pdf-prof").glob("*.pdf"))
         source.write_bytes(source.read_bytes() + b"\n% changed source\n")
         self.assert_error("Source checksum changed")
 
     def test_unrecorded_pdf_reported_pending(self):
-        source = self.root / "pdf-prof" / self.manifest["sources"][0]["filename"]
+        source = next((self.root / "pdf-prof").glob("*.pdf"))
         shutil.copy2(source, self.root / "pdf-prof/999999 - Tracking test.pdf")
         result = validate(self.root, require_sources=True)
         self.assertTrue(result["errors"])
@@ -81,6 +82,26 @@ class TrackingIntegrity(unittest.TestCase):
     def test_compile_sources_do_not_require_originals(self):
         shutil.rmtree(self.root / "pdf-prof")
         self.assertEqual(validate(self.root)["errors"], [])
+
+    def test_require_sources_rejects_missing_original(self):
+        source = next((self.root / "pdf-prof").glob("*.pdf"))
+        source.unlink()
+        self.assertTrue(any(f"Missing original PDF: {source.name}" == error
+                            for error in validate(self.root, require_sources=True)["errors"]))
+
+    def test_split_lecture_prefixes_have_distinct_ids(self):
+        shutil.copytree(ROOT / "scripts", self.root / "scripts")
+        source = next((self.root / "pdf-prof").glob("*.pdf"))
+        count = next(s["page_count"] for s in self.manifest["sources"]
+                     if s["filename"] == source.name)
+        for suffix in ("a", "b"):
+            filename = f"999998{suffix} - Split lecture.pdf"
+            shutil.copy2(source, self.root / "pdf-prof" / filename)
+            subprocess.run([sys.executable, str(self.root / "scripts/add_source.py"),
+                            filename, "--pages", str(count)], check=True, capture_output=True)
+        manifest = json.loads((self.root / "sources.json").read_text())
+        self.assertEqual([s["id"] for s in manifest["sources"][-2:]], ["999998a", "999998b"])
+        self.assertEqual(validate(self.root, check_build=False)["errors"], [])
 
 
 if __name__ == "__main__":

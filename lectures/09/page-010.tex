@@ -1,0 +1,14 @@
+% Source: 09 - Wed Oct 15 2025.pdf, page 10. Content remains in source order.
+\sourcepage{09}{10}
+The algorithm correctly returns a vertex cover (I eliminate an edge only when it is covered by some selected node).
+
+Running time: $O(|V|+|E|)=O(|\langle G=(V,E)\rangle|)$ (every time I select edge $\{u,v\}$, I eliminate the two adjacency lists of $u$ and $v$).
+
+\textbf{TOUGH PART OF THE ANALYSIS:} approximation ratio.
+
+Let $A$ be the set of edges selected by A-V-C $(G)$ at each iteration of the while loop.
+
+\textbf{PROPERTY:} $\forall e_1\ne e_2\in A:e_1\cap e_2=\varnothing$.
+The edges in $A$ do not share endpoints (since at each iteration all edges sharing one endpoint with the selected edge are removed).
+
+A set of edges $A$ not sharing endpoints is called a \textbf{matching}.

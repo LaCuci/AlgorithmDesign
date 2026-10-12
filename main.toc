@@ -1,0 +1,96 @@
+\contentsline {part}{Lecture 01: Course introduction and computational problems}{1}{section*.2}%
+\contentsline {subsection}{Advanced Algorithm Design (AAD)}{1}{section*.4}%
+\contentsline {section}{\numberline {1}Advanced Algorithm Design (AAD)}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Objective:}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}CourseTopics}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Course objective:}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Written Exam}{2}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Pre-requisites}{2}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Complexity Classes and Theory of Intractability (NP-Completeness)}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Computational Problem}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Complexity of a problem}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Problem Categories}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}HALTING PROBLEM}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Intractable Problems}{3}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Abstract Decision Problems}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}EXAMPLE: Membership of integer key in a set}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Restriction to decision problems: excessive?}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Optimization Problem}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Example : Shortest Unweighted Path Problem (SUP)}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Example : K Unweighted Path Problem (KUP)}{4}{subsection.4.2}%
+\contentsline {part}{Lecture 02: Encodings, formal languages and verification}{5}{section*.23}%
+\contentsline {section}{\numberline {5}Lesson 1 Recap}{6}{section.5}%
+\contentsline {section}{\numberline {6}Classes of decision problems}{6}{section.6}%
+\contentsline {section}{\numberline {7}Encodings}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Encoding Choice}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Binary Encoding}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Unary Encoding}{7}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Ripercussions on complexity analysis}{7}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Coincise Encodings}{8}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Formal Language Representation of Concrete Decision Problems}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Formal languages and concrete decision problems}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Polynomial-time decision problems and the complexity class P}{10}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}DEF complexity class:}{10}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}DEF class P:}{10}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Search Problem }{10}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Polynomial time verification}{11}{section.9}%
+\contentsline {section}{\numberline {10}Polynomial-time verification of Hamiltonian cycles}{11}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Solution}{11}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Verification}{11}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Class NP and the relationship between P and NP}{13}{subsection.10.3}%
+\newpage 
+\contentsline {part}{Lecture 03: Reductions and NP-completeness}{13}{section*.43}%
+\contentsline {section}{\numberline {11}Lesson 2 Recap}{13}{section.11}%
+\contentsline {section}{\numberline {12}Theorem and proof: P is a subset of NP}{13}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Reasonable guess and evidence that P is not NP:}{14}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Reducibility between problems}{15}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Example: reducibility between first and second degree equations}{15}{subsection.13.1}%
+\contentsline {section}{\numberline {14}Order between Problems}{15}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Polynomial time reducibility}{15}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Reductions and Order}{16}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}NP-Hard Languages}{17}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}NP-Complete languages}{18}{subsection.14.4}%
+\contentsline {subsection}{NP-COMPLETENESS PROOFS}{18}{section*.56}%
+\contentsline {part}{Lecture 04: Boolean circuits, Cook's theorem and SAT}{19}{section*.58}%
+\contentsline {subsection}{RECAP}{19}{section*.60}%
+\contentsline {section}{\numberline {15}Boolean Circuits}{20}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Boolean gates}{20}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Boolean Circuit}{20}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Truth assignments}{21}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}Configuration}{22}{subsection.15.4}%
+\contentsline {section}{\numberline {16}Boolean Circuit Satisfiability Problem BC-SAT}{22}{section.16}%
+\contentsline {subsection}{\numberline {16.1}BC-SAT is a NP problem }{23}{subsection.16.1}%
+\contentsline {section}{\numberline {17}Cook's Theorem}{24}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Cook's Reduction}{24}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Buinding the circuit}{24}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Crucial points:}{25}{subsection.17.3}%
+\contentsline {section}{\numberline {18}Formula satisfiability problem (SAT)}{26}{section.18}%
+\contentsline {subsection}{\numberline {18.1}formula encoding : a tree}{27}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Boolean formula truth assignment}{27}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Formula SAT problem formulation}{27}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Wrong Exponential Reduction}{28}{subsection.18.4}%
+\newpage 
+\contentsline {part}{Lecture 05: Satisfiability reductions and graph problems}{29}{section*.75}%
+\contentsline {subsection}{RECAP}{29}{section*.77}%
+\contentsline {subsection}{PROBLEMS ON GRAPHS}{33}{section*.86}%
+\contentsline {part}{Lecture 06: Graph problems and SUBSET SUM}{34}{section*.90}%
+\contentsline {subsection}{RECAP}{34}{section*.92}%
+\contentsline {part}{Lecture 07a: The SUBSET SUM reduction}{42}{section*.113}%
+\contentsline {subsection}{3-CNF-SAT to SUBSET SUM (SS)}{42}{section*.115}%
+\contentsline {part}{Lecture 07b: Exercises on complexity and NP-hardness}{45}{section*.121}%
+\contentsline {subsection}{Exercise: Decision algorithms for NP languages}{45}{section*.123}%
+\contentsline {subsection}{Exercise: The RAM halting problem}{45}{section*.126}%
+\contentsline {subsection}{Exercise: Closure of NP under reductions}{45}{section*.128}%
+\contentsline {subsection}{Exercise: Circuit testing}{45}{section*.131}%
+\contentsline {subsection}{Exercise: KNAPSACK}{46}{section*.134}%
+\contentsline {subsection}{Exercise: Complementary languages}{46}{section*.137}%
+\contentsline {part}{Lecture 08: Exercises on reductions and search}{46}{section*.138}%
+\contentsline {subsection}{Exercise: co-NP and its relationship to NP}{46}{section*.140}%
+\contentsline {subsection}{Exercise: Dominating sets}{46}{section*.144}%
+\contentsline {subsection}{DOMINATING SET (DS)}{47}{section*.146}%
+\contentsline {subsection}{Exercise: LONGEST PATH}{47}{section*.151}%
+\contentsline {subsection}{Exercise: From SUBSET SUM decision to search}{47}{section*.155}%
+\contentsline {subsection}{Exercise: PARTITION}{48}{section*.159}%
+\contentsline {part}{Lecture 09: Approximation algorithms}{48}{section*.160}%
+\contentsline {subsection}{APPROXIMATION ALGORITHMS}{48}{section*.162}%
+\contentsline {subsection}{A TWO-APPROXIMATION ALGORITHM FOR (MINIMUM) VERTEX COVER}{50}{section*.171}%
