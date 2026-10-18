@@ -1,0 +1,20 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 15. Content remains in source order.
+\sourcepage{12}{15}
+\begin{notesresult}
+\textbf{LEMMA}\quad $c(M^*)\leq c(\gamma^*)/2$.
+\end{notesresult}
+\textbf{PROOF} Consider an optimal tour:
+\[\gamma^*=\langle v_{i_1},v_{i_2},\ldots,v_{i_{|V|}},v_{i_1}\rangle.\]
+We can use shortcutting to eliminate all nodes in $V_{\mathrm{EVEN}}^{T^*}$. We are left with a simple cycle of all nodes in $V_{\mathrm{ODD}}^{T^*}$:
+\[\widehat\gamma=\langle\widehat v_{i_1},\widehat v_{i_2},\ldots,\widehat v_{i_{|V_{\mathrm{ODD}}^{T^*}|}},\widehat v_{i_1}\rangle\qquad\text{EVEN!}\]
+Clearly, $c(\widehat\gamma)\leq c(\gamma^*)$.
+
+\textbf{Example}
+\sourcefigure[0.50]{assets/12/page-015-shortcut-odd-nodes.png}
+If $\gamma^*=\langle b,\overbrace{e,a,c}^{\mathrm{SHORTCUT}},d,b\rangle$,
+\[\widehat\gamma=\langle b,e,c,d,b\rangle.\]
+$\widehat\gamma$ is a simple cycle of $|V_{\mathrm{ODD}}^{T^*}|$ (even!) edges containing all nodes in $V_{\mathrm{ODD}}^{T^*}$.
+\sourcefigure[0.19]{assets/12/page-015-even-cycle.png}
+Let us color the edges in the cycle alternating between RED and BLUE!
+\sourcefigure[0.4]{assets/12/page-015-alternating-matchings.png}
+I obtain TWO PERFECT MATCHINGS of $V_{\mathrm{ODD}}^{T^*}$! $M_{\mathrm{RED}}$ and $M_{\mathrm{BLUE}}$.

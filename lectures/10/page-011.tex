@@ -1,0 +1,21 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 11. Content remains in source order.
+\sourcepage{10}{11}
+\begin{notesresult}
+\textbf{LEMMA:} For any vertex cover $\overline V$:
+\[\sum_{e\in E}p_e\leq\sum_{v\in\overline V}w(v).\]
+\end{notesresult}
+\[ (|V'|\geq|A|) \]
+\textbf{PROOF}
+\begin{align*}
+\sum_{e\in E}p_e&\leq\sum_{u\in\overline V}\sum_{e\ni u}p_e
+&&\text{(since $\overline V$ is a VC, each $p_e$ appears at least once)}\\
+&\leq\sum_{u\in\overline V}w(u)&&\text{(by the fair property).}
+\end{align*}
+This is a crucial lemma that provides the lower bound on $C(V^*)$, since it must also hold for $\overline V=V^*$ (min-weight vertex cover):
+\[\sum_{e\in E}p_e\leq\sum_{v\in V^*}w(v)=C(V^*).\qquad(1)\]
+We are ready to prove a bound on
+\[\rho=\frac{C(V')}{C(V^*)}\qquad\text{($V'$ returned by algorithm).}\]
+\begin{align*}
+C(V')&=\sum_{u\in V'}w(u)\\
+&=\sum_{u\in V'}\sum_{e\ni u}p_e&&\text{all nodes in $V'$ are tight (corollary)}
+\end{align*}

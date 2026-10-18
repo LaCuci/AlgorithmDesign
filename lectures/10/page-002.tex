@@ -1,0 +1,17 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 2. Content remains in source order.
+\sourcepage{10}{2}
+Can A-V-C ($G$) be used to obtain an approximation algorithm for other problems?
+
+We know that any (maximum) clique $V'$ in $G$ is associated to a (minimum) vertex cover $V-V'$ in $G^c$, and vice versa.
+
+Possible algorithm for approximating MAX-CLIQUE:
+\begin{notesalgorithm}
+\textbf{APPROX-CLIQUE ($G$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$V'\gets\text{APPROX-VERTEX-COVER}(G^c)$}
+\pseudocodeline{0}{\textbf{return} $V-V'$}
+\end{notespseudocode}
+\end{notesalgorithm}
+The algorithm correctly returns a clique of $G$. What about $\rho_{\mathrm{AC}}$?
+
+Assume that $G=(V,E)$ has a maximum clique of size $\frac{|V|}{2}+1$. Thus the minimum vertex cover in $G^c$ has size $|V|-\frac{|V|}{2}-1=\frac{|V|}{2}-1$.

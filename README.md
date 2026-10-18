@@ -1,6 +1,6 @@
 # Advanced Algorithm Design lecture notes
 
-Editable transcription of ten source PDFs, in numerical filename order. All 139 source pages are accounted for: **15, 19, 13, 15, 12, 21, 6, 10, 15, 13**. The document uses continuous 11-point A4 typesetting, the existing lecture headings and filename bookmarks, plus an added title page and linked table of contents. The contents use Roman page numbers; lecture notes start at Arabic page 1. Original language, repetitions and apparent errors are retained.
+Editable transcription of thirteen source PDFs, in numerical filename order. All 184 source pages are accounted for: **15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16**. The document uses continuous 11-point A4 typesetting, the existing lecture headings and filename bookmarks, plus an added title page and linked table of contents. The contents use Roman page numbers; lecture notes start at Arabic page 1. Original language, repetitions and apparent errors are retained.
 
 ## Build
 
@@ -23,8 +23,8 @@ tex/preamble.tex            reusable layout and source macros
 tex/frontmatter.tex         title page and linked table of contents
 lectures/01/lecture.tex     filename bookmark and ordered page inclusions
 lectures/01/page-001.tex    editable content from one source page
-lectures/02/ … 09/          same structure, including separate 07a/ and 07b/
-assets/02/ … 09/           stored source-derived diagram/fragment crops
+lectures/02/ … 12/          same structure, including separate 07a/ and 07b/
+assets/02/ … 12/           stored source-derived diagram/fragment crops
 sources.json               ordered inclusion and review record
 review-notes.md             retained handwriting and contentless-page notes
 scripts/                   integrity, expansion and inspection helpers
@@ -93,8 +93,10 @@ Use `--kind unreadable --note '…'` for a retained fragment. The helper writes 
 
 ## Latest conversion
 
-Added the four supplied sources in order: `07a` (6 pages), `07b` (10), `08` (15), and `09` (13). The repeated subset-sum proof, unsolved exercise prompts, approximation definitions, vertex-cover algorithm and graph examples are retained. Thirteen ruled answer-space pages are tracked without inserting empty output pages. The original filename dates are retained exactly, including the 2025 dates.
+Added lessons `10` (17 pages), `11` (12), and `12` (16), preserving the existing statement boxes, problem braces, pseudocode and continuous layout. The 45 added pages cover approximation pitfalls, weighted vertex cover, fair pricing, LP rounding, TSP hardness, the MST approximation and Christofides' algorithm. All readable text and mathematics are editable; 33 source-derived crops retain graph geometry and attached annotations. The blank final pages of lessons 10 and 11 are recorded without inserting empty output pages. The title page and contents now include lectures 01–12.
 
-Only the four new originals are currently present in `pdf-prof`; the earlier six lectures remain self-contained in LaTeX and assets. Validation checks all available originals and reports the missing ones. One ambiguous handwritten asymptotic symbol in lecture 09 is retained as an inline crop; see `review-notes.md`.
+Seven originals (`07a`–`12`) are currently present in `pdf-prof`; the earlier six lectures remain self-contained in LaTeX and assets. Validation checks all available originals and reports the missing ones. Original wording, repetitions and apparent errors are retained; see `review-notes.md` for specific review observations and the earlier unresolved symbols.
+
+The three older asset inclusions identified in the existing review notes (lecture 03 page 1 and lecture 04 page 7) were restored to resolve the pre-existing tracking discrepancies. No earlier source text was rewritten.
 
 The front matter is editorial material requested for this document. Contents entries group the notes by lecture and include the existing section/subsection headings; exercise prompts use descriptive navigation labels while their printed headings stay as in the source.

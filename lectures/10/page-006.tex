@@ -1,0 +1,14 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 6. Content remains in source order.
+\sourcepage{10}{6}
+``Improved'' strategy: select vertex with larger degree (natural!).
+
+It can be shown that
+\[\rho(|V|)=\Omega(\log|V|).\]
+\sourceheading{EXTENSION: Weighted Vertex Cover}
+\begin{notesdefinition}
+\textbf{DEFINITION} Given a node-weighted undirected graph:
+\[\langle G=(V,E),w:V\mapsto\mathbb N^+\rangle\]
+(each node is associated to a positive weight), determine a vertex cover $V'\subseteq V$ minimizing
+\[C(V')=\sum_{u\in V'}w(u).\]
+\end{notesdefinition}
+\textbf{OBSERVATION} Letting $w(u)=1$ $\forall u\in V$ we obtain MINIMUM VERTEX COVER.

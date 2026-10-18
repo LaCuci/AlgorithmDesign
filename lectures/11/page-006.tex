@@ -1,0 +1,30 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 6. Content remains in source order.
+\sourcepage{11}{6}
+is a poly-time decision algorithm for HAMILTON, which contradicts $\classP\ne\classNP$.
+
+The proof implements the general GAP technique to prove inapproximability results:
+
+\textbf{GIVEN:} minimization problem $\Pi_m$ for which I want to prove $\rho(n)$-inapproximability:
+
+\textbf{DETERMINE:}
+\begin{itemize}
+\item decision problem $\Pi_d\in\classNPC$;
+\item ptc function $f(x)$ transforming instances of $\Pi_d$ into instances of $\Pi_m$ such that:
+\item Let $c:\mathcal S\mapsto\mathbb N^+$ be the cost function of $\Pi_m$: there exist a function $K(n)$ such that
+\begin{enumerate}
+\item $x\in L_{\Pi_d}\Rightarrow c(s^*(f(x)))\leq K(|f(x)|)$;
+\item $x\notin L_{\Pi_d}\Rightarrow c(s^*(f(x)))>\rho(|f(x)|)\cdot K(|f(x)|)$.
+\end{enumerate}
+\item Then if $\classP\ne\classNP$ there cannot be a poly-time $\rho(n)$-approximation algorithm for $\Pi_m$.
+\end{itemize}
+\textbf{PROOF} If $A_{\Pi_m}^\rho$ existed:
+\begin{notesalgorithm}
+\textbf{DECIDE ($x$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$s\gets A_{\Pi_m}^\rho(A_f(x))$}
+\pseudocodeline{0}{\textbf{if} $c(s)\leq\rho(|f(x)|)\cdot K(f(x))$}
+\pseudocodeline{1}{\textbf{then return} $1$}
+\pseudocodeline{1}{\textbf{else return} $0$}
+\end{notespseudocode}
+\end{notesalgorithm}
+would decide $\Pi_d$ in polynomial time.

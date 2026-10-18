@@ -1910,22 +1910,1155 @@
           "review_notes": []
         }
       ]
+    },
+    {
+      "id": "10",
+      "filename": "10 -Mon Oct 19 2026.pdf",
+      "sha256": "b29cf570eee60c031e0803fe4fc2a03356b49bf825082fc115c39be39a964a06",
+      "page_count": 17,
+      "lecture_file": "lectures/10/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/10/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/10/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/10/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 2
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/10/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "10",
+              "page": 4,
+              "path": "assets/10/page-004-reduction-solutions.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.04,
+                0.07,
+                0.96,
+                0.3
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/10/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "10",
+              "page": 5,
+              "path": "assets/10/page-005-wheel-graph.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.025,
+                0.712,
+                0.7,
+                0.901
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.6,
+                  0.712,
+                  0.7,
+                  0.735
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/10/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/10/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "10",
+              "page": 7,
+              "path": "assets/10/page-007-weighted-covers.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.02,
+                0.02,
+                0.96,
+                0.225
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/10/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/10/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "10",
+              "page": 9,
+              "path": "assets/10/page-009-fair-pricing-sequence.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.105,
+                0.636,
+                0.89,
+                0.99
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/10/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "The source's w'(v') term is retained without correction."
+          ]
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/10/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/10/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 11
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/10/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/10/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "10",
+              "page": 14,
+              "path": "assets/10/page-014-ilp-lp-triangle.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.055,
+                0.671,
+                0.98,
+                0.86
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.26,
+                  0.671,
+                  0.67,
+                  0.687
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.055,
+                    0.835,
+                    0.98,
+                    0.86
+                  ],
+                  "color": "blue"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/10/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 16,
+          "tex_file": "lectures/10/page-016.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 15
+        },
+        {
+          "page": 17,
+          "tex_file": "lectures/10/page-017.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Blank source page; no substantive content and no blank output page added."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "filename": "11 - Tue Oct 20 2026.pdf",
+      "sha256": "8b8cea9c036d0749a71f599599b789ff863dcb93bf58e733f7f884129335cc68",
+      "page_count": 12,
+      "lecture_file": "lectures/11/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/11/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/11/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/11/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/11/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/11/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "The source's assertion that the returned tour cannot use an edge outside E' is retained as written."
+          ]
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/11/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "The source's differing K arguments are retained as written."
+          ],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/11/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/11/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 7
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/11/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "11",
+              "page": 9,
+              "path": "assets/11/page-009-preorder-tour.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.045,
+                0.282,
+                0.98,
+                0.503
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/11/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "11",
+              "page": 10,
+              "path": "assets/11/page-010-tour-path.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.175,
+                0.389,
+                0.91,
+                0.54
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0,
+                  0.389,
+                  0.26,
+                  0.41
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/11/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "11",
+              "page": 11,
+              "path": "assets/11/page-011-preorder-walk.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.335,
+                0.132,
+                0.64,
+                0.237
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "11",
+              "page": 11,
+              "path": "assets/11/page-011-edge-traversals.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.603,
+                0.91,
+                0.773
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0,
+                  0.59,
+                  0.37,
+                  0.625
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [
+            "Continues the definition opened on page 10; inline source anchor retained inside the definition box."
+          ],
+          "continues_from": 10
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/11/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": [
+            "Blank source page; no substantive content and no blank output page added."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "filename": "12 - Wed Oct 21 2026.pdf",
+      "sha256": "c05b60b92da27f30fc2761e4645ad66db1a185ff47c130605f62ae8d6a23de93",
+      "page_count": 16,
+      "lecture_file": "lectures/12/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/12/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 1,
+              "path": "assets/12/page-001-preorder-tour.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.06,
+                0.565,
+                0.975,
+                0.826
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 1,
+              "path": "assets/12/page-001-full-preorder-walk.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.44,
+                0.87,
+                0.73,
+                0.984
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.44,
+                  0.87,
+                  0.52,
+                  0.91
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/12/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 2,
+              "path": "assets/12/page-002-edge-traversals.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.2,
+                0.24,
+                0.925,
+                0.412
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0,
+                  0.24,
+                  0.37,
+                  0.268
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/12/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 3,
+              "path": "assets/12/page-003-doubled-tree.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.05,
+                0.28,
+                0.975,
+                0.507
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/12/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 4,
+              "path": "assets/12/page-004-shortcut.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.735,
+                0.531,
+                0.91,
+                0.59
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 4,
+              "path": "assets/12/page-004-shortcut-sequence.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.01,
+                0.729,
+                0.99,
+                0.99
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/12/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 5,
+              "path": "assets/12/page-005-unit-grid.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.16,
+                0.501,
+                0.995,
+                0.622
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 5,
+              "path": "assets/12/page-005-optimal-perimeter.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.702,
+                0.99,
+                0.812
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 5,
+              "path": "assets/12/page-005-grid-mst.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.82,
+                0.61,
+                0.938
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [
+            "The intermediate approximation-ratio denominator c(T*) is retained as written in the source."
+          ]
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/12/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 6,
+              "path": "assets/12/page-006-grid-fpw.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.185,
+                0.004,
+                0.6,
+                0.13
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.185,
+                  0,
+                  0.223,
+                  0.034
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.185,
+                    0.121,
+                    0.6,
+                    0.13
+                  ],
+                  "color": "red"
+                },
+                {
+                  "normalized_box": [
+                    0.185,
+                    0,
+                    0.23,
+                    0.066
+                  ],
+                  "color": "red"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 6,
+              "path": "assets/12/page-006-grid-tour.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.22,
+                0.123,
+                0.71,
+                0.278
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.64,
+                  0.123,
+                  0.73,
+                  0.19
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.22,
+                    0.123,
+                    0.71,
+                    0.135
+                  ],
+                  "color": "blue"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/12/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 7,
+              "path": "assets/12/page-007-doubled-tree.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.408,
+                0.69,
+                0.625
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.38,
+                  0.408,
+                  0.69,
+                  0.45
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 7,
+              "path": "assets/12/page-007-shortcut.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.19,
+                0.79,
+                0.93,
+                0.888
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.19,
+                  0.79,
+                  0.31,
+                  0.81
+                ],
+                [
+                  0.4,
+                  0.79,
+                  0.61,
+                  0.815
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.19,
+                    0.79,
+                    0.61,
+                    0.815
+                  ],
+                  "color": "blue"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/12/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 8,
+              "path": "assets/12/page-008-multigraph.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.34,
+                0.312,
+                0.565,
+                0.433
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 8,
+              "path": "assets/12/page-008-eulerian-examples.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.17,
+                0.636,
+                0.96,
+                0.889
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/12/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 9,
+              "path": "assets/12/page-009-splicing-cycles.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.055,
+                0.482,
+                0.416,
+                0.698
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.32,
+                  0.482,
+                  0.416,
+                  0.52
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.055,
+                    0.482,
+                    0.416,
+                    0.501
+                  ],
+                  "color": "blue"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [
+            "Spliced-cycle sequences transcribed as editable mathematics beside the original graph."
+          ]
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/12/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 10,
+              "path": "assets/12/page-010-mst-euler-tour.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.028,
+                0.297,
+                0.965,
+                0.568
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 10,
+              "path": "assets/12/page-010-augmented-tree.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.218,
+                0.771,
+                0.965,
+                0.98
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.218,
+                  0.771,
+                  0.35,
+                  0.81
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/12/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/12/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 12,
+              "path": "assets/12/page-012-odd-nodes.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.24,
+                0.0,
+                0.84,
+                0.179
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 11
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/12/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 13,
+              "path": "assets/12/page-013-christofides-graph-mst.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.145,
+                0.563,
+                0.925,
+                0.941
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.145,
+                    0.563,
+                    0.58,
+                    0.579
+                  ],
+                  "color": "green"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/12/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 14,
+              "path": "assets/12/page-014-christofides-sequence.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.14,
+                0.005,
+                0.94,
+                0.585
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 13
+        },
+        {
+          "page": 15,
+          "tex_file": "lectures/12/page-015.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "12",
+              "page": 15,
+              "path": "assets/12/page-015-shortcut-odd-nodes.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.08,
+                0.475,
+                0.46,
+                0.635
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.08,
+                    0.475,
+                    0.46,
+                    0.501
+                  ],
+                  "color": "green"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 15,
+              "path": "assets/12/page-015-even-cycle.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.81,
+                0.707,
+                0.925,
+                0.757
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "12",
+              "page": 15,
+              "path": "assets/12/page-015-alternating-matchings.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.08,
+                0.835,
+                0.41,
+                0.996
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.405,
+                  0.925,
+                  0.41,
+                  0.966
+                ]
+              ],
+              "excluded_adjacent_ink": [
+                {
+                  "normalized_box": [
+                    0.08,
+                    0.835,
+                    0.41,
+                    0.878
+                  ],
+                  "color": "red"
+                },
+                {
+                  "normalized_box": [
+                    0.08,
+                    0.835,
+                    0.41,
+                    0.996
+                  ],
+                  "color": "yellow"
+                }
+              ],
+              "note": "Source-derived diagram and its attached labels/annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [
+            "Shortcut example sequences transcribed as editable mathematics beside the original graph."
+          ]
+        },
+        {
+          "page": 16,
+          "tex_file": "lectures/12/page-016.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 15
+        }
+      ]
     }
   ],
   "verification": {
     "build_succeeded": true,
     "build_command": "latexmk -pdf -outdir=build main.tex",
-    "verified_at_utc": "2026-10-12T13:00:24.222668+00:00",
+    "verified_at_utc": "2026-10-18T09:13:07.845473+00:00",
     "compiled_pdf": "build/main.pdf",
-    "compiled_pdf_sha256": "79a3fb8b6fe6bf3422e72330fac95bc9a66889a0dbeafae1725db81e356b55a5",
-    "compiled_page_count": 56,
-    "inputs_sha256": "ac36b3a626d64ea144b900ad8370f5823bae6a23e3bcaf909859f3b7fabfc2ba",
+    "compiled_pdf_sha256": "c329b25cc2128131623cc91202931ec2928ec8d9c8d8b65ce101576c8ab45b81",
+    "compiled_page_count": 84,
+    "inputs_sha256": "5e3a5f4e55820ac73b0c77bc477cb9c542fc4b58f33ecc037aedeac2006d2e1b",
     "review_method": "Visual inspection of available source pages and rendered notes; retained crops checked with their surrounding text. Earlier review states are preserved when originals are absent.",
     "available_originals": [
       "07a - Mon Oct 12 2026.pdf",
       "07b - Mon Oct 12 2026 - Exercise session (no solutions).pdf",
       "08 - Tue Oct 14 2025 - Exercise session (no solutions).pdf",
-      "09 - Wed Oct 15 2025.pdf"
+      "09 - Wed Oct 15 2025.pdf",
+      "10 -Mon Oct 19 2026.pdf",
+      "11 - Tue Oct 20 2026.pdf",
+      "12 - Wed Oct 21 2026.pdf"
     ],
     "absent_originals": [
       "01 - Mon  Sep 28 2026.pdf",

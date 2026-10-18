@@ -1,0 +1,25 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 1. Content remains in source order.
+\sourcepage{11}{1}
+\sourceheading[Recap: Weighted vertex cover]{RECAP}
+Weighted Vertex Cover $\langle G,w\rangle$:
+\begin{itemize}
+\item determine VC $V^*$ of minimum weight $\sum_{v\in V^*}w(v)$;
+\item FAIR PRICING extends the maximal matching algorithm (unweighted case);
+\item LP rounding:
+\end{itemize}
+\begin{notesproblem}
+&\min\sum_{v\in V}w(v)x_v\\
+&\text{s.t.}\\
+&x_u+x_v\geq1:\{u,v\}\in E\\
+&0\leq x_u\leq1:u\in V
+\end{notesproblem}
+\[V'=\left\{v\in V:x_v^*\geq\frac12\right\}.\]
+\sourcesubheading{CURIOSITY!}
+DUAL: (ignore constraints $x_u\leq1$: REDUNDANT)
+\begin{notesproblem}
+&\max\sum_{e\in E}p_e\\
+&\text{s.t.}\\
+&\sum_{e\ni u}p_e\leq w(u)\qquad u\in V\\
+&p_e\geq0\qquad e\in E
+\end{notesproblem}
+Linear relaxation of fair pricing!

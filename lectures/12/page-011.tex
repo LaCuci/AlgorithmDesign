@@ -1,0 +1,16 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 11. Content remains in source order.
+\sourcepage{12}{11}
+If $c(c,d)+c(b,e)<\alpha\cdot c(\gamma^*)$, $\alpha<1$ we get a better quality guarantee, since
+\[c(\widehat\gamma)\leq c(T^*)+\alpha c(\gamma^*)\leq(1+\alpha)c(\gamma^*)\]
+\[\Rightarrow\rho\leq(1+\alpha).\]
+Let us see how to do it!
+\begin{notesresult}
+\textbf{PROPERTY} Let $G=(V,E)$ be an arbitrary undirected graph, and let $V_{\mathrm{ODD}}$ be the subset of nodes of odd degree. Then $|V_{\mathrm{ODD}}|$ is even.
+\end{notesresult}
+\textbf{PROOF} In any graph, the sum of the degrees $\sum_{v\in V}\deg(v)=2|E|$ (each $e$ counted twice).
+
+Then
+\[\underbrace{2|E|}_{\text{EVEN}}=\sum_{v\in V}\deg(v)=\underbrace{\sum_{v\in V_{\mathrm{EVEN}}}\deg(v)}_{\text{EVEN}}+\underbrace{\sum_{v\in V_{\mathrm{ODD}}}\deg(v)}_{\text{it must be even!}}.\]
+Since $\sum_{v\in V_{\mathrm{ODD}}}\deg(v)$ is even and the single terms are odd, the number of these terms $|V_{\mathrm{ODD}}|$ must be even!
+
+Let us apply the property to the MST $T^*$: we have that $|V_{\mathrm{ODD}}^{T^*}|$ is even:

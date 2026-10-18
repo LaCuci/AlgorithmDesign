@@ -13,7 +13,7 @@ These fragments remain open for a future textual reading. Their source placement
 
 ## Page accounting and continuations
 
-- All ten source PDFs have page coverage recorded individually in `sources.json`: 15, 19, 13, 15, 12, 21, 6, 10, 15, 13 pages (139 total).
+- All thirteen source PDFs have page coverage recorded individually in `sources.json`: 15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16 pages (184 total).
 - Lecture 06 pages 16–19 have no extractable text. Their subset-sum proof and examples were transcribed from the visible handwriting, including the repeated example and column sums.
 - Lecture 06 page 20 contains a trailing closing parenthesis and box borders. The parenthesis is retained immediately after page 19's content, without a forced page break.
 - Lecture 06 page 21 contains box borders and a tiny isolated ink stroke, with no substantive content. It has a page file, source label and verified record, without blank-page filler.
@@ -38,3 +38,12 @@ The final integrity check also found three already-recorded assets omitted from 
 ## Document front matter
 
 A title page and linked table of contents were added at the user's request. The contents group entries by lecture and use descriptive labels for exercises. The printed lecture text and headings are unchanged, and lecture pagination starts at 1 after the Roman-numbered contents.
+
+## Added sources 10–12
+
+- Added 45 source pages: lesson 10 has 17, lesson 11 has 12, and lesson 12 has 16. Lesson 10 page 17 and lesson 11 page 12 are blank; their source markers and contentless records are retained without adding blank output pages.
+- All handwritten prose, formulas, proofs, algorithm instructions and recaps were inspected from Poppler source renders. Thirty-three source-derived diagram crops preserve graph geometry, weights, labels, highlighted choices and arrows. Adjacent prose is transcribed separately; exclusions and selective ink masks are recorded with each crop. The spliced-cycle sequences (lesson 12 page 9) and the shortcut example sequences (lesson 12 page 15) are editable beside their graph crops.
+- The source's apparent errors are retained. Examples include the `w'(v')` term in lesson 10 page 10, the `e` not in `E'` assertion in lesson 11 page 5, the inconsistent `K` arguments in lesson 11 page 6, and the `c(T*)` denominator in the intermediate approximation bound on lesson 12 page 5. The clique hardness attribution on lesson 10 page 4 remains “Feige et al. 1991.” These are transcription observations, not corrections to the lecture.
+- Lesson 11 pages 10–11 continue the full-preorder-walk definition across page files, with its source anchor retained inside the definition box. Proofs and derivations continue in source order; the repeated recaps and examples in lesson 12 are preserved.
+- No new handwriting fragment required an unresolved textual reading. Original filenames and dates, including `10 -Mon Oct 19 2026.pdf`, are unchanged.
+- The new source pages and their rendered LaTeX were visually compared, including the formulas, pseudocode, diagrams and the two contentless pages. Earlier source verification states are preserved because the first six original PDFs are absent. The older three recorded-but-omitted asset inclusions described above were restored and their rendered placement checked again.

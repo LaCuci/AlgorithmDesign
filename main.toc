@@ -70,42 +70,59 @@
 \contentsline {subsection}{\numberline {18.3}Formula SAT problem formulation}{29}{subsection.18.3}%
 \contentsline {subsection}{\numberline {18.4}Wrong Exponential Reduction}{30}{subsection.18.4}%
 \newpage 
-\contentsline {part}{Lecture 05: Satisfiability reductions and graph problems}{30}{section*.67}%
+\contentsline {part}{Lecture 05: Satisfiability reductions and graph problems}{31}{section*.67}%
 \contentsline {section}{\numberline {19}Recap lesson 4}{31}{section.19}%
 \contentsline {section}{\numberline {20}Proof that Formula Satisfiability problem is NP Complete}{31}{section.20}%
 \contentsline {subsection}{\numberline {20.1}Step 1 : proove that Formula Satisfiability is in NP}{31}{subsection.20.1}%
 \contentsline {subsection}{\numberline {20.2}Step 2 : Create a reduction of a problem in NPC to this problem}{31}{subsection.20.2}%
 \contentsline {subsubsection}{\numberline {20.2.1}Step 1 : Add new variables $y_g:\ g\in G$.}{31}{subsubsection.20.2.1}%
-\contentsline {subsubsection}{\numberline {20.2.2}Step 2 : Build the formula with the clauses}{31}{subsubsection.20.2.2}%
-\contentsline {section}{\numberline {21}Step 3 : Proove that the reduction is done in linear time}{32}{section.21}%
+\contentsline {subsubsection}{\numberline {20.2.2}Step 2 : Build the formula with the clauses}{32}{subsubsection.20.2.2}%
+\contentsline {section}{\numberline {21}Step 3 : Proove that the reduction is done in linear time}{33}{section.21}%
 \contentsline {subsection}{\numberline {21.1}Step 4 : Proove the correctness of the reduction}{33}{subsection.21.1}%
-\contentsline {subsubsection}{\numberline {21.1.1} Prove that if X is in BC SAT then the reduction creates a formula that is in SAT}{33}{subsubsection.21.1.1}%
-\contentsline {subsubsection}{\numberline {21.1.2} Prove that if the reduction on C(x) creates a formula that is in SAT, then x is in BC SAT}{33}{subsubsection.21.1.2}%
+\contentsline {subsubsection}{\numberline {21.1.1} Prove that if X is in BC SAT then the reduction creates a formula that is in SAT}{34}{subsubsection.21.1.1}%
+\contentsline {subsubsection}{\numberline {21.1.2} Prove that if the reduction on C(x) creates a formula that is in SAT, then x is in BC SAT}{34}{subsubsection.21.1.2}%
 \contentsline {section}{\numberline {22}Reductions by restriction}{34}{section.22}%
 \contentsline {subsection}{\numberline {22.1}Restriction on Formula satisfiability}{34}{subsection.22.1}%
 \contentsline {subsection}{\numberline {22.2}3-Conjunctive Normal Form -SAT}{34}{subsection.22.2}%
-\contentsline {section}{\numberline {23}3-CNF-SAT is in NPC}{34}{section.23}%
-\contentsline {subsection}{\numberline {23.1}Step 1 : Proove that 3-CNF-SAT is in NP }{34}{subsection.23.1}%
-\contentsline {subsection}{\numberline {23.2}Step 2 : Proove that 3-CNF-SAT is in NPH }{34}{subsection.23.2}%
-\contentsline {subsection}{PROBLEMS ON GRAPHS}{35}{section*.76}%
-\contentsline {part}{Lecture 06: Graph problems and SUBSET SUM}{37}{section*.80}%
-\contentsline {subsection}{RECAP}{37}{section*.81}%
-\contentsline {part}{Lecture 07a: The SUBSET SUM reduction}{45}{section*.102}%
-\contentsline {subsection}{3-CNF-SAT to SUBSET SUM (SS)}{45}{section*.103}%
-\contentsline {part}{Lecture 07b: Exercises on complexity and NP-hardness}{48}{section*.109}%
-\contentsline {subsection}{Exercise: Decision algorithms for NP languages}{48}{section*.110}%
-\contentsline {subsection}{Exercise: The RAM halting problem}{48}{section*.112}%
+\contentsline {section}{\numberline {23}3-CNF-SAT is in NPC}{35}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Step 1 : Proove that 3-CNF-SAT is in NP }{35}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Step 2 : Proove that 3-CNF-SAT is in NPH }{35}{subsection.23.2}%
+\contentsline {subsection}{PROBLEMS ON GRAPHS}{36}{section*.76}%
+\contentsline {part}{Lecture 06: Graph problems and SUBSET SUM}{38}{section*.80}%
+\contentsline {subsection}{RECAP}{38}{section*.81}%
+\contentsline {part}{Lecture 07a: The SUBSET SUM reduction}{46}{section*.102}%
+\contentsline {subsection}{3-CNF-SAT to SUBSET SUM (SS)}{46}{section*.103}%
+\contentsline {part}{Lecture 07b: Exercises on complexity and NP-hardness}{49}{section*.109}%
+\contentsline {subsection}{Exercise: Decision algorithms for NP languages}{49}{section*.110}%
+\contentsline {subsection}{Exercise: The RAM halting problem}{49}{section*.112}%
 \contentsline {subsection}{Exercise: Closure of NP under reductions}{49}{section*.113}%
 \contentsline {subsection}{Exercise: Circuit testing}{49}{section*.115}%
 \contentsline {subsection}{Exercise: KNAPSACK}{49}{section*.117}%
-\contentsline {subsection}{Exercise: Complementary languages}{49}{section*.119}%
-\contentsline {part}{Lecture 08: Exercises on reductions and search}{49}{section*.120}%
-\contentsline {subsection}{Exercise: co-NP and its relationship to NP}{49}{section*.121}%
+\contentsline {subsection}{Exercise: Complementary languages}{50}{section*.119}%
+\contentsline {part}{Lecture 08: Exercises on reductions and search}{50}{section*.120}%
+\contentsline {subsection}{Exercise: co-NP and its relationship to NP}{50}{section*.121}%
 \contentsline {subsection}{Exercise: Dominating sets}{50}{section*.124}%
-\contentsline {subsection}{DOMINATING SET (DS)}{50}{section*.125}%
-\contentsline {subsection}{Exercise: LONGEST PATH}{50}{section*.129}%
+\contentsline {subsection}{DOMINATING SET (DS)}{51}{section*.125}%
+\contentsline {subsection}{Exercise: LONGEST PATH}{51}{section*.129}%
 \contentsline {subsection}{Exercise: From SUBSET SUM decision to search}{51}{section*.132}%
 \contentsline {subsection}{Exercise: PARTITION}{51}{section*.135}%
 \contentsline {part}{Lecture 09: Approximation algorithms}{51}{section*.136}%
 \contentsline {subsection}{APPROXIMATION ALGORITHMS}{51}{section*.137}%
 \contentsline {subsection}{A TWO-APPROXIMATION ALGORITHM FOR (MINIMUM) VERTEX COVER}{54}{section*.145}%
+\contentsline {part}{Lecture 10: Weighted vertex cover and LP rounding}{56}{section*.150}%
+\contentsline {subsection}{Recap: Approximation guarantees and vertex cover}{56}{section*.151}%
+\contentsline {subsection}{HARDNESS OF APPROXIMATING CLIQUE}{57}{section*.154}%
+\contentsline {subsection}{NOT ALL GREEDY APPROACHES LEAD TO A GOOD APPROXIMATION}{58}{section*.155}%
+\contentsline {subsection}{EXTENSION: Weighted Vertex Cover}{58}{section*.156}%
+\contentsline {subsection}{Fair Pricing Method}{59}{section*.158}%
+\contentsline {subsection}{Integer linear programming formulation of weighted vertex cover}{61}{section*.163}%
+\contentsline {part}{Lecture 11: Travelling salesperson, hardness and MST approximation}{63}{section*.168}%
+\contentsline {subsection}{Recap: Weighted vertex cover}{63}{section*.169}%
+\contentsline {subsection}{THE TRAVELLING SALESPERSON PROBLEM (TSP)}{63}{section*.170}%
+\contentsline {subsection}{INAPPROXIMABILITY RESULT FOR GENERAL TSP}{65}{section*.172}%
+\contentsline {subsection}{RESTRICTION: METRIC COST FUNCTION}{66}{section*.175}%
+\contentsline {subsection}{A 2-APPROXIMATION ALGORITHM FOR $\triangle $-TSP}{67}{section*.176}%
+\contentsline {part}{Lecture 12: Metric TSP and Christofides' algorithm}{69}{section*.181}%
+\contentsline {subsection}{Recap: MST approximation for metric TSP}{69}{section*.182}%
+\contentsline {subsection}{LESSON LEARNED from MST-based approximation}{73}{section*.188}%
+\contentsline {subsection}{Christofides algorithm}{74}{section*.189}%

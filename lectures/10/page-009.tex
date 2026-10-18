@@ -1,0 +1,16 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 9. Content remains in source order.
+\sourcepage{10}{9}
+\begin{notesalgorithm}
+\textbf{FAIR-PRICING ($\langle G=(V,E),w\rangle$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{\textbf{for each} $e\in E$ \textbf{do} $p_e=0$}
+\pseudocodeline{0}{\textbf{for each} $v\in V$ \textbf{do} $w'(v)=w(v)$}
+\pseudocodeline{0}{\textbf{while} $(\exists e=\{u,v\}:(w'(u)>0)\land(w'(v)>0))$}
+\pseudocodeline{1}{\textbf{do} $p_e\gets\min\{w'(u),w'(v)\}$}
+\pseudocodeline{2}{$w'(u)\gets w'(u)-p_e$}
+\pseudocodeline{2}{$w'(v)\gets w'(v)-p_e$}
+\pseudocodeline{2}{\{one among $u$ and $v$ becomes tight\}}
+\pseudocodeline{0}{\textbf{return} $V'=\{v\in V:w'(v)=0\}$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\sourcefigure[0.94]{assets/10/page-009-fair-pricing-sequence.png}

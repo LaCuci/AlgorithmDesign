@@ -1,0 +1,18 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 5. Content remains in source order.
+\sourcepage{10}{5}
+\sourceheading{NOT ALL GREEDY APPROACHES LEAD TO A GOOD APPROXIMATION}
+Alternative greedy approach:
+\begin{notesalgorithm}
+\begin{notespseudocode}
+\pseudocodeline{0}{$V'\gets\varnothing$; $E'\gets E$}
+\pseudocodeline{0}{\textbf{repeat}}
+\pseudocodeline{1}{select arbitrary edge $e=\{u,v\}$ \quad Greedy Choice}
+\pseudocodeline{1}{$V'\gets V'\cup\{u\}$ \quad (only one endpoint)}
+\pseudocodeline{1}{$E'\gets E'-\{e\in E':u\in e\}$ \quad Clean Up}
+\pseudocodeline{0}{\textbf{until} $(E'=\varnothing)$}
+\end{notespseudocode}
+\end{notesalgorithm}
+Algorithm correctly returns a VC $V'$ (all edges are covered when they are eliminated) but (counterexample):
+\sourcefigure[0.48]{assets/10/page-005-wheel-graph.png}
+The algorithm might select $s_1,s_2,\ldots,s_n$!
+\[\Rightarrow\rho(|V|)\geq\frac{|V|-1}{1}=|V|-1.\]

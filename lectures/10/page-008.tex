@@ -1,0 +1,12 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 8. Content remains in source order.
+\sourcepage{10}{8}
+\sourceheading{Fair Pricing Method}
+As in A-V-C we proceed by covering edges. In the weighted variant, each selected $e=\{u,v\}$ pays a price to get covered. The price is a portion of the weights $w(u)$ and $w(v)$ and has to be positive:
+\begin{itemize}
+\item the price payed is $p_e=\min\{w(u),w(v)\}>0$;
+\item the weights $w(u),w(v)$ are decremented:
+\[w'(u)=w(u)-p_e,\qquad w'(v)=w(v)-p_e;\]
+\item After the selection, one of the weights becomes $0$ and the corresponding node becomes tight ($\to$ will go into $V'$).
+\item We proceed until there are no edges between non-tight nodes.
+\end{itemize}
+$V'=$ set of tight nodes.

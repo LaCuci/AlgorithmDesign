@@ -1,0 +1,16 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 14. Content remains in source order.
+\sourcepage{10}{14}
+Let us consider the continuous relaxation of ILP.
+
+\textbf{LINEAR PROGRAM (LP)}
+\begin{notesproblem}
+&\min\sum_{u\in V}w(u)x_u\\
+&\text{s.t.}\\
+&x_u+x_v\geq1:\{u,v\}\in E\\
+&0\leq x_u\leq1\qquad u\in V
+\end{notesproblem}
+Clearly, the optimal solution $x^*$ to LP is not necessarily integer and its cost is $\leq$ cost of the optimal integer solution.
+
+\textbf{EXAMPLE:} $w(u)=1$ $\forall u\in V$.
+\sourcefigure[0.9]{assets/10/page-014-ilp-lp-triangle.png}
+We can use $x^*$ of LP to find a ``good'' solution $\widehat x$ to ILP via ROUNDING! Also, $C(x^*)$ lower bounds $C_{\mathrm{OPT}}$!

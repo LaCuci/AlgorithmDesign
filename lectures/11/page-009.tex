@@ -1,0 +1,33 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 9. Content remains in source order.
+\sourcepage{11}{9}
+\textbf{IDEA:} I determine an MST $T^*$ of $G$ and obtain a TOUR $\gamma_{T^*}$ from it.
+
+\textbf{HOW:} $\gamma_{T^*}$ is obtained as the preorder visit of $T^*$ (closed on the first node).
+
+\textbf{EXAMPLE:}
+\sourcefigure[0.92]{assets/11/page-009-preorder-tour.png}
+We will prove that $c(\gamma_{T^*})\leq2c(\gamma^*)$!
+
+Here is the algorithm:
+\begin{notesalgorithm}
+\textbf{APPROX-T-TSP ($G,c$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* $V=\{v_1,v_2,\ldots,v_{|V|}\}$ *}
+\pseudocodeline{0}{$T^*=(V,E_{T^*})\gets\mathrm{PRIM}(G,c)$}
+\pseudocodeline{0}{$r=v_1$}
+\pseudocodeline{0}{$\gamma_{T^*}\gets\langle\mathrm{PREORDER}(T^*,r),r\rangle$}
+\pseudocodeline{0}{\textbf{return} $\gamma_{T^*}$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\begin{notesalgorithm}
+\textbf{PREORDER ($T,r$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$P\gets\langle r\rangle$}
+\pseudocodeline{0}{\textbf{if} (not leaf($r$))}
+\pseudocodeline{1}{\textbf{then}}
+\pseudocodeline{2}{\textbf{for each} $(s\in\operatorname{child}(r))$}
+\pseudocodeline{3}{\textbf{do} $P\gets\langle P,\mathrm{PREORDER}(T,s)\rangle$}
+\pseudocodeline{0}{\textbf{return} $P$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\[T_{\mathrm{A\text{-}T\text{-}T}}(|\langle G,c\rangle|)=\underbrace{O(|E|\log|V|)}_{T_{\mathrm{PRIM}}}=O(|\langle G,c\rangle|\log|\langle G,c\rangle|).\]

@@ -1,0 +1,16 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 10. Content remains in source order.
+\sourcepage{11}{10}
+To prove that A-T-T is a 2-approximation, we must relate $\mathrm{OPT}=c(\gamma^*)$ and $c(T^*)$.
+\begin{notesresult}
+\textbf{LEMMA}\quad $c(\gamma^*)\geq c(T^*)$.
+\end{notesresult}
+\textbf{PROOF} Let $\gamma^*=\langle v_{i_1},v_{i_2},\ldots,v_{i_{|V|}},v_{i_1}\rangle$.
+Remove edge $\{v_{i_{|V|}},v_{i_1}\}$: we obtain a hamiltonian path $H:\langle v_{i_1},v_{i_2},\ldots,v_{i_{|V|}}\rangle$ touching all nodes. $H$ is a Spanning Tree!
+\sourcefigure[0.83]{assets/11/page-010-tour-path.png}
+We have
+\[c(\underbrace{T^*}_{\mathrm{MST}})\leq c(\underbrace H_{\mathrm{ST}})\leq c(\gamma^*)!\]
+The cost $c(T^*)$ is a lower bound to $c(\gamma^*)$ BUT:
+
+Observe that $\gamma_{T^*}$ uses edges outside $T^*$! We have to upper bound $c(\gamma_{T^*})$ as a function of $c(T^*)$.
+\begin{notesdefinition}
+\textbf{DEF} A Full Preorder Walk (FPW) is the non-simple cycle obtained by

@@ -1,0 +1,20 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 10. Content remains in source order.
+\sourcepage{10}{10}
+\textbf{Running Time:} can be implemented in linear time (single scan of adjacency list -- as A-V-C).
+
+\textbf{Correctness:} The set $V'$ returned by FP is a vertex cover:
+
+\textbf{PROOF:} all edges must be adjacent to a tight node, or otherwise
+\[\exists e=\{u,v\}\in E:(w'(u)>0)\land(w'(v')>0)\]
+and FP could not have finished.
+
+\textbf{OBSERVATION:} For $w(v)=1$ $\forall v\in V$, we have $\mathrm{FP}\cong\mathrm{A\text{-}V\text{-}C}$ (each selected edge makes both of its endpoints tight).
+\sourcesubheading{ANALYSIS OF APPROXIMATION RATIO}
+\begin{notesresult}
+\textbf{FAIR PROPERTY:} At the end of FP:
+\[\forall u\in V:\quad\sum_{e\ni u}p_e\leq w(u).\]
+\end{notesresult}
+\textbf{PROOF} $w'(u)\geq p_e>0$ is decremented by $p_e$ after each edge $e=\{u,v\}$ is selected and no edge $\{u,v\}$ can be selected if $w'(u)=0$.
+\begin{notesresult}
+\textbf{COROLLARY:} $u$ tight $\Rightarrow\sum_{e\ni u}p_e=w(u)$.
+\end{notesresult}

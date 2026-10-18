@@ -1,0 +1,13 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 3. Content remains in source order.
+\sourcepage{10}{3}
+Since $\rho_{\mathrm{A\text{-}V\text{-}C}}=2$, A-V-C ($G^c$) may return a vertex cover $V'$ of size $2\left(\frac{|V|}{2}-1\right)=|V|-2$.
+
+Therefore we return a (trivial) clique $V-V'$ of size $|V|-(|V|-2)=2$!
+
+\textbf{APPROXIMATION RATIO:}
+\[\rho_{\mathrm{AC}}\geq\frac{\frac{|V|}{2}+1}{2}\approx\frac{|V|}{4}.\]
+Very bad quality algorithm!
+
+This is a clear example that the reduction
+\[f(\langle G\rangle_{\mathrm{CLIQUE}})=\langle G^c\rangle_{\mathrm{VERTEX\ COVER}}\]
+with inverse function $g(V')=V-V'$ does not preserve the approximation!

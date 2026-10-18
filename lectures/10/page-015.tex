@@ -1,0 +1,17 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 15. Content remains in source order.
+\sourcepage{10}{15}
+\begin{notestheorem}
+\textbf{Theorem} If $x^*$ is an optimal solution of the LP relaxation of the vertex-cover ILP, then
+\[V'=\left\{u\in V:x_u^*\geq\frac12\right\}\]
+is a vertex cover of weight at most twice the minimum weight.
+\end{notestheorem}
+\textbf{Proof:} Let us prove that $V'$ is a VC:
+
+$\forall e=\{u,v\}\in E$, we have $x_u^*+x_v^*\geq1$ ($x_u^*,x_v^*\geq0$), therefore:
+\[\left(x_u^*\geq\frac12\right)\lor\left(x_v^*\geq\frac12\right)
+\Rightarrow(u\in V')\lor(v\in V').\]
+Each edge is covered by $V'$!
+
+Let's prove the bound on the weight:
+\[\underbrace{\sum_{u\in V^*}w(u)}_{V^*\text{ feasible for ILP}}\overset{\mathrm{LB!}}\geq
+\underbrace{\sum_{u\in V}w(u)x_u^*}_{\text{optimal cost of LP}}.\]

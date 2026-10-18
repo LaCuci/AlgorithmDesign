@@ -1,0 +1,23 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 1. Content remains in source order.
+\sourcepage{12}{1}
+\sourceheading[Recap: MST approximation for metric TSP]{RECAP}
+\begin{itemize}
+\item TSP is not $\rho(n)$-approximable for ANY $\rho(n)$ ptc.
+\item T-TSP (NPH): $c$ satisfies $\triangle$-inequality.
+\end{itemize}
+\sourcesubheading{MST-BASED APPROXIMATION}
+\begin{notesalgorithm}
+\textbf{APPROX-T-TSP ($G,c$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* $V=\{v_1,v_2,\ldots,v_{|V|}\}$ *}
+\pseudocodeline{0}{$T^*=(V,E_{T^*})\gets\mathrm{PRIM}(G,c)$}
+\pseudocodeline{0}{$r=v_1$}
+\pseudocodeline{0}{$\gamma_{T^*}\gets\langle\mathrm{PREORDER}(T^*,r),r\rangle$}
+\pseudocodeline{0}{\textbf{return} $\gamma_{T^*}$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\sourcefigure[0.92]{assets/12/page-001-preorder-tour.png}
+FPW: Nonsimple cycle associated to calls of PREORDER($T^*,r$):
+\[\langle a,b,c,b,d,b,a,e,a\rangle.\]
+\sourcefigure[0.6]{assets/12/page-001-full-preorder-walk.png}
+Each edge of $T^*$ used twice.

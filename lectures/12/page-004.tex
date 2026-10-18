@@ -1,0 +1,18 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 4. Content remains in source order.
+\sourcepage{12}{4}
+\textbf{PROOF}
+
+Consider the FPW associated to the call PREORDER($T^*,r$) in A-T-T($G,c$):
+\[\mathrm{FPW}=\langle v_1=r,v_2,\ldots,v_{2|V|-1}=v_1=r\rangle\]
+(the FPW contains $2|V|-2$ edges).
+
+Thanks to the $\triangle$-inequality, we can use shortcutting to eliminate all duplicate nodes (but $v_{2|V|-1}=r$) from FPW without increasing the cost:
+\[\mathrm{FPW}=\langle\cdots,u,w,v,\cdots\rangle
+\quad\longmapsto\quad\mathrm{FPW}'=\langle\cdots,u,v,\cdots\rangle\]
+($w$ duplicate), $c(u,w)+c(w,v)\geq c(u,v)$.
+\sourcefigure[0.28]{assets/12/page-004-shortcut.png}
+\[c(\mathrm{FPW})\geq c(\mathrm{FPW}')!\]
+By removing all these duplicates, we obtain $\langle\mathrm{PREORDER}(T^*,r),r\rangle=\gamma_{T^*}$!
+
+\textbf{EXAMPLE}
+\sourcefigure[0.95]{assets/12/page-004-shortcut-sequence.png}

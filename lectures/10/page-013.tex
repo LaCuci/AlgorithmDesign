@@ -1,0 +1,21 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 13. Content remains in source order.
+\sourcepage{10}{13}
+\sourceheading{Integer linear programming formulation of weighted vertex cover}
+Given $\langle G=(V,E),w\rangle$, we use:
+\begin{enumerate}
+\item $|V|$ 0/1 variables $x_u:u\in V$. The vertex cover is $\{u\in V:x_u=1\}$.
+\item $|E|$ covering constraints:
+\[\forall e=\{u,v\}:x_u+x_v\geq1\qquad(x_u,x_v\in\{0,1\}).\]
+\item Objective function:
+\[\min\sum_{u\in V}w(u)x_u.\]
+\end{enumerate}
+\textbf{INTEGER LINEAR PROGRAM (ILP)}
+\begin{notesproblem}
+&\min\sum_{u\in V}w(u)x_u\\
+&\text{s.t.}\\
+&x_u+x_v\geq1:\{u,v\}\in E\\
+&x_u\in\{0,1\}\qquad u\in V
+\end{notesproblem}
+The optimal integer solution is a minimum-weight vertex cover.
+
+(PROVE IT: each vertex cover is feasible and each feasible solution is a vertex cover.)

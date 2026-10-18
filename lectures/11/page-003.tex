@@ -1,0 +1,19 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 3. Content remains in source order.
+\sourcepage{11}{3}
+If $\langle G\rangle\in\mathrm{HAMILTON}$, then the cost of a hamiltonian cycle of $G$ under $c(\cdot)$ is exactly $|V|$ $\Rightarrow f(\langle G\rangle)=\langle G',c,|V|\rangle\in\mathrm{TSP}$.
+
+If $f(\langle G\rangle)=\langle G,c,|V|\rangle\in\mathrm{TSP}$ then there is a tour $\gamma$ (made of $|V|$ edges) of cost $c(\gamma)=|V|$
+\begin{align*}
+&\Rightarrow\text{ALL edges in the tour must cost 1}\\
+&\Rightarrow\text{ALL edges in the tour belong to $E$}\\
+&\Rightarrow\text{the tour is a hamiltonian cycle of $G$}\\
+&\Rightarrow\langle G\rangle\in\mathrm{HAMILTON}.
+\end{align*}
+Two interesting results on TSP:
+\begin{enumerate}
+\item Strong inapproximability result of general TSP: if $\classP\ne\classNP$ there cannot exist a poly-time $\rho(n)$-approximation for many functions $\rho(n)$.
+\item Good approximation algorithms for a ``natural'' (still hard) restriction of TSP (metric cost function):
+\[2\text{-approximation (based on MST)}\]
+\[\tfrac32\text{-approximation (Christofides' algorithm)}\]
+(based on MST and min-cost matching).
+\end{enumerate}

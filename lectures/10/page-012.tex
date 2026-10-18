@@ -1,0 +1,16 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 12. Content remains in source order.
+\sourcepage{10}{12}
+\begin{align*}
+&\leq\sum_{u\in V}\sum_{e\ni u}p_e&&\text{since $V'\subseteq V$ and $p_e\geq0$}\\
+&=2\sum_{e\in E}p_e&&\text{each $p_e$ counted twice ($e=\{u,v\}$), once w.r.t. $u$}\\
+&&&\text{and once w.r.t. $v$}\\
+&\leq2C(V^*)&&\text{by (1).}
+\end{align*}
+Thus
+\[\rho=\frac{C(V')}{C(V^*)}\leq\frac{2C(V^*)}{C(V^*)}\leq2.\]
+\textbf{OBSERVATION:} When $w(u)=1$ $\forall u\in V$ (unweighted case), the analysis becomes the one used for A-V-C:
+\begin{enumerate}
+\item The fair property implies that the selected edges are a matching $A$.
+\item The lemma says that any VC must have size $\geq$ any matching $A$.
+\end{enumerate}
+(VERIFY AS HOMEWORK)

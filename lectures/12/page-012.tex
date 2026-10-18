@@ -1,0 +1,13 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 12. Content remains in source order.
+\sourcepage{12}{12}
+\sourcefigure[0.7]{assets/12/page-012-odd-nodes.png}
+\textbf{CRUCIAL IDEA:} Let us complete $T^*$ into a Eulerian multisubgraph by adding $|V_{\mathrm{ODD}}|/2$ edges between pairs of nodes in $V_{\mathrm{ODD}}$ and use the resulting Euler TOUR instead of the FPW.
+
+(with the new edges, all degrees become even)
+\begin{notesdefinition}
+\textbf{DEF} Given a weighted undirected complete graph $G'=(V',E')$ with $|V'|$ even, a perfect matching is a matching $M\subseteq E'$ of size $|V'|/2$ (a perfect matching ``touches'' all nodes in $V'$). Its cost is
+\[c(M)=\sum_{\{u,v\}\in M}c(u,v).\]
+\end{notesdefinition}
+\begin{notesresult}
+\textbf{FACT} A perfect matching $M^*$ of minimum cost can be found in $O(|V'|^3)$ time (blossom algorithm) (extremely complex).
+\end{notesresult}

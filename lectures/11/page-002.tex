@@ -1,0 +1,27 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 2. Content remains in source order.
+\sourcepage{11}{2}
+\sourceheading{THE TRAVELLING SALESPERSON PROBLEM (TSP)}
+Decision version:
+
+\textbf{TSP}
+\begin{notesproblem}
+&\text{I: }\langle G=(V,E),c,K\rangle:\\
+&G\text{ complete, undirected graph}\\
+&c:V\times V\to\mathbb N,\text{ symmetric}\\
+&\qquad(c(u,v)=c(v,u)),\quad(c(u,u)=0)\\
+&K\in\mathbb N-\{0\}\\[4pt]
+&\text{Q: Is there a tour (hamiltonian cycle)}\\
+&\gamma=\langle v_1,v_2,\ldots,v_{|V|},v_{|V|+1}=v_1\rangle\\
+&\qquad(v_i\ne v_j\quad1\leq i<j\leq|V|)\\
+&\text{of cost }c(\gamma)=\sum_{i=1}^{|V|}c(v_i,v_{i+1})\leq K\text{?}
+\end{notesproblem}
+\textbf{OBSERVATION:} There are $|V|!$ tours in $G$.
+
+We can prove $\mathrm{TSP}\in\classNPH$ by reducing from HAMILTON:
+
+An instance of HAMILTON is an arbitrary undirected graph $G=(V,E)$.
+
+Reduction:
+\[\langle G=(V,E)\rangle\overset f\longmapsto\langle G'=(V,E'),c,K\rangle\]
+with $E'=\{\{u,v\}:u,v\in V\}$ (complete set),
+\[c(u,v)=\begin{cases}1&\text{if }\{u,v\}\in E,\\2&\text{otherwise},\end{cases}\qquad K=|V|.\]

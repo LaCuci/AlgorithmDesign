@@ -1,0 +1,27 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 11. Content remains in source order.
+\sourcecontinuation{11}{11}
+considering the sequence of active calls of procedure PREORDER($T,r$).
+\end{notesdefinition}
+\textbf{EXAMPLE:}
+\sourcefigure[0.48]{assets/11/page-011-preorder-walk.png}
+\begin{tabular}{@{}ll@{}}
+PREORDER($T,a$) calls & PREORDER($T,b$)\\
+PREORDER($T,b$) calls & PREORDER($T,c$)\\
+PREORDER($T,c$) returns to & PREORDER($T,b$)\\
+PREORDER($T,b$) calls & PREORDER($T,d$)\\
+PREORDER($T,d$) returns to & PREORDER($T,b$)\\
+PREORDER($T,b$) returns to & PREORDER($T,a$)\\
+PREORDER($T,a$) calls & PREORDER($T,e$)\\
+PREORDER($T,e$) returns to & PREORDER($T,a$)
+\end{tabular}
+\[\mathrm{FPW}=\langle a,b,c,b,d,b,a,e,a\rangle.\]
+\begin{notesresult}
+\textbf{PROPERTIES OF A FPW}
+\begin{enumerate}
+\item The first occurrence of each node gives the preorder visit of $T$.
+\item Each edge of $T$ is used 2 times by FPW:
+\end{enumerate}
+\end{notesresult}
+\sourcefigure[0.72]{assets/11/page-011-edge-traversals.png}
+Therefore:
+\[c(\mathrm{FPW})=2c(T^*).\]

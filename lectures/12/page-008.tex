@@ -1,0 +1,16 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 8. Content remains in source order.
+\sourcepage{12}{8}
+\sourceheading{Christofides algorithm}
+Christofides algorithm: determine a better subgraph than the double replica ``$2T^*$'' characterized by a Euler tour of smaller cost.
+\begin{notesdefinition}
+\textbf{DEF} A multigraph $G=(V,E)$ is such that $E$ is a multiset (each edge is associated to a multiplicity).
+\end{notesdefinition}
+E.g.
+\sourcefigure[0.3]{assets/12/page-008-multigraph.png}
+Edge $e=\{a,b\}$ has multiplicity $m(e)=2$.
+\begin{notesdefinition}
+\textbf{DEF} An undirected multigraph $G=(V,E)$ is Eulerian if $\exists$ a Euler tour (nonsimple cycle) traversing each edge $m(e)$ times.
+\end{notesdefinition}
+E.g.
+\sourcefigure[0.83]{assets/12/page-008-eulerian-examples.png}
+Observe: A Euler tour enters and exits each node the same number of times.

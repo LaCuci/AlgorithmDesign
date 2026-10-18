@@ -1,0 +1,13 @@
+% Source: 10 -Mon Oct 19 2026.pdf, page 16. Content remains in source order.
+\sourcepage{10}{16}
+\begin{align*}
+&\geq\sum_{u\in V'}w(u)x_u^*&&\text{(eliminate terms with $x_u^*<1/2$)}\\
+&\geq\frac12\sum_{u\in V'}w(u)&&\text{($u\in V':x_u^*\geq\tfrac12$).}
+\end{align*}
+Therefore:
+\[\rho=\frac{\sum_{u\in V'}w(u)}{\sum_{u\in V^*}w(u)}\leq2.\]
+\textbf{LESSON LEARNED} LP rounding is a powerful technique to obtain quality-controlled approximations to hard problems that admit a ``good'' ILP representation.
+\begin{itemize}
+\item Randomized rounding: even more powerful.
+\item CONS: Cost of solving LP.
+\end{itemize}

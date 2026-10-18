@@ -1,0 +1,26 @@
+% Source: 11 - Tue Oct 20 2026.pdf, page 5. Content remains in source order.
+\sourcepage{11}{5}
+Observe that $\langle G',c\rangle$ can be computed in polynomial time since $\rho(|V|)$ is ptc. Thus, $|\langle G',c\rangle|=\operatorname{poly}(|\langle G\rangle|)$.
+
+Let us see what happens if I run $A_{\mathrm{TSP}}^\rho(G',c)$:
+\begin{enumerate}
+\item If $\langle G\rangle\in\mathrm{HAMILTON}$, then $G'$ contains a tour $\gamma^*$ of cost $c(\gamma)=|V|$. But then $A_{\mathrm{TSP}}^\rho(G')$ has to return a tour $\gamma_A$ of cost $c(\gamma_A)\leq\rho(|V|)\cdot|V|$:
+\begin{align*}
+&\Rightarrow\gamma_A\text{ cannot use any edge }\notin E'!\\
+&\Rightarrow\gamma_A\text{ is a hamiltonian cycle of $G$ of cost }c(\gamma_A)=c(\gamma^*)=|V|.
+\end{align*}
+\item If $\langle G\rangle\notin\mathrm{HAMILTON}$, then any tour $\gamma$ of $G'$ must use an edge $e\notin E$ $\Rightarrow\forall\gamma:c(\gamma)>|V|\cdot\rho(|V|)$.
+\end{enumerate}
+1) + 2) imply that
+\[\langle G\rangle\in\mathrm{HAMILTON}\Longleftrightarrow c(\gamma_A=A_{\mathrm{TSP}}^\rho(G',c))\leq|V|\rho(|V|).\]
+Then:
+\begin{notesalgorithm}
+\textbf{DECIDE-HAMILTON ($\langle G=(V,E)\rangle$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* build $\langle G'=(V,E'),c\rangle$ *}
+\pseudocodeline{0}{$\gamma_A\gets A_{\mathrm{TSP}}^\rho(G',c)$}
+\pseudocodeline{0}{\textbf{if} $(c(\gamma_A)\leq|V|\rho(|V|))$}
+\pseudocodeline{1}{\textbf{then return} $1$}
+\pseudocodeline{1}{\textbf{else return} $0$}
+\end{notespseudocode}
+\end{notesalgorithm}

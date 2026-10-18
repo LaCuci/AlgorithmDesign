@@ -1,0 +1,16 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 16. Content remains in source order.
+\sourcepage{12}{16}
+We have:
+\[c(\widehat\gamma)=c(M_{\mathrm{RED}})+c(M_{\mathrm{BLUE}})\]
+therefore one of the two matchings has cost $\leq c(\widehat\gamma)/2\leq c(\gamma^*)/2$!
+
+Therefore:
+\[c(M^*)\leq\min\{c(M_{\mathrm{RED}}),c(M_{\mathrm{BLUE}})\}\leq c(\gamma^*)/2.\]
+Putting it all together.
+
+Let $\widehat\gamma=\mathrm{CHRISTOFIDES}(G=(V,E),c)$:
+\begin{align*}
+c(\widehat\gamma)&\leq c(E_{T^*})+c(M^*)\leq c(\gamma^*)+c(\gamma^*)/2\\
+&=\frac32c(\gamma^*)
+\end{align*}
+\[\Rightarrow\rho=\frac{c(\widehat\gamma)}{c(\gamma^*)}\leq\frac32\frac{c(\gamma^*)}{c(\gamma^*)}=\frac32.\]

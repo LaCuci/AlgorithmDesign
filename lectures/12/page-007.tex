@@ -1,0 +1,13 @@
+% Source: 12 - Wed Oct 21 2026.pdf, page 7. Content remains in source order.
+\sourcepage{12}{7}
+\sourceheading{LESSON LEARNED from MST-based approximation}
+\begin{itemize}
+\item MST has been used to create the FULL-PREORDER-WALK (FPW), a nonsimple cycle of small cost ($2\cdot c(T^*)$) touching all nodes (multiple times).
+\end{itemize}
+FPW: Duplicate all edges of $T^*$ and traverse all replicas: Euler tour of the (multi-)subgraph ``$2T^*$''.
+\sourcefigure[0.52]{assets/12/page-007-doubled-tree.png}
+\begin{itemize}
+\item ANY nonsimple cycle can be made simple using shortcutting without increasing the cost (thanks to $\triangle$-inequality).
+\end{itemize}
+\sourcefigure[0.8]{assets/12/page-007-shortcut.png}
+$\Rightarrow$ Any Euler tour yields a tour of lesser cost!
