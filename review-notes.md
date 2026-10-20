@@ -1,6 +1,6 @@
 # Source transcription review notes
 
-These editorial tracking notes are not included in the lecture PDF. The lecture content contains only material from the supplied PDFs. The title page and table of contents are separately requested editorial front matter.
+These editorial tracking notes are not included in the lecture PDF. The lecture content contains material from the supplied PDFs, with editorial navigation headings added or revised at the user's request. The title page and table of contents are separately requested editorial front matter.
 
 ## Retained unresolved handwriting
 
@@ -21,7 +21,7 @@ These fragments remain open for a future textual reading. Their source placement
 
 ## Faithfulness and figures
 
-Apparent source errors, inconsistent indices, repetitions, original exercise prompts and administrative information are retained. The lecture text adds no corrections, explanations or external material. Source notation is transcribed where readable. Diagrams and their labels are source-derived crops; adjacent annotation relationships are retained with their corresponding diagrams or typeset text. Where a neighboring line intrudes into a diagram's rectangle, its separately transcribed lettering is excluded from the asset; the exact excluded regions are recorded in the crop provenance.
+Apparent source errors, inconsistent indices, repetitions, original exercise prompts and administrative information are retained. Apart from editorial navigation headings, the lecture text adds no corrections, explanations or external material. Source notation is transcribed where readable. Diagrams and their labels are source-derived crops; adjacent annotation relationships are retained with their corresponding diagrams or typeset text. Where a neighboring line intrudes into a diagram's rectangle, its separately transcribed lettering is excluded from the asset; the exact excluded regions are recorded in the crop provenance.
 
 The supplied source pages and rendered notes were visually reviewed. Integrity checks and compilation evidence are recorded separately in `sources.json`; the validator verifies structural coverage and file integrity, not the semantic accuracy of handwriting recognition.
 
@@ -37,7 +37,7 @@ The final integrity check also found three already-recorded assets omitted from 
 
 ## Document front matter
 
-A title page and linked table of contents were added at the user's request. The contents group entries by lecture and use descriptive labels for exercises. The printed lecture text and headings are unchanged, and lecture pagination starts at 1 after the Roman-numbered contents.
+A title page and linked table of contents were added at the user's request. The contents group entries by lecture, and lecture pagination starts at 1 after the Roman-numbered contents. A subsequent heading pass gives lectures 06–12 numbered sections and subsections consistent with the earlier lectures, descriptive printed exercise headings, and navigation entries for constructions, algorithms, proofs and approximation bounds. These headings are editorial; source prose, mathematics, figures, continuations and page anchors remain in their original order.
 
 ## Added sources 10–12
 

@@ -3045,11 +3045,11 @@
   "verification": {
     "build_succeeded": true,
     "build_command": "latexmk -pdf -outdir=build main.tex",
-    "verified_at_utc": "2026-10-18T09:13:07.845473+00:00",
+    "verified_at_utc": "2026-10-20T17:52:53.730752+00:00",
     "compiled_pdf": "build/main.pdf",
-    "compiled_pdf_sha256": "c329b25cc2128131623cc91202931ec2928ec8d9c8d8b65ce101576c8ab45b81",
-    "compiled_page_count": 84,
-    "inputs_sha256": "5e3a5f4e55820ac73b0c77bc477cb9c542fc4b58f33ecc037aedeac2006d2e1b",
+    "compiled_pdf_sha256": "1d24d8ed081e29e33152c670c854b7a5c8dbe8ccaecb521b9f8101fbcd986cb7",
+    "compiled_page_count": 90,
+    "inputs_sha256": "81cc59f38d789ff0853779d8acfa523ec237b443f4f9a2abda43d09c05c7395e",
     "review_method": "Visual inspection of available source pages and rendered notes; retained crops checked with their surrounding text. Earlier review states are preserved when originals are absent.",
     "available_originals": [
       "07a - Mon Oct 12 2026.pdf",

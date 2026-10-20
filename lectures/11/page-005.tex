@@ -2,6 +2,7 @@
 \sourcepage{11}{5}
 Observe that $\langle G',c\rangle$ can be computed in polynomial time since $\rho(|V|)$ is ptc. Thus, $|\langle G',c\rangle|=\operatorname{poly}(|\langle G\rangle|)$.
 
+\subsection{Using an approximation algorithm to decide HAMILTON}
 Let us see what happens if I run $A_{\mathrm{TSP}}^\rho(G',c)$:
 \begin{enumerate}
 \item If $\langle G\rangle\in\mathrm{HAMILTON}$, then $G'$ contains a tour $\gamma^*$ of cost $c(\gamma)=|V|$. But then $A_{\mathrm{TSP}}^\rho(G')$ has to return a tour $\gamma_A$ of cost $c(\gamma_A)\leq\rho(|V|)\cdot|V|$:

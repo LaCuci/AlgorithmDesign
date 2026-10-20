@@ -1,6 +1,6 @@
 % Source: 11 - Tue Oct 20 2026.pdf, page 4. Content remains in source order.
 \sourcepage{11}{4}
-\sourceheading{INAPPROXIMABILITY RESULT FOR GENERAL TSP}
+\section{Inapproximability of general TSP}
 \begin{notestheorem}
 \textbf{THEOREM} If $\classP\ne\classNP$ there cannot exist a polynomial $\rho(|V|)$-approximation algorithm for TSP, for ANY polynomial-time computable function $\rho(|V|)$.
 \end{notestheorem}
@@ -8,6 +8,7 @@ Very strong result: observe that even $\rho(|V|)=2^{|V|}$ is poly-time computabl
 
 \textbf{STANDARD TECHNIQUE:} by contradiction: I show that if a $\rho(|V|)$-approximation algorithm exists, I can use it to solve an NPC problem in polynomial time (against the hypothesis $\classP\ne\classNP$).
 
+\subsection{Gap construction from HAMILTON}
 \textbf{PROOF} We show that if $A_{\mathrm{TSP}}^\rho$ exists, I can solve HAMILTON in polynomial time:
 
 Let $\langle G=(V,E)\rangle$ be an instance of HAMILTON. I create $\langle G'=(V,E'),c:V\times V\mapsto\mathbb N\rangle$ an instance of the optimization TSP problem following the idea of the reduction above:

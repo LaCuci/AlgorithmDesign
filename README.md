@@ -11,7 +11,7 @@ latexmk -pdf -outdir=build main.tex
 python3 scripts/validate_sources.py
 ```
 
-The compiled notes are **`build/main.pdf`**. A convenience copy is also available as `main.pdf`; refresh it after rebuilding with `cp build/main.pdf main.pdf`. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `microtype`, `titlesec`, `tcolorbox` with its `breakable` and `skins` libraries, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
+The compiled notes are **`build/main.pdf`**. A convenience copy is also available as `main.pdf`; refresh it after rebuilding with `cp build/main.pdf main.pdf`. The shared preamble lists the required packages (`lmodern`, `geometry`, AMS mathematics, `graphicx`, `xcolor`, `enumitem`, `booktabs`, `array`, `microtype`, `titlesec`, `needspace`, `tcolorbox` with its `breakable` and `skins` libraries, `hyperref` and their standard dependencies). No shell escape, network service, bibliography download or original PDF is needed to compile. All diagram and handwriting assets are stored in `assets`.
 
 The original `pdf-prof/` ignore rule is retained. Build products and temporary extraction/review files are also ignored. The compiled PDF remains available locally under `build`.
 
@@ -99,4 +99,4 @@ Seven originals (`07a`–`12`) are currently present in `pdf-prof`; the earlier 
 
 The three older asset inclusions identified in the existing review notes (lecture 03 page 1 and lecture 04 page 7) were restored to resolve the pre-existing tracking discrepancies. No earlier source text was rewritten.
 
-The front matter is editorial material requested for this document. Contents entries group the notes by lecture and include the existing section/subsection headings; exercise prompts use descriptive navigation labels while their printed headings stay as in the source.
+The front matter and navigation headings are editorial material requested for this document. Contents entries group the notes by lecture. Lectures 06–12 follow the numbered section/subsection hierarchy used in the earlier lectures: sections introduce major topics, while subsections identify problem definitions, constructions, algorithms, correctness arguments and approximation bounds. Exercise headings name their topics, and related exercises are grouped under common sections. Use sentence case for editorial headings and reserve subsubsections for details below the contents' two-level outline. Added or revised headings do not change source prose, mathematics, figures, repetitions, source anchors or content order.

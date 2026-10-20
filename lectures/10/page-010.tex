@@ -1,5 +1,6 @@
 % Source: 10 -Mon Oct 19 2026.pdf, page 10. Content remains in source order.
 \sourcepage{10}{10}
+\subsection{Correctness and running time}
 \textbf{Running Time:} can be implemented in linear time (single scan of adjacency list -- as A-V-C).
 
 \textbf{Correctness:} The set $V'$ returned by FP is a vertex cover:
@@ -9,7 +10,7 @@
 and FP could not have finished.
 
 \textbf{OBSERVATION:} For $w(v)=1$ $\forall v\in V$, we have $\mathrm{FP}\cong\mathrm{A\text{-}V\text{-}C}$ (each selected edge makes both of its endpoints tight).
-\sourcesubheading{ANALYSIS OF APPROXIMATION RATIO}
+\subsection{Fair prices and tight vertices}
 \begin{notesresult}
 \textbf{FAIR PROPERTY:} At the end of FP:
 \[\forall u\in V:\quad\sum_{e\ni u}p_e\leq w(u).\]

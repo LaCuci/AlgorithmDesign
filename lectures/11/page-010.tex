@@ -1,5 +1,6 @@
 % Source: 11 - Tue Oct 20 2026.pdf, page 10. Content remains in source order.
 \sourcepage{11}{10}
+\subsection{The MST cost is a lower bound on the optimal tour}
 To prove that A-T-T is a 2-approximation, we must relate $\mathrm{OPT}=c(\gamma^*)$ and $c(T^*)$.
 \begin{notesresult}
 \textbf{LEMMA}\quad $c(\gamma^*)\geq c(T^*)$.
@@ -11,6 +12,7 @@ We have
 \[c(\underbrace{T^*}_{\mathrm{MST}})\leq c(\underbrace H_{\mathrm{ST}})\leq c(\gamma^*)!\]
 The cost $c(T^*)$ is a lower bound to $c(\gamma^*)$ BUT:
 
+\subsection{Full preorder walks and doubled tree edges}
 Observe that $\gamma_{T^*}$ uses edges outside $T^*$! We have to upper bound $c(\gamma_{T^*})$ as a function of $c(T^*)$.
 \begin{notesdefinition}
 \textbf{DEF} A Full Preorder Walk (FPW) is the non-simple cycle obtained by

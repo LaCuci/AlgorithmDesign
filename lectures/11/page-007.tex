@@ -1,6 +1,6 @@
 % Source: 11 - Tue Oct 20 2026.pdf, page 7. Content remains in source order.
 \sourcepage{11}{7}
-\sourceheading{RESTRICTION: METRIC COST FUNCTION}
+\section{Metric TSP and the triangle inequality}
 \begin{notesdefinition}
 \textbf{DEF:} A symmetric function $c:V\times V\to\mathbb N$ is metric if it satisfies the triangle inequality:
 \[\forall u,v,w:c(u,v)\leq c(u,w)+c(w,v).\]
@@ -8,6 +8,7 @@
 Triangle ($\triangle$) inequality states that it is always more convenient to go directly from $u$ to $v$ rather than via intermediate nodes. E.g.: nodes $u,v$ are points in $\mathbb R^d$ and $c(u,v)$ is their Euclidean distance.
 
 The decision problem TRIANGLE-TSP is defined as TSP: the instance is $\langle G,c,K\rangle$ with the additional constraint that $c$ is metric.
+\subsection{NP-hardness of metric TSP}
 \begin{notestheorem}
 \textbf{THEOREM} $\mathrm{TRIANGLE\text{-}TSP}\in\classNPH$.
 \end{notestheorem}

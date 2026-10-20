@@ -21,6 +21,13 @@
 \pagenumbering{roman}
 \pdfbookmark[0]{Contents}{document-contents}
 \setcounter{tocdepth}{2}
+% Leave a clear gap after subsection numbers such as 49.10.
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.2em}}
+% Start each lecture group with enough room for its opening entries.
+\let\notes@tocpart\l@part
+\renewcommand*\l@part[2]{\Needspace{8\baselineskip}\notes@tocpart{#1}{#2}}
+\makeatother
 \begingroup
 \small
 \setlength{\parskip}{0pt}

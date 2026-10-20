@@ -1,5 +1,6 @@
 % Source: 12 - Wed Oct 21 2026.pdf, page 9. Content remains in source order.
 \sourcepage{12}{9}
+\subsection{Euler's theorem and finding an Euler tour}
 \begin{notestheorem}
 \textbf{THEOREM (Euler)} A connected multigraph $G=(V,E)$ is Eulerian if and only if all nodes have even degree.
 \end{notestheorem}
@@ -17,6 +18,6 @@
 \sourcefigure[0.43]{assets/12/page-009-splicing-cycles.png}
 \[\langle a,b,c,d,e,f,a\rangle\quad\longmapsto\quad
 \langle a,b,d,f,b,c,d,e,f,a\rangle.\]
-\sourcesubheading{GENERALIZATION OF THE MST APPROACH}
+\subsection{Generalizing the MST approach}
 Given an instance $\langle G=(V,E)\rangle$ let us determine a (multi-)subgraph of $G$, $G'=(V,E')$ that is Eulerian and such that
 \[\underbrace{\sum_{e\in E'}\underbrace{m(e)}_{\text{multiplicity}}\cdot w(e)}_{\text{cost of the Euler tour}}\quad\text{is small.}\]

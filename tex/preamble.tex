@@ -4,7 +4,7 @@
 \usepackage[margin=25mm]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx,xcolor,enumitem,booktabs,array}
-\usepackage{microtype,titlesec}
+\usepackage{microtype,titlesec,needspace}
 \usepackage[breakable,skins]{tcolorbox}
 \usepackage[hidelinks,unicode]{hyperref}
 \definecolor{notesblue}{HTML}{335C81}
@@ -69,7 +69,11 @@
     \addcontentsline{toc}{subsection}{#1}%
   \fi
 }
-\newcommand{\lecturecontents}[1]{\phantomsection\addcontentsline{toc}{part}{#1}}
+% Keep lecture anchors with the opening heading, including at page boundaries.
+\newcommand{\lecturecontents}[1]{%
+  \par\Needspace{8\baselineskip}%
+  \phantomsection\addcontentsline{toc}{part}{#1}%
+}
 \newcommand{\sourcesubheading}[1]{\paragraph*{#1}}
 \newcommand{\sourcefigure}[2][0.9]{\par\begin{center}\includegraphics[width=#1\linewidth,height=0.85\textheight,keepaspectratio]{#2}\end{center}\par}
 \newcommand{\bits}{\{0,1\}}
