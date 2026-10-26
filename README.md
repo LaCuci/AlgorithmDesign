@@ -1,6 +1,6 @@
 # Advanced Algorithm Design lecture notes
 
-Editable transcription of thirteen source PDFs, in numerical filename order. All 184 source pages are accounted for: **15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16**. The document uses continuous 11-point A4 typesetting, the existing lecture headings and filename bookmarks, plus an added title page and linked table of contents. The contents use Roman page numbers; lecture notes start at Arabic page 1. Original language, repetitions and apparent errors are retained.
+Editable transcription of sixteen source PDFs, in numerical filename order. All 224 source pages are accounted for: **15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16, 14, 14, 12**. The document uses continuous 11-point A4 typesetting, the existing lecture headings and filename bookmarks, plus an added title page and linked table of contents. The contents use Roman page numbers; lecture notes start at Arabic page 1. Original language, repetitions and apparent errors are retained.
 
 ## Build
 
@@ -23,8 +23,8 @@ tex/preamble.tex            reusable layout and source macros
 tex/frontmatter.tex         title page and linked table of contents
 lectures/01/lecture.tex     filename bookmark and ordered page inclusions
 lectures/01/page-001.tex    editable content from one source page
-lectures/02/ … 12/          same structure, including separate 07a/ and 07b/
-assets/02/ … 12/           stored source-derived diagram/fragment crops
+lectures/02/ … 15/          same structure, including separate 07a/ and 07b/
+assets/02/ … 14/           stored source-derived diagram/fragment crops
 sources.json               ordered inclusion and review record
 review-notes.md             retained handwriting and contentless-page notes
 scripts/                   integrity, expansion and inspection helpers
@@ -93,10 +93,10 @@ Use `--kind unreadable --note '…'` for a retained fragment. The helper writes 
 
 ## Latest conversion
 
-Added lessons `10` (17 pages), `11` (12), and `12` (16), preserving the existing statement boxes, problem braces, pseudocode and continuous layout. The 45 added pages cover approximation pitfalls, weighted vertex cover, fair pricing, LP rounding, TSP hardness, the MST approximation and Christofides' algorithm. All readable text and mathematics are editable; 33 source-derived crops retain graph geometry and attached annotations. The blank final pages of lessons 10 and 11 are recorded without inserting empty output pages. The title page and contents now include lectures 01–12.
+Added lessons `13` (14 pages), `14` (14), and `15` (12), preserving the existing statement boxes, problem braces, pseudocode and continuous layout. The 40 added source pages cover Christofides' tightness bound, set cover and its greedy approximation, charging arguments and harmonic numbers, the subset-sum FPTAS, and randomized approximation algorithms. All readable text and mathematics are editable; four source-derived crops retain the graph examples, bucket-list construction and harmonic-number diagram. Lesson 13's blank final page is recorded without inserting an empty output page. The title page and linked contents now include lectures 01–15.
 
-Seven originals (`07a`–`12`) are currently present in `pdf-prof`; the earlier six lectures remain self-contained in LaTeX and assets. Validation checks all available originals and reports the missing ones. Original wording, repetitions and apparent errors are retained; see `review-notes.md` for specific review observations and the earlier unresolved symbols.
+Ten originals (`07a`–`15`) are currently present in `pdf-prof`; the earlier six lectures remain self-contained in LaTeX and assets. Validation checks all available originals and reports the missing ones. Original wording, repetitions and apparent errors are retained; see `review-notes.md` for specific review observations and the earlier unresolved symbols.
 
 The three older asset inclusions identified in the existing review notes (lecture 03 page 1 and lecture 04 page 7) were restored to resolve the pre-existing tracking discrepancies. No earlier source text was rewritten.
 
-The front matter and navigation headings are editorial material requested for this document. Contents entries group the notes by lecture. Lectures 06–12 follow the numbered section/subsection hierarchy used in the earlier lectures: sections introduce major topics, while subsections identify problem definitions, constructions, algorithms, correctness arguments and approximation bounds. Exercise headings name their topics, and related exercises are grouped under common sections. Use sentence case for editorial headings and reserve subsubsections for details below the contents' two-level outline. Added or revised headings do not change source prose, mathematics, figures, repetitions, source anchors or content order.
+The front matter and navigation headings are editorial material requested for this document. Contents entries group the notes by lecture. Lectures 06–15 follow the numbered section/subsection hierarchy used in the earlier lectures: sections introduce major topics, while subsections identify problem definitions, constructions, algorithms, correctness arguments and approximation bounds. Exercise headings name their topics, and related exercises are grouped under common sections. Use sentence case for editorial headings and reserve subsubsections for details below the contents' two-level outline. Added or revised headings do not change source prose, mathematics, figures, repetitions, source anchors or content order.

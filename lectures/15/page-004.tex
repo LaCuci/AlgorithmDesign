@@ -1,0 +1,27 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 4. Content remains in source order.
+\sourcepage{15}{4}
+PROOF: Let $y=y_i$ and let $\mathrm{GC}_i$ the greedy choice at iteration $i$. Clearly, $\mathrm{GC}_i=y_j$ for some $j<i\Rightarrow y_j=\mathrm{GC}_i\leq y=y_i$. Also, since $y=y_i\notin L'$ it must be $\mathrm{GC}_i\geq y_i/(1+\delta)$. The proof follows setting $z=\mathrm{GC}_i\in L'$.
+
+EXERCISE: Prove that $L'=\mathrm{TRIM}(L,\delta)$ is a minimum trimming (standard analysis of a greedy algorithm).
+However, we will not use minimality directly but the following:
+\begin{notesresult}
+\textbf{PROPERTY} Let $L'=\langle z_0=0,z_1,\ldots,z_{K-1}\rangle=\mathrm{TRIM}(L,\delta)$.
+Then, for $1\leq j<K-1$: $z_{j+1}/z_j>(1+\delta)$.
+(The property does not hold for $j=0$ since $z_0=0$.)
+\end{notesresult}
+PROOF. $z_{j+1}$ and $z_j$ are two consecutive greedy choices. Thus it must be
+\[z_j<z_{j+1}/(1+\delta)\Rightarrow z_{j+1}/z_j>(1+\delta).\]
+\subsection{The approximation algorithm}
+We are ready to transform EXP-SS$(\langle S,t\rangle)$ into a FPTAS:
+(identical to EXP-SS$(S,t)$ but for trimming with $\delta=\eps/(2n)$).
+\begin{notesalgorithm}
+\textbf{APPROX-SS ($S,t,\eps$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* Let $S=\{x_1,x_2,\ldots,x_n\}$ *}
+\pseudocodeline{0}{$L'_0\gets\langle\varnothing\rangle$}
+\pseudocodeline{0}{\textbf{for} $i\gets1$ \textbf{to} $n$ \textbf{do}}
+\pseudocodeline{1}{$L'_i\gets\mathrm{MERGE\text{-}WD}(L'_{i-1},L'_{i-1}+_t x_i)$}
+\pseudocodeline{1}{$L'_i\gets\mathrm{TRIM}(L'_i,\eps/(2n))$}
+\pseudocodeline{0}{\textbf{return} $\mathrm{MAX}(L'_n)$}
+\end{notespseudocode}
+\end{notesalgorithm}

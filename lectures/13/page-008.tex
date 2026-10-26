@@ -1,0 +1,29 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 8. Content remains in source order.
+\sourcepage{13}{8}
+\subsection{Pseudocode, correctness and running time}
+Pseudocode
+\begin{notesalgorithm}
+\textbf{APPROX-SET-COVER ($X,\mathcal F$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$U\gets X;\quad\mathcal C\gets\varnothing$}
+\pseudocodeline{0}{\textbf{while} $(U\neq\varnothing)$ \textbf{do}}
+\pseudocodeline{1}{$S\gets\operatorname{argmax}\{|T\cap U|:T\in\mathcal F\}$}
+\pseudocodeline{1}{$U\gets U-S;\quad\mathcal C\gets\mathcal C\cup\{S\}$}
+\pseudocodeline{0}{\textbf{return} $\mathcal C$}
+\end{notespseudocode}
+\end{notesalgorithm}
+NOTE: After $S$ is selected, in all subsequent iterations $S\cap U=\varnothing$ ($\Rightarrow S$ will not be selected again).
+
+CORRECTNESS
+
+Since $X=\bigcup_{S\in\mathcal F}S$, $|U|$ is strictly decreasing hence the algorithm terminates. On termination,
+\[U=\varnothing\Rightarrow\forall x\in X\ \exists S\in\mathcal C:x\in S.\]
+Thus, $\mathcal C$ covers $X$.
+
+RUNNING TIME. Trivial Analysis:
+\begin{itemize}
+\item $O(\min(|X|,|\mathcal F|))$ iterations.
+\item Computing $\operatorname{argmax}\{|T\cap U|:T\in\mathcal F\}$ can be done in time $O(|X||\mathcal F|)$.
+\end{itemize}
+\[\Rightarrow T(|X|,|\mathcal F|)=O(|X||\mathcal F|\min\{|X|,|\mathcal F|\}).\]
+Can be cubic in $|\langle X,\mathcal F\rangle|$!

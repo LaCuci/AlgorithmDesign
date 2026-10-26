@@ -1,0 +1,21 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 9. Content remains in source order.
+\sourcepage{15}{9}
+\subsection{Polynomial running time}
+\[\Rightarrow\underbrace{K}_{|L'_i|}<\frac{\ln t}{\ln(1+\eps/(2n))}+2.\]
+However, for $|x|<1$: $\ln(1+x)\geq x/(1+x)$.
+\begin{align*}
+\Rightarrow |L'_i|=K
+&\leq\frac{\ln t}{\frac\eps{2n}/(1+\frac\eps{2n})}+2\\
+&\leq\frac{2n}\eps\underbrace{\left(1+\frac\eps{2n}\right)}_{\leq3/2}\ln t+2
+=O\left(\frac n\eps\log t\right).
+\end{align*}
+Therefore
+\[T_{\mathrm{ASS}}=O\left(\sum_{i=0}^{n-1}|L'_i|\right)
+=O\left(\frac{n^2\log t}\eps\right).\]
+But $n=O(|\langle S,t\rangle|)$ and $\log t=O(|\langle S,t\rangle|)$.
+Thus
+\[T_{\mathrm{ASS}}(|\langle S,t\rangle|,\eps)=O\left(\frac{|\langle S,t\rangle|^3}\eps\right)\]
+which is polynomial both in $|\langle S,t\rangle|$ and $1/\eps$.
+\begin{notesresult}
+EXERCISE: Extend A-SS so that it also returns the subset associated to MAX$(L'_n)$.
+\end{notesresult}

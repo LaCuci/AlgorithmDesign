@@ -1,0 +1,32 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 3. Content remains in source order.
+\sourcepage{15}{3}
+\subsection{Trimming an ordered list}
+\begin{notesdefinition}
+\textbf{DEF} For $\delta>0$, a $\delta$-trimming of an ordered list $L$ is a sublist $L'$ of $L$ such that:
+\[\forall y\in L\ \exists z\in L':\quad\frac y{1+\delta}\leq z\leq y.\]
+\end{notesdefinition}
+In a $\delta$-trimming, element $z\in L'$ is ``close'' to element $y$. $z$ is smaller than or equal to $y$ but cannot be much smaller!
+
+Observe that each element $z\in L$ may represent itself (e.g. 0 always represents itself).
+
+EXAMPLE. $L=\langle0,10,11,12,20,21\rangle$, $\delta=1/10$.
+Then $L'=\langle0,10,12,20\rangle$ is a $\delta$-trimming of $L$, since
+\[\underbrace{\frac{11}{1+1/10}}_{10}\leq10\leq11
+\quad\text{and}\quad
+\underbrace{\frac{21}{1+1/10}}_{\approx19,1}\leq20\leq21.\]
+We can obtain the minimum size $\delta$-trimming greedily in linear time:
+\begin{notesalgorithm}
+\textbf{TRIM ($L,\delta$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* Let $L=\langle y_0,y_1,\ldots,y_{K-1}\rangle$ \{ $|L|=K$ \} *}
+\pseudocodeline{0}{$\mathrm{GC}\gets y_0$ \{ greedy choice \}}
+\pseudocodeline{0}{$L'\gets\langle\mathrm{GC}\rangle$}
+\pseudocodeline{0}{\textbf{for} $i\gets1$ \textbf{to} $K-1$ \textbf{do}}
+\pseudocodeline{1}{\textbf{if} $(\mathrm{GC}<y_i/(1+\delta))$ \{ GC not close enough to $y_i$ \}}
+\pseudocodeline{1}{\textbf{then}}
+\pseudocodeline{2}{$\mathrm{GC}\gets y_i$}
+\pseudocodeline{2}{$L'\gets\langle L',\mathrm{GC}\rangle$}
+\pseudocodeline{0}{\textbf{return} $L'$}
+\end{notespseudocode}
+\end{notesalgorithm}
+CORRECTNESS: $\forall y\in L-L'\ \exists z\in L':y/(1+\delta)\leq z\leq y$.

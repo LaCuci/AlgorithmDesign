@@ -1,0 +1,17 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 3. Content remains in source order.
+\sourcepage{14}{3}
+\subsection{Charging elements for their first coverage}
+REMARK. We proved $\rho\leq1+\ln n$ ($\rho\leq\lceil\ln n\rceil$). In the worst case $|S_{\max}|=\Theta(|X|)=\Theta(n)$! This bound is not better in the worst case but it can be much better for instances with ``small'' $|S_{\max}|$.
+
+TECHNIQUE: CHARGING ARGUMENT
+
+Each $x\in X$ is assigned a weight $c_x$. The weight depends on ASC$(X,\mathcal F)$ and is ``small'' if $x$ is covered together with many other elements.
+
+We will relate $|\mathcal C^*|$ to the weights determined by ASC$(X,\mathcal F)$ to show that the ``covering rate'' of the algorithm is good.
+
+RECALL THAT:
+\begin{notesdefinition}
+$U_t$: set of elements still to be covered at the beginning of iteration $t\geq1$.
+
+$S_t$: $\operatorname{argmax}\{|T\cap U_t|:T\in\mathcal F\}$ selected subset during iteration $t$.
+\end{notesdefinition}

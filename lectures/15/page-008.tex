@@ -1,0 +1,25 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 8. Content remains in source order.
+\sourcecontinuation{15}{8}
+it follows that
+\[\rho\leq\left(1+\frac\eps{2n}\right)^n
+<\lim_{n\to+\infty}\left(1+\frac\eps{2n}\right)^n=e^{\eps/2}<1+\eps.\]
+$\Rightarrow$ A-SS$(S,t,\eps)$ is a $(1+\eps)$-approximation!
+
+\subsection{Bounding the trimmed-list size}
+We are not finished! We need to bound the running time.
+Each iteration $i\geq1$ requires time $\Theta(|L'_{i-1}|)$.
+It suffices to limit $\sum_{i=1}^n|L'_{i-1}|=\sum_{i=0}^{n-1}|L'_i|$.
+
+Let $L'_i=\langle z_0=0,z_1,\ldots,z_{K-1}\rangle$ ($|L'_i|=K$).
+We proved that $\forall\ 1\leq j<K-1:z_{j+1}/z_j>(1+\eps/(2n))$ (see PROPERTY).
+We can then write
+\[\frac{z_{K-1}}{z_1}=\frac{z_{K-1}}{z_{K-2}}\cdot\frac{z_{K-2}}{z_{K-3}}
+\cdots\frac{z_3}{z_2}\cdot\frac{z_2}{z_1}.\]
+Telescoping product: each factor $>(1+\eps/(2n))$.
+Thus
+\[\frac{z_{K-1}}{z_1}>\left(1+\frac\eps{2n}\right)^{K-2}.\]
+Moreover
+\[t\geq z_{K-1}>\left(1+\frac\eps{2n}\right)^{K-2}z_1
+\geq\left(1+\frac\eps{2n}\right)^{K-2}.\]
+Let us ``solve'' in $K$:
+\[(K-2)\ln\left(1+\frac\eps{2n}\right)<\ln t.\]

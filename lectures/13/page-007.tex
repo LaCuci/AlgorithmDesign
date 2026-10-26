@@ -1,0 +1,22 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 7. Content remains in source order.
+\sourcepage{13}{7}
+Clearly:
+\begin{align*}
+&\langle G=(V,E),K\rangle\in\mathrm{VC}\\
+\Longleftrightarrow\quad&\exists V'\subseteq V,\ |V'|=K:\quad
+\forall e=\{u,v\}\in E:(u\in V')\vee(v\in V')\\
+\Longleftrightarrow\quad&\exists V'\subseteq V,\ |V'|=K:\quad
+\forall e\in E\ \exists u\in V':e\in N_u\\
+\Longleftrightarrow\quad&\exists V'\subseteq V,\ |V'|=K:\quad E=\bigcup_{u\in V'}N_u\\
+\Longleftrightarrow\quad&\exists\mathcal C'\subseteq\mathcal F_G,\ |\mathcal C'|=K'=K:\quad
+X_G=E=\bigcup_{S\in\mathcal C'}S\\[-2pt]
+&\hspace{3em}(\mathcal C'=\{N_u:u\in V'\})\\
+\Longleftrightarrow\quad&f(\langle G=(V,E),K\rangle)=\langle E_G,\mathcal F_G,K'\rangle\in\mathrm{SC}.
+\end{align*}
+\subsection{The greedy choice}
+SC admits the following, intuitive greedy algorithm:
+\begin{itemize}
+\item GC: Choose the subset $S\in\mathcal F$ covering the largest number of elements of $X$.
+\item Cleanup: Remove covered elements.
+\end{itemize}
+(REMARK: For VC this corresponds to select the node of largest degree.)

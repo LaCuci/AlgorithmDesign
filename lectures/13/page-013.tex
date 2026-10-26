@@ -1,0 +1,18 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 13. Content remains in source order.
+\sourcepage{13}{13}
+Thus there cannot be more than
+\[n\left(1-\frac1K\right)^t<ne^{-t/K}\qquad
+\left(\left(1-\frac1m\right)^m<e^{-1}\right)\]
+uncovered elements after iteration $t$.
+Set $\bar t=K\lceil\ln n\rceil$. We have that
+\[|U_{\bar t+1}|<ne^{-\bar t/K}
+=ne^{-K\lceil\ln n\rceil/K}
+=ne^{-\lceil\ln n\rceil}<n\frac1n=1.\]
+Thus: $U_{\bar t+1}=\varnothing$. Therefore
+\[|\mathcal C|\leq\bar t=K\lceil\ln n\rceil
+=|\mathcal C^*|\lceil\ln n\rceil.\]
+Finally:
+\[\rho(|X|)=\rho(n)\leq\frac{|\mathcal C|}{|\mathcal C^*|}
+\leq\frac{|\mathcal C^*|\lceil\ln n\rceil}{|\mathcal C^*|}
+=\lceil\ln n\rceil.\]
+The quality of the approximation provided by A-S-C $(X,\mathcal F)$ decreases as $n=|X|$ increases!

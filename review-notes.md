@@ -13,7 +13,7 @@ These fragments remain open for a future textual reading. Their source placement
 
 ## Page accounting and continuations
 
-- All thirteen source PDFs have page coverage recorded individually in `sources.json`: 15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16 pages (184 total).
+- All sixteen source PDFs have page coverage recorded individually in `sources.json`: 15, 19, 13, 15, 12, 21, 6, 10, 15, 13, 17, 12, 16, 14, 14, 12 pages (224 total).
 - Lecture 06 pages 16–19 have no extractable text. Their subset-sum proof and examples were transcribed from the visible handwriting, including the repeated example and column sums.
 - Lecture 06 page 20 contains a trailing closing parenthesis and box borders. The parenthesis is retained immediately after page 19's content, without a forced page break.
 - Lecture 06 page 21 contains box borders and a tiny isolated ink stroke, with no substantive content. It has a page file, source label and verified record, without blank-page filler.
@@ -47,3 +47,12 @@ A title page and linked table of contents were added at the user's request. The 
 - Lesson 11 pages 10–11 continue the full-preorder-walk definition across page files, with its source anchor retained inside the definition box. Proofs and derivations continue in source order; the repeated recaps and examples in lesson 12 are preserved.
 - No new handwriting fragment required an unresolved textual reading. Original filenames and dates, including `10 -Mon Oct 19 2026.pdf`, are unchanged.
 - The new source pages and their rendered LaTeX were visually compared, including the formulas, pseudocode, diagrams and the two contentless pages. Earlier source verification states are preserved because the first six original PDFs are absent. The older three recorded-but-omitted asset inclusions described above were restored and their rendered placement checked again.
+
+## Added sources 13–15
+
+- Added 40 source pages: lesson 13 has 14, lesson 14 has 14, and lesson 15 has 12. Lesson 13 page 14 is blank; its source marker and contentless record are retained without adding an empty output page.
+- The additions retain the established continuous layout, blue statement boxes, problem braces, amber algorithms, and numbered navigation headings. The title page and linked contents include lectures 01–15. Repeated recaps, pseudocode, examples, exercise prompts and derivations remain in source order; no exercise solutions are added.
+- All source pages were inspected from Poppler renders. Readable handwriting, prose, formulas and algorithms are editable LaTeX. Four crops retain the weighted graph and MST example (13 page 3), bucket-list construction (13 page 9), and harmonic-number integral diagram (14 page 2). Crop provenance records the small excluded regions of adjacent prose transcribed separately.
+- Apparent source errors are retained: the final vertex-cover reduction uses `E_G` after defining `X_G=E` (13 page 7); the termination observation writes a cardinality equal to the empty set (13 page 10); the logarithmic-bound derivation uses a strict inequality where equality may occur (13 page 13); and the charging proof leaves denominators zero after a fixed set has been fully covered (14 page 8). The exercise's `m_t` indices (14 page 9) are unchanged.
+- APPROX-SS initializes its first list with the empty-set symbol rather than zero in lesson 15 page 4. The subsequent proof uses the original zero-cost lists. The error-propagation lemma omits an explicit feasibility condition and includes `i=0` although its proof starts at `i=1` (15 page 5). These source inconsistencies are preserved without editorial corrections in the notes.
+- The new source pages were compared with their rendered notes, including subscripts, inequalities, trimming parameters and the final expected-cost approximation ratio. The diagram assets and the blank page were also checked. No new unresolved handwriting fragment was introduced; earlier review states remain unchanged.

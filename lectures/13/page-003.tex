@@ -1,0 +1,19 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 3. Content remains in source order.
+\sourcepage{13}{3}
+The graph: let $n$ be odd. For $\eps>0$ very small (to be determined):
+\sourcefigure[0.95]{assets/13/page-003-tight-example.png}
+To complete the graph: weigh all other edges with cost of the shortest path $\bar\pi^*_{u,v}$.
+
+MST $T^*$:
+\sourcefigure[0.8]{assets/13/page-003-path-mst.png}
+\[c(T^*)=n-1.\]
+MCPM of $V_{\mathrm{ODD}}=\{1,n\}$:
+$M^*$: one edge $\{1,n\}$ at cost $\lfloor n/2\rfloor(1+\eps)$ ($n$ odd).
+
+$T^*\cup M^*$ is the tour $\gamma$ (no shortcutting).
+\[c(T^*\cup M^*)\approx\frac32n+O(\eps n).\]
+\[\gamma^*=\langle1,3,\ldots,n,n-1,n-3,\ldots,2,1\rangle\]
+\[c(\gamma^*)=\left\lfloor\frac n2\right\rfloor(1+\eps)+2+
+\left(\left\lfloor\frac n2\right\rfloor-1\right)(1+\eps)=n+O(\eps n).\]
+Choose $\eps=1/n^2$:
+\[\lim_{n\to+\infty}\frac{c(T^*\cup M^*)}{c(\gamma^*)}=\frac32.\]

@@ -1,0 +1,17 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 5. Content remains in source order.
+\sourcepage{14}{5}
+\begin{notesresult}
+\[\sum_{x\in X}c_x=\sum_{t=1}^{|\mathcal C|}
+\underbrace{\left(\sum_{x\in S_t\cap U_t}c_x\right)}_{1}=|\mathcal C|.\]
+\end{notesresult}
+We are ready to relate $\mathcal C^*$ and $\mathcal C$ using the weights.
+\begin{notesresult}
+\textbf{LEMMA}
+\[\sum_{S\in\mathcal C^*}\sum_{x\in S}c_x\geq\sum_{x\in X}c_x=|\mathcal C|.\]
+\end{notesresult}
+PROOF: We know that $\mathcal C^*$ is a cover. Thus $\forall x\in X$, $c_x$ must be present as a summand in one of the sums on the l.h.s.!
+
+ARGUMENT IDEA: We will prove that
+\[\forall S\in\mathcal F:\quad\sum_{x\in S}c_x\leq H(|S|).\]
+Therefore, from the lemma:
+\[|\mathcal C|\leq\sum_{S\in\mathcal C^*}H(|S|).\]

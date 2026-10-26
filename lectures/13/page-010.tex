@@ -1,0 +1,32 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 10. Content remains in source order.
+\sourcepage{13}{10}
+\section{Approximation analysis of greedy set cover}
+\subsection{Two approximation bounds}
+We will see two different arguments to upperbound $\rho$:
+\begin{itemize}
+\item Simple argument yielding $\rho(n)\leq\lceil\ln n\rceil$ with $n=|X|$.
+\item Complex argument yielding $\rho(\langle X,\mathcal F\rangle)\leq\ln|S_{\max}|+1$ with
+$|S_{\max}|=\max\{|S|:S\in\mathcal F\}$.
+\end{itemize}
+(NOTE: $|S_{\max}|$ can be $\ll n$!)
+
+Interesting charging argument (uses weights).
+
+\subsection{The logarithmic bound in the universe size}
+\begin{notestheorem}
+\textbf{THEOREM}\quad $\rho(n)\leq\lceil\ln n\rceil$, $n=|X|$.
+\end{notestheorem}
+PROOF. Call $U_t$ set $U$ at the start of iteration $t\geq1$. $U_t$ is the set of elements that still need to be covered.
+
+Observe that the first time $\bar t$ when $|U_{\bar t}|=\varnothing$ implies that $|\mathcal C|=\bar t-1$.
+% The inset repeats the algorithm; its repetition is retained.
+\begin{notesalgorithm}
+\textbf{APPROX-SET-COVER ($X,\mathcal F$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$U\gets X;\quad\mathcal C\gets\varnothing$}
+\pseudocodeline{0}{\textbf{while} $(U\neq\varnothing)$ \textbf{do}}
+\pseudocodeline{1}{$S\gets\operatorname{argmax}\{|T\cap U|:T\in\mathcal F\}$}
+\pseudocodeline{1}{$U\gets U-S;\quad\mathcal C\gets\mathcal C\cup\{S\}$}
+\pseudocodeline{0}{\textbf{return} $\mathcal C$}
+\end{notespseudocode}
+\end{notesalgorithm}

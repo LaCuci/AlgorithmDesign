@@ -1,0 +1,27 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 4. Content remains in source order.
+\sourcepage{13}{4}
+\subsection{Inapproximability and Euclidean TSP}
+\begin{notesresult}
+\textbf{INAPPROXIMABILITY RESULT:}
+
+For TRIANGLE-TSP there cannot exist a constant $\rho$-approximation algorithm for
+\[\rho<\frac{123}{122}\approx1,008\]
+unless $\classP=\classNP$ [Karpinski, Lampis, Schmied '15].
+\end{notesresult}
+\begin{notesresult}
+Christofides' algorithm has been the best approximation algorithm for $\triangle$-TSP for 48 years (since 1976).
+
+In 2020, a new (impractical) algorithm has been announced with
+\[\rho\leq\frac32-10^{-36}\qquad\smile\]
+[Karlin, Klein, Gharan '20].
+\end{notesresult}
+\begin{notesdefinition}
+\textbf{FURTHER RESTRICTION: EUCLIDEAN TSP}
+
+The nodes of $G$ are points $\in\mathbb R^d$ and
+$c(u,v)=\lVert u-v\rVert_2=d_E(u,v)$.
+
+There is a PTAS for EUCLIDEAN TSP.
+Running time: $O(n\log n+2^{\operatorname{poly}(1/\eps)})$.
+The algorithm is totally impractical.
+\end{notesdefinition}

@@ -1,0 +1,20 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 9. Content remains in source order.
+\sourcepage{14}{9}
+\[=H(\underbrace{m_0}_{|S|})-H(\underbrace{m_{|\mathcal C|}}_0)
+=H(|S|)-\underbrace{H(0)}_0=H(|S|)!\]
+\subsection{Bounded-degree vertex cover and exercises}
+OBSERVATIONS
+
+The bound is much better when $|S_{\max}|$ is small.
+
+APPLICATION: MINIMUM VERTEX COVER.
+Restriction: graphs of degree 3: still hard!
+Using the $\mathrm{VC}\polyred\mathrm{SC}$ reduction (which preserves the approximation) obtain
+\[\rho_{3\text{-}\Delta\text{-VC}}=H(3)=1+\frac12+\frac13=\frac{11}{6}<2!\]
+EXERCISES
+\begin{enumerate}
+\item Define $m_t=|U_t|$ ($m_0=|X|$, $\ldots$, $m_c=0$). Use the charging argument to prove that
+\[|\mathcal C|=\sum_{x\in X}c_x\leq|\mathcal C^*|H(|X|).\]
+(Hint: apply pigeon-hole to lowerbound $|S_t\cap U_t|$ as a function of $m_{t-1}$.)
+\item Prove that VC on all graphs of degree $\leq2$ is in $\classP$.
+\end{enumerate}

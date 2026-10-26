@@ -1,0 +1,20 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 8. Content remains in source order.
+\sourcepage{14}{8}
+Therefore:
+\[|S_t\cap U_t|\geq|S\cap U_t|=m_{t-1}.\]
+$m_{t-1}$: \# elements of $S$ still uncovered at the beginning of iteration $t$.
+
+Substituting in (1):
+\[\sum_{x\in S}c_x\leq\sum_{t=1}^{|\mathcal C|}\frac{m_{t-1}-m_t}{m_{t-1}}.\]
+From now on, simple manipulations:
+\begin{align*}
+\sum_{t=1}^{|\mathcal C|}\frac{m_{t-1}-m_t}{m_{t-1}}
+&=\sum_{t=1}^{|\mathcal C|}\sum_{j=m_t+1}^{m_{t-1}}\frac1{m_{t-1}}\\
+&\leq\sum_{t=1}^{|\mathcal C|}\sum_{j=m_t+1}^{m_{t-1}}\frac1j\\
+&\leq\sum_{t=1}^{|\mathcal C|}\left(\sum_{j=1}^{m_{t-1}}\frac1j-\sum_{j=1}^{m_t}\frac1j\right)\\
+&=\sum_{t=1}^{|\mathcal C|}(H(m_{t-1})-H(m_t))\\
+&=H(m_0)-H(m_1)+H(m_1)-H(m_2)+\cdots\\
+&\hspace{2em}+H(m_{|\mathcal C|-1})-H(m_{|\mathcal C|}).
+\end{align*}
+CHECK AT HOME! $1/m_{t-1}\leq1/j$.
+(Telescoping sum.)

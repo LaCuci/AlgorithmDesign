@@ -1,0 +1,9 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 14. Content remains in source order.
+\sourcepage{14}{14}
+\subsection{Exponential running time}
+RUNNING TIME: In the worst case:
+\[\begin{cases}|L_i|=2|L_{i-1}|,\\|L_0|=1.\end{cases}
+\quad\Rightarrow\quad |L_i|=2^i.\]
+$\Rightarrow$ The time of MERGE-WD$(L_i,L_i+_t x_i)$ is $\Theta(2^i)$.
+\[\Rightarrow T_{\mathrm{ESS}}(n)=\Theta(2^n)!\qquad n=|S|.\]
+OBSERVATION: $2^{|S|}$ can be $\Theta(2^{|\langle S,t\rangle|})$.

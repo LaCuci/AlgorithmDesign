@@ -1,0 +1,28 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 13. Content remains in source order.
+\sourcepage{14}{13}
+\subsection{The exhaustive algorithm}
+\begin{notesresult}
+\textbf{PROPERTY}
+
+For $1\leq i\leq n$:
+\[L_i=\mathrm{MERGE\text{-}WD}(L_{i-1},L_{i-1}+_t x_i).\]
+\end{notesresult}
+PROOF. Let $S\subseteq S_i$. If $x_i\notin S$ then $S\subseteq S_{i-1}$ and $c(S)=\sum_{s\in S}s\in L_{i-1}$. Otherwise:
+\[c(S)=\sum_{s\in S-\{x_i\}}s+x_i\]
+and $S-\{x_i\}\subseteq S_{i-1}$. Therefore $c(S)\in L_{i-1}+_t x_i$.
+The ordered list without duplicates $L_i$ can thus be obtained as
+\[L_i=\mathrm{MERGE\text{-}WD}(L_{i-1},L_{i-1}+_t x_i).\]
+We are ready to see the exhaustive algorithm:
+\begin{notesalgorithm}
+\textbf{EXP-SS ($S,t$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* Let $S=\{x_1,x_2,\ldots,x_n\}$ *}
+\pseudocodeline{0}{$L_0\gets\langle0\rangle$}
+\pseudocodeline{0}{\textbf{for} $i\gets1$ \textbf{to} $n$ \textbf{do}}
+\pseudocodeline{1}{$L_i\gets\mathrm{MERGE\text{-}WD}(L_{i-1},L_{i-1}+_t x_i)$}
+\pseudocodeline{0}{\textbf{return} $\mathrm{MAX}(L_n)$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\begin{notesresult}
+CORRECTNESS: Straight from PROPERTY: MAX$(L_n)$ is the maximum cost of a feasible subset.
+\end{notesresult}

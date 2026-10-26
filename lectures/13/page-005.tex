@@ -1,0 +1,27 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 5. Content remains in source order.
+\sourcepage{13}{5}
+\section{The minimum set cover problem}
+\subsection{Instances, coverings and applications}
+An instance of SC is a pair $(X,\mathcal F)$.
+\begin{itemize}
+\item $X$: universe of elements.
+\item $\mathcal F$: family of subsets of $X$: $\mathcal F\subseteq\{S:S\subseteq X\}$ [$S\in\mathcal F\Rightarrow S\subseteq X$]. $\mathcal B(X)$: Boolean of $X$.
+\end{itemize}
+Covering constraint:
+\[X=\bigcup_{S\in\mathcal F}S\qquad
+(\forall x\in X\ \exists S\in\mathcal F:x\in S).\]
+\begin{notesdefinition}
+A subset $\mathcal C\subseteq\mathcal F$ is a covering of $X$ (also: $\mathcal C$ covers $X$) if
+$X=\bigcup_{S\in\mathcal C}S$.
+
+(Observe that $\mathcal F$ covers $X$.)
+\end{notesdefinition}
+\begin{notesproblem}
+&\text{We wish to find a minimum cardinality}\\
+&\text{covering }\mathcal C^*\text{ of }X.
+\end{notesproblem}
+SC is an important problem which extends Vertex Cover.
+
+APPLICATIONS:
+\[X=\text{set of individuals},\qquad\mathcal F=\text{set of mailing lists}.\]
+$|\mathcal C^*|$: minimum number of bulk e'mails to reach all individuals.

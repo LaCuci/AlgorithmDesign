@@ -1,0 +1,19 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 11. Content remains in source order.
+\sourcepage{14}{11}
+Clearly $\mathrm{SS}\polyred\mathrm{SS'}$ (generalization).
+\[f(\langle S,t\rangle)=\langle S,t,t\rangle.\]
+The question for SS' under $f$ becomes:
+\[\exists S'\subseteq S:t\leq\sum_{s\in S'}s\leq t
+\quad\Longleftrightarrow\quad\exists S'\subseteq S:\sum_{s\in S'}s=t\text{?}\]
+Same question as SS. Clearly:
+\[\langle S,t\rangle\in\mathrm{SS}\Longleftrightarrow
+f(\langle S,t\rangle)=\langle S,t,t\rangle\in\mathrm{SS'}.\]
+We will develop a FPTAS for (the optimization version of) SS:
+APPROX-SS$(\langle S,t\rangle,\eps)$.
+
+$\forall\ 0<\eps\leq1$, if $S'=\mathrm{APPROX\text{-}SS}(S,t,\eps)$:
+\[\underbrace{\frac{c(S^*)}{c(S')}}_{\text{MAX!}}
+=\frac{\sum_{s\in S^*}s}{\sum_{s\in S'}s}\leq(1+\eps).\]
+APPROACH (paradigmatic): we start from an exhaustive approach which enumerates all costs of subsets in $\mathcal S(i)$. The exhaustive search is modified (according to $\eps$) to yield the FPTAS.
+
+REMARK: Exhaustive search may cost $\Theta(2^{|S|})$.

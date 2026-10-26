@@ -1,0 +1,20 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 1. Content remains in source order.
+\sourcepage{15}{1}
+\section{Recap: Exhaustive search for subset sum}
+Optimization version of Subset Sum (determine $S^*$ of maximum $c(S^*)=\sum_{s\in S^*}s$ among all subsets $S'\subseteq S:c(S')\leq t$).
+
+EXHAUSTIVE SEARCH IN $\{c(S')\leq t:S'\subseteq S\}$.
+\begin{notesalgorithm}
+\textbf{EXP-SS ($S,t$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{* Let $S=\{x_1,x_2,\ldots,x_n\}$ *}
+\pseudocodeline{0}{$L_0\gets\langle0\rangle$}
+\pseudocodeline{0}{\textbf{for} $i\gets1$ \textbf{to} $n$ \textbf{do}}
+\pseudocodeline{1}{$L_i\gets\mathrm{MERGE\text{-}WD}(L_{i-1},L_{i-1}+_t x_i)$}
+\pseudocodeline{0}{\textbf{return} $\mathrm{MAX}(L_n)$}
+\end{notespseudocode}
+\end{notesalgorithm}
+RUNNING TIME: In the worst case: $|L_i|=2^i$.
+\[\Rightarrow T_{\mathrm{ESS}}(n)=\Theta\left(\sum_{i=1}^n|L_i|\right)
+=\Theta\left(\sum_{i=1}^n2^i\right)=\Theta(2^n),\quad n=|S|.\]
+OBSERVATION: $2^{|S|}$ can be $\Theta(2^{|\langle S,t\rangle|})$.

@@ -1,0 +1,15 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 11. Content remains in source order.
+\sourcepage{13}{11}
+Also, call $S_t$ the set selected during iteration $t$
+($S_t=\operatorname{argmax}\{|T\cap U_t|:T\in\mathcal F\}$).
+Let $K=|\mathcal C^*|$ (cost of optimal cover).
+
+Since $U_t\subseteq X$ and $X$ admits a cover of size $K$, $U_t\subseteq X$ can also be covered with ($\leq$) $K$ subsets. Thus:
+\[\exists S_{i_1},S_{i_2},\ldots,S_{i_K}\in\mathcal F:
+\quad U_t\subseteq\bigcup_{j=1}^K S_{i_j}.\]
+Then, we can apply the pigeon-hole principle and prove:
+\[\exists\bar j:1\leq\bar j\leq K:\quad
+|U_t\cap S_{i_{\bar j}}|\geq\frac{|U_t|}{K}.\]
+By contradiction, if $\forall j:|U_t\cap S_{i_j}|<|U_t|/K$, the maximum number of elements of $U_t$ that could be covered by $S_{i_1},S_{i_2},\ldots,S_{i_K}$ would be:
+\[\leq\sum_{j=1}^K|U_t\cap S_{i_j}|<K\frac{|U_t|}{K}=|U_t|\]
+contradicting the hypothesis that $S_{i_1},S_{i_2},\ldots,S_{i_K}$ cover $U_t$!

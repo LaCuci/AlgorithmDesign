@@ -1,0 +1,30 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 12. Content remains in source order.
+\sourcepage{14}{12}
+\subsection{Ordered lists of feasible costs}
+LET $S=\{x_1,x_2,\ldots,x_n\}$. W.l.o.g. $x_i\leq t$.
+\begin{notesdefinition}
+DEFINE $L_i$ as the ordered list without duplicates of ALL costs of feasible subsets of $S_i=\{x_1,x_2,\ldots,x_i\}$, $1\leq i\leq n$.
+Also, define $L_0=\langle0\rangle=\langle c(\varnothing)\rangle$.
+\end{notesdefinition}
+\begin{notesresult}
+EXAMPLE. For instance $\langle S,12\rangle$, with $S=\{x_1=3,x_2=4,x_3=7\}$:
+\begin{align*}
+L_0&=\langle0\rangle;\quad L_1=\langle0,3\rangle;\quad L_2=\langle0,3,4,7\rangle;\\
+L_3&=\langle0,3,4,7,10,11\rangle.
+\end{align*}
+Note that $x_1+x_2+x_3=14\notin L_3$.
+\end{notesresult}
+\begin{notesdefinition}
+DEFINE the operation $L+_t x$ as the list obtained by summing $x$ to all elements of $L$ and removing the values $>t$.
+E.g.:
+\[L_2+_{12}7=\langle0+7,3+7,4+7,\underbrace{7+7}_{\text{removed}}\rangle
+=\langle7,10,11\rangle.\]
+Clearly: $T_{+_t}(|L|)=\Theta(|L|)$.
+\end{notesdefinition}
+\begin{notesdefinition}
+LET MERGE-WD$(A,B)$ a subroutine doing the merge of two ordered lists $A$ and $B$ which also eliminates duplicates in the resulting list.
+\[T_{\mathrm{MWD}}(|A|,|B|)=\Theta(|A|+|B|).\]
+\end{notesdefinition}
+\begin{notesresult}
+EXERCISE: write code for MERGE-WD$(A,B)$.
+\end{notesresult}

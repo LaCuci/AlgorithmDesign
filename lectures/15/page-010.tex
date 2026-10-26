@@ -1,0 +1,19 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 10. Content remains in source order.
+\sourcepage{15}{10}
+\section{Randomized approximation algorithms}
+The use of randomization can help achieve simple and good approximations to hard optimization problems.
+\subsection{Random choices and coin flips}
+\begin{notesdefinition}
+A RANDOMIZED ALGORITHM is an algorithm which may use the primitive RANDOM$(S)$, where $S$ is any finite set.
+$X=\mathrm{RANDOM}(S)\in S$ is a random variable returning any element of $S$ with probability $1/|S|$ (uniform distr. on $S$).
+\end{notesdefinition}
+Different runs of RANDOM:
+$X=\mathrm{RANDOM}(S_1)$; $Y=\mathrm{RANDOM}(S_2)$ are probabilistically independent, in the sense that:
+\[\forall x\in S_1,\forall y\in S_2:
+\Pr((X=x)\wedge(Y=y))=\frac1{|S_1|}\cdot\frac1{|S_2|}.\]
+$x\gets\mathrm{RANDOM}(S)$: extraction from urn $S$ with replacement.
+\begin{notesdefinition}
+SPECIAL CASE
+
+$X=\mathrm{RANDOM}(\{0,1\})$ ($\Pr(X=0)=\Pr(X=1)=1/2$) is called a COIN FLIP.
+\end{notesdefinition}

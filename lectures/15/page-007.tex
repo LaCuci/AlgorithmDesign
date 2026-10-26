@@ -1,0 +1,23 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 7. Content remains in source order.
+\sourcepage{15}{7}
+Again we have two subcases:
+\begin{itemize}
+\item[2.a] $z'+x_i\in L'_i\Rightarrow\dfrac y{(1+\eps/(2n))^i}\leq z'+x_i\leq y$ (reasoning as in 1.a).
+\item[2.b] $z'+x_i\notin L'_i\Rightarrow\exists z''\in L'_i:\quad\dfrac y{(1+\eps/(2n))^i}\leq z''\leq y$ (reasoning as in 1.b).
+\end{itemize}
+\subsection{The approximation guarantee}
+Let now $y^*=c(S^*)=\sum_{s\in S^*}s$, $S^*\subseteq S=S_n$.
+The lemma implies that $\exists z'\in L'_n$:
+\[\frac{y^*}{(1+\eps/(2n))^n}\leq z'\leq y^*.\]
+Therefore: $y^*/z'\leq(1+\eps/(2n))^n$.
+
+OBSERVATION: We return MAX$(L'_n)\geq z'$!
+Thus
+\[\rho(n)=\frac{c(S^*)}{\mathrm{MAX}(L'_n)}\leq\frac{y^*}{z'}
+\leq\left(1+\frac\eps{2n}\right)^n.\]
+It suffices to show that $(1+\eps/(2n))^n\leq(1+\eps)$!
+But:
+\[\frac d{dn}\left(1+\frac\eps{2n}\right)^n>0
+\quad\text{and}\quad
+\lim_{n\to+\infty}\left(1+\frac\eps{2n}\right)^n=e^{\eps/2}.\]
+Since $e^{\eps/2}<1+\eps/2+(\eps/2)^2<1+\eps/2+\eps/2=1+\eps$ (Taylor),

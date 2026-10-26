@@ -1,0 +1,18 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 6. Content remains in source order.
+\sourcepage{14}{6}
+Let $S_{\max}=\operatorname{argmax}\{|S|:S\in\mathcal F\}$.
+We have:
+\[|\mathcal C|\leq\sum_{S\in\mathcal C^*}H(|S|)
+\leq|\mathcal C^*|H(|S_{\max}|)\]
+whence:
+\[\rho=\frac{|\mathcal C|}{|\mathcal C^*|}\leq H(|S_{\max}|).\]
+The only thing to prove to complete the analysis is:
+\subsection{Bounding the charges of one set}
+\begin{notesresult}
+\textbf{LEMMA}
+\[\forall S\in\mathcal F:\quad\sum_{x\in S}c_x\leq H(|S|).\]
+\end{notesresult}
+(Intuition: the sum is not too large because A-S-C covers many elements together at each iteration.)
+
+PROOF: Let $S\in\mathcal F$.
+Recall that $S_1,S_2,\ldots,S_{|\mathcal C|}$ are the subsets selected by A-S-C and that $U_t$ is the set of uncovered elements before iteration $t\geq1$.

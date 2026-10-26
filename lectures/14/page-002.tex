@@ -1,0 +1,20 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 2. Content remains in source order.
+\sourcepage{14}{2}
+\section{A tighter analysis of greedy set cover}
+\subsection{Harmonic numbers}
+TIGHTER (MORE COMPLEX) ANALYSIS
+\begin{notesdefinition}
+\textbf{DEF}\quad HARMONIC NUMBER $H(K)$:
+\[H(K)=\sum_{i=1}^K\frac1i.\]
+\end{notesdefinition}
+We have:
+\sourcefigure[0.85]{assets/14/page-002-harmonic-integrals.png}
+Then
+\[\int_1^{K+1}\frac1x\,dx<\sum_{i=1}^K\frac1i
+\leq1+\int_1^K\frac1x\,dx.\]
+Thus $\ln(K+1)<H(K)\leq1+\ln K$.
+
+We will prove that given $|S_{\max}|=\max\{|S|:S\in\mathcal F\}\leq|X|=n$,
+\begin{notesresult}
+\[\rho\leq H(|S_{\max}|)\leq1+\ln|S_{\max}|.\]
+\end{notesresult}

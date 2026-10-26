@@ -1,0 +1,21 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 1. Content remains in source order.
+\sourcepage{13}{1}
+\section{Recap: Christofides' algorithm}
+Determine an Eulerian multi-subgraph $\bar G$ of $(G,c)$ spanning $V$ of small cost. Obtain Euler Tour touching all edges once and from it a tour via shortcutting:
+\begin{notesalgorithm}
+\textbf{CHRISTOFIDES ($G=(V,E),c$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$T^*=(V,E_{T^*})\gets\mathrm{MST}(G,c)$ \hfill $O(|E|\log|V|)=O(|V|^2\log|V|)$}
+\pseudocodeline{0}{* let $V_{\mathrm{ODD}}^{T^*}$ be the set of nodes of odd degree of $T^*$ and let $E_{\mathrm{ODD}}^{T^*}=\{e=\{u,v\}\in E:u,v\in V_{\mathrm{ODD}}^{T^*}\}$ * \hfill $O(|V|)$}
+\pseudocodeline{0}{$M^*\gets\mathrm{M.C.P.MATCHING}(G'=(V_{\mathrm{ODD}}^{T^*},E_{\mathrm{ODD}}^{T^*}),c)$ \hfill $O(|V|^3)$}
+\pseudocodeline{0}{$W\gets\mathrm{EULER\_TOUR}(\bar G=(V,E_{T^*}\cup M^*))$ \hfill $O(|V|)$}
+\pseudocodeline{0}{$\gamma\gets\mathrm{SHORTCUT}(W)$ \hfill $O(|V|)$}
+\pseudocodeline{0}{\textbf{return} $\gamma$}
+\end{notespseudocode}
+\end{notesalgorithm}
+\subsection{Running time and approximation ratio}
+Running Time $O(|V|^3)$ (Edmond's Blossom Algorithm for min-cost perfect matching).
+
+Approximation ratio: Since $c(M^*)\leq c(\gamma^*)/2$,
+\[c(\gamma)\leq c(E_{T^*})+c(M^*)\leq\frac32c(\gamma^*)
+\quad\Rightarrow\quad\rho=3/2.\]

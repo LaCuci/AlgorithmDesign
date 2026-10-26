@@ -1,0 +1,18 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 4. Content remains in source order.
+\sourcepage{14}{4}
+We assign weight $c_x$ to $x\in X$ when $x$ gets covered for the first time at iteration $t$:
+\begin{notesdefinition}
+\textbf{DEF:} Let $x\in S_t\cap U_t$ (all elements covered together at iteration $t$):
+\[\text{Then}\qquad c_x=\frac1{|S_t\cap U_t|}.\]
+\end{notesdefinition}
+REMARK 1: If iteration $t$ covers many elements ($|S_t\cap U_t|$ large) then $c_x$ is small.
+
+REMARK 2: Since A-S-C covers all elements $x\in X$, each $x$ is assigned a given weight $c_x$, eventually.
+
+\begin{notesresult}
+\textbf{PROPERTY 1:}
+\[\sum_{x\in S_t\cap U_t}c_x
+=\sum_{x\in S_t\cap U_t}\frac1{|S_t\cap U_t|}
+=\frac{|S_t\cap U_t|}{|S_t\cap U_t|}=1.\]
+\end{notesresult}
+We assign unit weight at each iteration. Since there are $|\mathcal C|$ iterations (where $\mathcal C$ is the cover returned by A-S-C):

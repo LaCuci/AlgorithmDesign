@@ -1,0 +1,23 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 6. Content remains in source order.
+\sourcepage{13}{6}
+$X'$ = set of required skills.
+$\mathcal F$ = set of individuals (each represented by the set of his/her skills).
+
+$|\mathcal C^*|$: minimum number of hirings to cover all skills.
+
+\subsection{Decision version and reduction from vertex cover}
+The decision version is the following:
+\begin{notesproblem}
+&\text{SC}\\
+\text{I: }&\langle X,\mathcal F,K\rangle\\
+\text{Q: }&\exists\mathcal C\subseteq\mathcal F\text{ covering }X,\text{ with }|\mathcal C|\leq K\text{?}
+\end{notesproblem}
+We prove that $\mathrm{SC}\in\classNPH$ via $\mathrm{VC}\polyred\mathrm{SC}$.
+
+The reduction simply ``reformulates'' VC as a set-cover problem (generalization).
+Given $\langle G=(V,E),K\rangle$:
+\[f(\langle G=(V,E),K\rangle)=\langle X_G,\mathcal F_G,K'\rangle\]
+\[X_G=E\quad\text{(we have to cover edges)},\qquad
+\mathcal F_G=\{N_v:v\in V\}.\]
+$N_v$: all edges that $v$ can cover:
+\[N_v=\{e\in E:e\ni v\}.\]

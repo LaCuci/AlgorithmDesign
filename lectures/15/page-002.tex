@@ -1,0 +1,12 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 2. Content remains in source order.
+\sourcepage{15}{2}
+\section{From exhaustive search to an FPTAS}
+\subsection{The approximation idea}
+Rather than just eliminating duplicates and values $>t$, we also eliminate costs of subsets that are ``well represented'' by other costs.
+
+Eliminating entries from the $L_i$'s reduces the size of the lists.
+
+APPROXIMATION IDEA: if two costs are sufficiently ``close'' we consider them as ``duplicates'', and keep only one of them (the smallest of the two to preserve feasibility).
+\begin{notesresult}
+REMARK: ``Closeness'' will depend on $\eps$! The smaller $\eps$, the closer the costs must be so that the smaller cost can represent the larger.
+\end{notesresult}

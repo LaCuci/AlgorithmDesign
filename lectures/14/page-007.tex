@@ -1,0 +1,14 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 7. Content remains in source order.
+\sourcepage{14}{7}
+For $1\leq t\leq|\mathcal C|$ define
+\[m_t=|S\cap U_{t+1}|.\]
+The value $m_t$ is the number of elements of $S$ still uncovered after iteration $t\geq1$.
+Let $m_0=|S|$. We have:
+\[|S|=m_0\geq m_1\geq\cdots\geq m_t\geq\cdots\geq m_{|\mathcal C|}=0.\]
+(Observe that it might be $m_{t-1}=m_t$.)
+
+Now, in $S$ $m_{t-1}-m_t$ elements are covered at iteration $t$. The cost $c_x$ of each of these elements is $1/|S_t\cap U_t|$ (from definition of $c_x$).
+Therefore:
+\[\sum_{x\in S}c_x=\sum_{t=1}^{|\mathcal C|}(m_{t-1}-m_t)\cdot\frac1{|S_t\cap U_t|}.\qquad(1)\]
+Now, recall that $S_t$ is the greedy choice at iteration $t$, thus
+\[|S_t\cap U_t|\geq|T\cap U_t|\quad\forall T\in\mathcal F.\]

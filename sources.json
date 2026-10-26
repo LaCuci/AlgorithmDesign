@@ -3040,16 +3040,493 @@
           "continues_from": 15
         }
       ]
+    },
+    {
+      "id": "13",
+      "filename": "13 - Mon Oct 26 2026.pdf",
+      "sha256": "c2aa1189383f4d0f1c6352bf844b4d66233be0ba920337cfff2da4df1e5f7138",
+      "page_count": 14,
+      "lecture_file": "lectures/13/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/13/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/13/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/13/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [
+            {
+              "lecture": "13",
+              "page": 3,
+              "path": "assets/13/page-003-tight-example.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.055,
+                0.119,
+                0.988,
+                0.239
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.35,
+                  0.119,
+                  0.45,
+                  0.13
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram with attached labels and annotations; surrounding prose transcribed separately."
+            },
+            {
+              "lecture": "13",
+              "page": 3,
+              "path": "assets/13/page-003-path-mst.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.365,
+                0.346,
+                0.97,
+                0.435
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.365,
+                  0.416,
+                  0.415,
+                  0.435
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram with attached labels and annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": [],
+          "continues_from": 2
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/13/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/13/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/13/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/13/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "The final reduction equivalence uses E_G in the source, following the earlier definition X_G=E; the original notation and exact-cardinality assertions are retained."
+          ],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/13/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/13/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "13",
+              "page": 9,
+              "path": "assets/13/page-009-bucket-lists.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.04,
+                0.548,
+                0.915,
+                0.839
+              ],
+              "excluded_adjacent_regions": [],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram with attached labels and annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/13/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "The source writes |U_bar_t|=emptyset; this apparent notation error is retained."
+          ]
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/13/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 10
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/13/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 11
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/13/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "The source uses a strict inequality after replacing exp(-ceil(ln n)) by 1/n; retained as written."
+          ],
+          "continues_from": 12
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/13/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "contentless",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "filename": "14 - Tue Oct 27 2026.pdf",
+      "sha256": "62df8f553213906cce00caa88d675130b40c48ecafaeef4dd0b9b4f241de56a5",
+      "page_count": 14,
+      "lecture_file": "lectures/14/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/14/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/14/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [
+            {
+              "lecture": "14",
+              "page": 2,
+              "path": "assets/14/page-002-harmonic-integrals.png",
+              "kind": "diagram",
+              "normalized_box": [
+                0.225,
+                0.249,
+                0.95,
+                0.548
+              ],
+              "excluded_adjacent_regions": [
+                [
+                  0.225,
+                  0.536,
+                  0.4,
+                  0.548
+                ],
+                [
+                  0.83,
+                  0.54,
+                  0.95,
+                  0.548
+                ],
+                [
+                  0.55,
+                  0.53,
+                  0.65,
+                  0.548
+                ]
+              ],
+              "excluded_adjacent_ink": [],
+              "note": "Source-derived diagram with attached labels and annotations; surrounding prose transcribed separately."
+            }
+          ],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/14/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/14/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/14/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 4
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/14/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/14/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/14/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "The charging proof retains the source denominators, including possible zero denominators in iterations after S has been covered; no correction is inserted."
+          ],
+          "continues_from": 7
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/14/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "The exercise defines m_t=|U_t| while also giving m_0=|X| and m_c=0; the original indices are retained."
+          ],
+          "continues_from": 8
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/14/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/14/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 10
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/14/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 13,
+          "tex_file": "lectures/14/page-013.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 14,
+          "tex_file": "lectures/14/page-014.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "filename": "15 - Wed Oct 28 2026.pdf",
+      "sha256": "bf599036180ddf85897a6ab5635d02d5a6944a7135df75fd4ce7e16081a56583",
+      "page_count": 12,
+      "lecture_file": "lectures/15/lecture.tex",
+      "status": "complete",
+      "pages": [
+        {
+          "page": 1,
+          "tex_file": "lectures/15/page-001.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 2,
+          "tex_file": "lectures/15/page-002.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 3,
+          "tex_file": "lectures/15/page-003.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 4,
+          "tex_file": "lectures/15/page-004.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [
+            "APPROX-SS initializes L_0 prime with <emptyset> in the source, unlike the earlier <0>; retained as written."
+          ],
+          "continues_from": 3
+        },
+        {
+          "page": 5,
+          "tex_file": "lectures/15/page-005.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": [
+            "The source lemma omits an explicit feasibility condition on S prime and starts its induction at i=1 although its statement includes i=0; retained as written."
+          ]
+        },
+        {
+          "page": 6,
+          "tex_file": "lectures/15/page-006.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 5
+        },
+        {
+          "page": 7,
+          "tex_file": "lectures/15/page-007.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 6
+        },
+        {
+          "page": 8,
+          "tex_file": "lectures/15/page-008.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 7
+        },
+        {
+          "page": 9,
+          "tex_file": "lectures/15/page-009.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 8
+        },
+        {
+          "page": 10,
+          "tex_file": "lectures/15/page-010.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 11,
+          "tex_file": "lectures/15/page-011.tex",
+          "status": "visually_verified",
+          "content_kind": "substantive",
+          "assets": [],
+          "review_notes": []
+        },
+        {
+          "page": 12,
+          "tex_file": "lectures/15/page-012.tex",
+          "status": "visually_verified",
+          "content_kind": "continuation",
+          "assets": [],
+          "review_notes": [],
+          "continues_from": 11
+        }
+      ]
     }
   ],
   "verification": {
     "build_succeeded": true,
     "build_command": "latexmk -pdf -outdir=build main.tex",
-    "verified_at_utc": "2026-10-20T17:52:53.730752+00:00",
+    "verified_at_utc": "2026-10-26T14:33:25.691603+00:00",
     "compiled_pdf": "build/main.pdf",
-    "compiled_pdf_sha256": "1d24d8ed081e29e33152c670c854b7a5c8dbe8ccaecb521b9f8101fbcd986cb7",
-    "compiled_page_count": 90,
-    "inputs_sha256": "81cc59f38d789ff0853779d8acfa523ec237b443f4f9a2abda43d09c05c7395e",
+    "compiled_pdf_sha256": "4092b5cbf9b2e35944da1d307c5bfd2b905bfdcaf72d227ca475f7def6da0414",
+    "compiled_page_count": 108,
+    "inputs_sha256": "64cde4f68d7259cd4181f0272b28539a9b5af6f42b58583cb53176c4aaac839d",
     "review_method": "Visual inspection of available source pages and rendered notes; retained crops checked with their surrounding text. Earlier review states are preserved when originals are absent.",
     "available_originals": [
       "07a - Mon Oct 12 2026.pdf",
@@ -3058,7 +3535,10 @@
       "09 - Wed Oct 15 2025.pdf",
       "10 -Mon Oct 19 2026.pdf",
       "11 - Tue Oct 20 2026.pdf",
-      "12 - Wed Oct 21 2026.pdf"
+      "12 - Wed Oct 21 2026.pdf",
+      "13 - Mon Oct 26 2026.pdf",
+      "14 - Tue Oct 27 2026.pdf",
+      "15 - Wed Oct 28 2026.pdf"
     ],
     "absent_originals": [
       "01 - Mon  Sep 28 2026.pdf",

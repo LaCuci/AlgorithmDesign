@@ -1,0 +1,10 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 9. Content remains in source order.
+\sourcepage{13}{9}
+\subsection{A linear-time implementation}
+A-S-C admits a linked-list-based implementation running in time
+\[O\left(\sum_{S\in\mathcal F}|S|\right)=O(|\langle X,\mathcal F\rangle|).\]
+\begin{notesresult}
+\textbf{EXERCISE} (IDEA: Store each subset as a doubly-linked list of its elements. Also, for each element $x\in X$, keep another list linking all set entries equal to $x$. Subsets have to be maintained sorted by their cardinality, using $|X|$ list buckets.)
+\sourcefigure[0.95]{assets/13/page-009-bucket-lists.png}
+After each selection, the elements' lists can be used to update the subsets and their reference buckets.
+\end{notesresult}

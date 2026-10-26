@@ -1,0 +1,19 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 5. Content remains in source order.
+\sourcepage{15}{5}
+\subsection{Propagation of the trimming error}
+The algorithm is clearly correct, since it returns a feasible cost $z'=\mathrm{MAX}(L'_n)$ ($L'_n\subseteq L_n$).
+
+Let $z^*=\operatorname{cost}(S^*)=\sum_{s\in S^*}s$. We must prove that $\rho_\eps=z^*/z'\leq1+\eps$.
+We have to study how the trimming error propagates.
+\begin{notesresult}
+\textbf{LEMMA} Let $S'\subseteq S_i=\{x_1,x_2,\ldots,x_i\}$ and let $y=c(S')=\sum_{s\in S'}s$.
+For $0\leq i\leq n$, let $L'_i$ be the list computed by A-SS at the end of iteration $i$, for $0\leq i\leq n$. Then
+\[\exists z\in L'_i:\quad\frac y{(1+\eps/(2n))^i}\leq z\leq y.\]
+\end{notesresult}
+The lemma states that the ``closeness'' of the representative $z$ gets ``looser'' exponentially fast in $i$.
+
+PROOF. Induction on $i$. The base $i=1$ is trivial, since $L'_1=\langle0,x_1\rangle=L_1$ (all possible costs in $S_1=\{x_1\}$). Let $i>1$ and assume that the HP holds for $i-1$. Two cases:
+\begin{enumerate}
+\item $x_i\notin S'\subseteq\{x_1,\ldots,x_i\}$. Then $S'\subseteq S_{i-1}=\{x_1,\ldots,x_{i-1}\}$ thus HP holds and for $y=c(S')=\sum_{s\in S'}s$:
+\[\exists z'\in L'_{i-1}:\quad\frac y{(1+\eps/(2n))^{i-1}}\leq z'\leq y.\]
+\end{enumerate}

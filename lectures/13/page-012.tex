@@ -1,0 +1,22 @@
+% Source: 13 - Mon Oct 26 2026.pdf, page 12. Content remains in source order.
+\sourcepage{13}{12}
+Due to the greedy choice A-S-C selects
+$S_t=\operatorname{argmax}\{|T\cap U_t|:T\in\mathcal F\}$.
+Thus $|U_t\cap S_t|\geq|U_t\cap S_{i_{\bar j}}|\geq|U_t|/K$.
+\begin{notesresult}
+\textbf{Morale:} Thanks to the greedy choice I always cover a fraction
+$\geq1/K=1/|\mathcal C^*|$ of the yet uncovered elements!
+\end{notesresult}
+This gives the important relation between the returned solution and the optimal solution.
+
+We can write the following recurrence:
+\[\begin{cases}|U_1|=n,\\
+|U_{t+1}|\leq|U_t|-|U_t|/K=|U_t|(1-1/K).
+\end{cases}\]
+By unfolding:
+\begin{align*}
+|U_{t+1}|&\leq|U_t|(1-1/K)\leq|U_{t-1}|(1-1/K)^2\\
+&\leq|U_{t-i}|(1-1/K)^{i+1}\\
+&\overset{i=t-1}{\leq}|U_1|(1-1/K)^t=n(1-1/K)^t.
+\end{align*}
+$|U_{t+1}|$: uncovered elements after iteration $t$.

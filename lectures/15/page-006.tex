@@ -1,0 +1,24 @@
+% Source: 15 - Wed Oct 28 2026.pdf, page 6. Content remains in source order.
+\sourcepage{15}{6}
+Two subcases:
+\begin{itemize}
+\item[1.a] $z'$ not eliminated in TRIM$(L'_i,\eps/(2n))$. Then we have:
+\[\frac y{(1+\eps/(2n))^i}\leq\frac y{(1+\eps/(2n))^{i-1}}\leq\underbrace{z'}_{\in L'_i}\leq y\]
+and the thesis follows setting $z=z'$.
+\item[1.b] $z'$ is eliminated in TRIM$(L'_i,\eps/(2n))$. Then $\exists z''\in L'_i$:
+\[\frac y{(1+\eps/(2n))^i}
+\leq\frac y{(1+\eps/(2n))^{i-1}}\cdot\frac1{1+\eps/(2n)}
+\leq\frac{z'}{1+\eps/(2n)}\leq z''\leq z'\leq y\]
+and the thesis follows setting $z=z''$.
+\end{itemize}
+\begin{enumerate}[start=2]
+\item $x_i\in S'\subseteq S_i=\{x_1,\ldots,x_i\}$. Let $y=c(S')=\sum_{s\in S'}s$.
+We have $S'=S''\cup\{x_i\}$, with $S''\subseteq S_{i-1}$, and
+$y=c(S'')+x_i\Rightarrow c(S'')=y-x_i$.
+Then, by HP: $\exists z'\in L'_{i-1}$:
+\[\frac{y-x_i}{(1+\eps/(2n))^{i-1}}\leq z'\leq y-x_i.\]
+Thus
+\[\frac y{(1+\eps/(2n))^{i-1}}
+<\frac{y-x_i}{(1+\eps/(2n))^{i-1}}+x_i\leq z'+x_i\leq y.\]
+Observe that $z'+x_i\in L'_{i-1}+_t x_i$.
+\end{enumerate}

@@ -1,0 +1,25 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 10. Content remains in source order.
+\sourcepage{14}{10}
+\section{An FPTAS for subset sum}
+\subsection{The optimization problem and its decision version}
+Optimization version of SS:
+\begin{notesproblem}
+\mathcal I&=\{\langle S,t\rangle:S\subseteq\mathbb N^+\text{ finite};\ t\in\mathbb N\}\\
+\mathcal S&=\{T\subseteq\mathbb N^+:T\text{ finite}\}.
+\end{notesproblem}
+Given $i=\langle S,t\rangle$:
+\[\mathcal S(i)=\left\{S'\subseteq S:c(S')=\sum_{s\in S'}s\leq t\right\}.\]
+Type: MAX.
+\begin{itemize}
+\item Determine the subset of $S$ of maximum sum among all those (admissible) whose sum is not larger than target $t$.
+\item ``Best lower approximation'' of $t$.
+\end{itemize}
+APPLICATION: $S=\{s_1,\ldots,s_n\}$ are weights and $t$ is the capacity of the container.
+Aim: pack the container as much as possible (hypotheses: \textcircled{1} no volume constraints; \textcircled{2} all items have the same unit value).
+
+HARDNESS: Decision version:
+\begin{notesproblem}
+&\text{SS'}\\
+\text{I: }&\langle S,t,K\rangle\\
+\text{Q: }&\exists S'\subseteq S:\quad\underbrace{K}_{\text{lower bound}}\leq\sum_{s\in S'}s\leq t\text{?}
+\end{notesproblem}

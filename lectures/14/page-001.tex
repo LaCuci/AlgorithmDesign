@@ -1,0 +1,18 @@
+% Source: 14 - Tue Oct 27 2026.pdf, page 1. Content remains in source order.
+\sourcepage{14}{1}
+\section{Recap: Greedy set cover}
+SET-COVER: Given $\langle X,\mathcal F\rangle$, $\mathcal F\subseteq\mathcal B(X)$ determine min-size covering $\mathcal C^*\subseteq\mathcal F$:
+\[X=\bigcup_{S\in\mathcal C^*}S\quad(\text{size}=|\mathcal C^*|).\]
+\begin{notesalgorithm}
+\textbf{APPROX-SET-COVER ($X,\mathcal F$)}
+\begin{notespseudocode}
+\pseudocodeline{0}{$U\gets X;\quad\mathcal C\gets\varnothing$}
+\pseudocodeline{0}{\textbf{while} $(U\neq\varnothing)$ \textbf{do}}
+\pseudocodeline{1}{$S\gets\operatorname{argmax}\{|T\cap U|:T\in\mathcal F\}$}
+\pseudocodeline{1}{$U\gets U-S;\quad\mathcal C\gets\mathcal C\cup\{S\}$}
+\pseudocodeline{0}{\textbf{return} $\mathcal C$}
+\end{notespseudocode}
+\end{notesalgorithm}
+We proved a lowerbound on the covering rate: Let $K=|\mathcal C^*|$:
+\[\frac{|U_t-U_{t+1}|}{|U_t|}\geq\frac{|U_t|(1/K)}{|U_t|}=\frac1K.\]
+$\therefore$ whence $\rho(n)\leq\lceil\ln n\rceil\leq1+\ln n$.
